@@ -7,57 +7,57 @@
 ## Pages
 
 ### בית
-https://example.com
+https://casa-verona.zappy5.app
 casa verona מביאה לכם ריהוט ופרטי עיצוב הבית במראה קלאסי-מודרני. סלונים, מיטות, שולחנות אוכל ועוד מחכים לכם. היכנסו להתאהב בביתכם מחדש.
 
 ### קולקציות
-https://example.com/collections
+https://casa-verona.zappy5.app/collections
 התרשמו ממגוון הקולקציות של casa verona: סלונים מהודרים, מזנונים אלגנטיים, כיסאות מעוצבים ועוד. מצאו את הסט המושלם להשלמת חלל החלומות שלכם.
 
 ### גלריית עיצוב
-https://example.com/design-gallery
+https://casa-verona.zappy5.app/design-gallery
 גלריית העיצוב של casa verona מציגה חללי מגורים מעוררי השראה. קבלו רעיונות לשילוב רהיטים יוקרתיים בעיצוב קלאסי-מודרני. היכנסו לחוויית סטיילינג ייחודית.
 
 ### אודות
-https://example.com/about
+https://casa-verona.zappy5.app/about
 casa verona היא חנות רהיטים יוקרתית המחברת בין איכות ללא פשרות לעיצוב על-זמני. הכירו את הפילוסופיה, החומרים והחזון שמאחורי כל פריט שאנו יוצרים.
 
 ### שאלות נפוצות
-https://example.com/faq
+https://casa-verona.zappy5.app/faq
 משלוחים, החזרות, התאמה אישית וטיפול ברהיטים — כל מה שחשוב לדעת לפני הקנייה. קבלו מענה מהיר וברור לשאלות הנפוצות על ריהוט מעוצב מבית casa verona.
 
 ### צור קשר
-https://example.com/contact
+https://casa-verona.zappy5.app/contact
 מוכנים להפוך את הבית ליצירת מופת? צרו קשר עם casa verona עוד היום. הצוות שלנו ישמח לייעץ, לתאם ביקור באולם התצוגה ולענות על כל שאלה.
 
 ### Products
-https://example.com/products
+https://casa-verona.zappy5.app/products
 המוצרים שלנו - casa verona
 
 ### Product Detail
-https://example.com/product/:slug
+https://casa-verona.zappy5.app/product/:slug
 פרטי המוצר - casa verona
 
 ### Category
-https://example.com/category/:slug
+https://casa-verona.zappy5.app/category/:slug
 מוצרים - casa verona
 
 ### תודה שפניתם אלינו
-https://example.com/thank-you
+https://casa-verona.zappy5.app/thank-you
 casa verona - תודה שפניתם אלינו
 
 ## Legal & Policy
 
 ### Privacy Policy
-https://example.com/privacy
+https://casa-verona.zappy5.app/privacy
 Information about how user data is collected, stored, and protected.
 
 ### Terms & Conditions
-https://example.com/terms
+https://casa-verona.zappy5.app/terms
 Legal terms describing service usage, rights, and policies.
 
 ### Accessibility Statement
-https://example.com/accessibility
+https://casa-verona.zappy5.app/accessibility
 Information about WCAG compliance and accessibility features.
 
 ---
@@ -87,8 +87,8 @@ Furniture & Home Decor
 
 # Machine-readable feeds
 
-- Sitemap (XML): https://example.com/sitemap.xml
-- Robots: https://example.com/robots.txt
-- Flattened page text (for LLMs): https://example.com/llms-full.txt
-- Products (JSON): https://example.com/products.json
-- Products (Google Merchant RSS): https://example.com/product-feed.xml
+- Sitemap (XML): https://casa-verona.zappy5.app/sitemap.xml
+- Robots: https://casa-verona.zappy5.app/robots.txt
+- Flattened page text (for LLMs): https://casa-verona.zappy5.app/llms-full.txt
+- Products (JSON): https://casa-verona.zappy5.app/products.json
+- Products (Google Merchant RSS): https://casa-verona.zappy5.app/product-feed.xml
