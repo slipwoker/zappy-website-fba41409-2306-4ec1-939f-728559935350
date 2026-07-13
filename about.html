@@ -364,13 +364,13 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
     </div>
   
 <script>window.ZAPPY_PRODUCTS_LISTING_PATH = "/products";</script>
-<script>window.ZAPPY_WEBSITE_ID = "fba41409-2306-4ec1-939f-728559935350";window.ZAPPY_API_BASE = "https://api.zappy5.com"</script><a class="skip-link" href="#main">דלג לתוכן הראשי</a>
+<script>window.ZAPPY_WEBSITE_ID = "fba41409-2306-4ec1-939f-728559935350";window.ZAPPY_API_BASE = (window.location.pathname.includes('/preview') ? window.location.origin : "https://api.zappy5.com");</script><a class="skip-link" href="#main">דלג לתוכן הראשי</a>
   <nav class="navbar" dir="rtl">
   <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
-    <svg style="display:block !important" class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+    <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
       <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
     </svg>
-    <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display:none !important">
+    <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display: none;">
       <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
     </svg>
   </button>
@@ -865,11 +865,11 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
 </script>
   
   <main id="main">
-    <section class="about-story-section" data-layout-spec="אודות-story">
+    <section class="about-story-section" data-layout-spec="אודות-story" id="about-story-section">
     <div class="about-story-section__container">
         <!-- Text Content Column (Right side in RTL) -->
         <div class="about-story-section__content">
-            <h1 class="about-story-section__heading">הסיפור של קאזה ורונה</h1>
+            <h1 class="about-story-section__heading" style="">הסיפור של קאסה ורונה</h1>
             
             <!-- Gold Ornament Divider -->
             <div class="about-story-section__ornament" aria-hidden="true">
@@ -882,8 +882,8 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
                 </svg>
             </div>
 
-            <p class="about-story-section__paragraph">
-                קאזה ורונה נולדה מתוך אהבה עמוקה לאסתטיקה אירופאית קלאסית ולנוחות מודרנית ללא פשרות. אנו מאמינים כי הבית הוא המקום האישי ביותר בעולם, ולכן כל פריט ריהוט שאנו בוחרים להציג עובר תהליך קפדני של אוצרות – החל מבחירת חומרי הגלם המשובחים ועד לקווי העיצוב הנקיים והעל-זמניים. המטרה שלנו היא אחת: לאפשר לכם ליצור מרחב מגורים שמשדר חמימות, יוקרה מאופקת ותחושת שייכות אמיתית.
+            <p class="about-story-section__paragraph" style="">
+                קאזה ורונה נולדה מתוך אהבה עמוקה לאסתטיקה אירופאית קלאסית ולנוחות מודרנית ללא פשרות. אנו מאמינים כי הבית הוא המקום האישי ביותר בעולם, ולכן כל פריט ריהוט שאנו בוחרים להציג עובר תהליך קפדני של אוצרות – החל מבחירת חומרי הגלם המשובחים ועד לקווי העיצוב הנקיים והעל-זמניים. המטרה שלנו היא אחת: לסאפשר לכם ליצור מרחב מגורים שמשדר חמימות, יוקרה מאופקת ותחושת שייכות אמיתית.
             </p>
             <p class="about-story-section__paragraph">
                 אנחנו לא רק חנות רהיטים; אנחנו שותפים למסע עיצוב הבית שלכם. החזון שלנו משלב בין מורשת נגרות מסורתית לבין טכנולוגיות ייצור חדשניות, ומעניק לכל לקוח חוויה אישית, מקצועית ובלתי מתפשרת. בין אם אתם מחפשים סלון מפואר, פינת אוכל אינטימית או חדר שינה מעוצב – הצוות שלנו כאן כדי להקשיב, לייעץ ולהגשים את החלום שלכם לפרטי פרטים.
@@ -894,13 +894,13 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
                 <p class="about-story-section__quote">
                     "כל בית מספר סיפור. אנחנו כאן כדי לעזור לכם לכתוב את הפרק היפה ביותר שלו, עם רהיטים שהופכים חלל לחגיגה של סטייל ואופי."
                 </p>
-                <span class="about-story-section__signature">— צוות קאזה ורונה</span>
-            </div>
+                <p><span class="about-story-section__signature" style="color: rgb(36, 33, 30) !important;">— צוות קאסה ורונה</span>
+            </p></div>
         </div>
 
         <!-- Image Column (Left side in RTL) -->
         <div class="about-story-section__media">
-            <img loading="lazy" fetchpriority="low" data-placeholder="about-story-image-1" data-context="A warm, luxurious living room showroom with elegant modern-classic furniture, soft beige and cream tones, a large arched mirror, and natural light streaming through sheer curtains. The atmosphere is refined, calm, and inviting." width="600" height="750" src="/assets/site-about-story-image-1.webp" alt="חלל תצוגה יוקרתי של קאזה ורונה עם ריהוט קלאסי-מודרני בגוונים חמים" class="about-story-section__image" decoding="async">
+            <img loading="lazy" fetchpriority="low" data-placeholder="about-story-image-1" data-context="A warm, luxurious living room showroom with elegant modern-classic furniture, soft beige and cream tones, a large arched mirror, and natural light streaming through sheer curtains. The atmosphere is refined, calm, and inviting." width="600" height="750" src="/assets/site-about-story-image-1.webp" alt="חלל תצוגה יוקרתי של קאזה ורונה עם ריהוט קלאסי-מודרני בגוונים חמים" class="about-story-section__image" data-element-type="image" data-element-id="img-1783976525881-f4mvebv7s" style="" decoding="async">
         </div>
     </div>
 
@@ -1047,7 +1047,7 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
     </div>
 </section>
 
-<section class="about-trust-section" data-layout-spec="אודות-trust">
+<section class="about-trust-section" data-layout-spec="אודות-trust" id="about-trust-section">
   <div class="about-trust-section__container">
     <div class="about-trust-section__inner">
       
@@ -1058,7 +1058,7 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
         <div class="about-trust-section__divider" aria-hidden="true"></div>
         
         <ul class="about-trust-section__trust-list">
-          <li class="about-trust-section__trust-item">
+          <li class="about-trust-section__trust-item" data-grid-item-index="0">
             <div class="about-trust-section__icon-wrap">
               <svg class="about-trust-section__icon" data-element-type="icon" data-icon-type="svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7l-8 8-4-4"></path></svg>
             </div>
@@ -1067,7 +1067,7 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
               <p class="about-trust-section__item-text">מבחר פריטים שנבחרו בקפידה ממיטב המעצבים, המשלבים אלגנטיות קלאסית עם נוחות עכשווית.</p>
             </div>
           </li>
-          <li class="about-trust-section__trust-item">
+          <li class="about-trust-section__trust-item" data-grid-item-index="1">
             <div class="about-trust-section__icon-wrap">
               <svg class="about-trust-section__icon" data-element-type="icon" data-icon-type="svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
             </div>
@@ -1076,7 +1076,7 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
               <p class="about-trust-section__item-text">צוות המומחים שלנו מלווה אותך בבחירת הרהיטים המושלמים, מהסלון ועד לחדר השינה.</p>
             </div>
           </li>
-          <li class="about-trust-section__trust-item">
+          <li class="about-trust-section__trust-item" data-grid-item-index="2">
             <div class="about-trust-section__icon-wrap">
               <svg class="about-trust-section__icon" data-element-type="icon" data-icon-type="svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
             </div>
@@ -1085,7 +1085,7 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
               <p class="about-trust-section__item-text">חומרי גלם משובחים, גימורים מוקפדים ועיצוב על-זמני המעניקים לכל חלל תחושה של פאר מאופק.</p>
             </div>
           </li>
-          <li class="about-trust-section__trust-item">
+          <li class="about-trust-section__trust-item" data-grid-item-index="3">
             <div class="about-trust-section__icon-wrap">
               <svg class="about-trust-section__icon" data-element-type="icon" data-icon-type="svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
             </div>
@@ -1100,11 +1100,11 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
       <!-- Image Panel -->
       <div class="about-trust-section__image-panel">
         <div class="about-trust-section__image-frame">
-          <img loading="lazy" decoding="async" data-placeholder="about-trust-image-1" data-context="A warm, softly lit corner of a luxury living room featuring a plush cream sofa, a marble coffee table, and an elegant arched floor lamp. The scene conveys refined comfort and sophisticated home decor." width="600" height="750" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='750'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23FF0083;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23FF008320;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grad)'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial, sans-serif' font-size='18' fill='white' text-anchor='middle' dy='.3em' font-weight='500'%3E%D7%A4%D7%99%D7%A0%D7%AA%20%D7%99%D7%A9%D7%99%D7%91%D7%94%20%D7%99%D7%95%D7%A7%D7%A8%D7%AA%D7%99%D7%AA%20%D7%91%D7%A2%D7%99%D7%A6%D7%95%D7%91%20%D7%95%D7%A8%D7%95%D7%A0%D7%94%3C/text%3E%3C/svg%3E" alt="פינת ישיבה יוקרתית בעיצוב ורונה" class="about-trust-section__image" fetchpriority="low">
+          <div data-zappy-zoom-wrapper="true" data-element-id="img-1783976525881-l82p40xmi" data-element-type="image" data-zappy-zoom-wrapper-width="600px" data-zappy-zoom-wrapper-height="800px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-wrapper-align="center" style="position: relative !important; overflow: hidden !important; width: 600px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 800px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true"><img decoding="async" data-placeholder="about-trust-image-1" data-context="A warm, softly lit corner of a luxury living room featuring a plush cream sofa, a marble coffee table, and an elegant arched floor lamp. The scene conveys refined comfort and sophisticated home decor." width="600" height="750" src="/assets/casa-verona-furniture-home-decor-gallery-upload-1783973778239-usyd1u.webp?t=1783976585351" alt="פינת ישיבה יוקרתית בעיצוב ורונה" class="about-trust-section__image" data-element-type="image" data-element-id="img-1783976525881-l82p40xmi" style="object-position: 47% 95% !important; border-radius: 8px; object-fit: fill !important; width: 100% !important; height: 100% !important; max-width: none !important; display: block !important; margin: 0px !important; left: 0% !important; top: 0% !important; max-height: none !important;" data-zappy-zoom="0.5" data-zappy-object-position="47% 95%" loading="lazy" fetchpriority="low"></div>
         </div>
         <!-- Decorative overlapping tile -->
-        <div class="about-trust-section__decor-tile" aria-hidden="true">
-          <img loading="lazy" decoding="async" data-placeholder="about-trust-image-decor" data-context="A close-up detail of a textured linen cushion and a warm wool throw draped over an armchair, with soft natural light highlighting the fabric weave." width="300" height="300" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23FF0083;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23FF008320;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grad)'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial, sans-serif' font-size='18' fill='white' text-anchor='middle' dy='.3em' font-weight='500'%3Eabout-trust-image-decor%3C/text%3E%3C/svg%3E" alt="" class="about-trust-section__decor-img" fetchpriority="low">
+        <div class="about-trust-section__decor-tile" aria-hidden="true" style="width: 50px !important; max-width: 100% !important; height: 50px !important; flex: 0 0 auto !important; align-self: flex-start !important;" data-zappy-image-frame-synced="true">
+          <img loading="lazy" decoding="async" data-placeholder="about-trust-image-decor" data-context="A close-up detail of a textured linen cushion and a warm wool throw draped over an armchair, with soft natural light highlighting the fabric weave." width="300" height="300" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23FF0083;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23FF008320;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grad)'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial, sans-serif' font-size='18' fill='white' text-anchor='middle' dy='.3em' font-weight='500'%3Eabout-trust-image-decor%3C/text%3E%3C/svg%3E" alt="" class="about-trust-section__decor-img" data-element-type="image" data-element-id="img-1783976525881-w9dx2ixd1" style="object-position: 50% 50%; width: 50px !important; max-width: none !important; max-height: none !important; height: auto !important;" fetchpriority="low">
         </div>
       </div>
 
@@ -1117,7 +1117,7 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
   <div class="footer-container">
     <div class="footer-top">
       <div class="footer-col footer-company-col">
-        <img src="/assets/casa-verona-furniture-home-decor-logo.webp" alt="casa verona" class="logo" decoding="async" width="35" height="35">
+        <img src="/assets/casa-verona-furniture-home-decor-logo.webp" alt="casa verona" class="logo" data-element-type="image" data-element-id="img-1783976414867-7n8lkkexx" data-zappy-footer-image="true" style="" decoding="async" width="35" height="35">
         <p class="footer-tagline">עיצוב יוקרתי לבית בהשראת ורונה הקלאסית. אנו מביאים לכם רהיטים ופתרונות עיצוב באיכות ללא פשרות, המשלבים אלגנטיות נצחית עם נוחות מודרנית.</p>
       </div>
       <div class="footer-col footer-links-col">
@@ -1135,29 +1135,29 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
         <h4>צור קשר</h4>
         <ul class="footer-contact">
           <li>
-            <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+            <span class="contact-icon"><i class="fas fa-envelope" data-element-type="icon" data-element-id="icon-1783976414866-2y5af5w8k" data-icon-type="fontawesome"></i></span>
             <span class="contact-text"><a href="mailto:casaverona33@gmail.com">casaverona33@gmail.com</a></span>
           </li>
           <li>
-            <span class="contact-icon"><i class="fas fa-phone"></i></span>
+            <span class="contact-icon"><i class="fas fa-phone" data-element-type="icon" data-element-id="icon-1783976414866-rvnh8w3kr" data-icon-type="fontawesome"></i></span>
             <span class="contact-text"><a href="tel:0534211370">0534211370</a></span>
           </li>
-          <li><a href="/"><span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span>
+          <li><a href="/"><span class="contact-icon"><i class="fas fa-map-marker-alt" data-element-type="icon" data-element-id="icon-1783976414866-0al1rz45z" data-icon-type="fontawesome"></i></span>
             <span class="contact-text">[business_address]</span></a></li>
         </ul>
       </div>
       <div class="footer-col footer-hours-col">
         <h4>שעות פעילות</h4>
-        <ul class="footer-hours"><li><a href="/"><span class="hours-day">יום א’</span> <span class="hours-time">סגור</span></a></li>
-<li><a href="/"><span class="hours-day">ימים ב’–ו’</span> <span class="hours-time">09:00–17:00</span></a></li>
+        <ul class="footer-hours"><li><a href="/" style=""><span class="hours-day">יום א’</span>&nbsp;08:00-22:00</a></li>
+<li><a href="/" style=""><span class="hours-day">ימים ב’–ה </span><span class="hours-time">08:00-22:00</span></a></li>
 <li><a href="/"><span class="hours-day">שבת</span> <span class="hours-time">סגור</span></a></li></ul>
       </div>
       <div class="footer-col footer-social-col">
         <h4>עקבו אחרינו</h4>
         <div class="footer-social">
           <a href="#" aria-label="Facebook" data-zappy-social-placeholder="true"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" aria-label="Instagram" data-zappy-social-placeholder="true"><i class="fab fa-instagram"></i></a>
-          <a href="#" aria-label="WhatsApp" data-zappy-social-placeholder="true"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" aria-label="Instagram" data-zappy-social-placeholder="true"><i class="fab fa-instagram" data-element-type="icon" data-element-id="icon-1783976414866-mlg8ufkx4" data-icon-type="fontawesome"></i></a>
+          <a href="#" aria-label="WhatsApp" data-zappy-social-placeholder="true"><i class="fab fa-whatsapp" data-element-type="icon" data-element-id="icon-1783976414866-e5f6z7ftw" data-icon-type="fontawesome"></i></a>
         </div>
       </div>
     </div>
@@ -1168,10 +1168,7 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
       <div class="footer-bottom-right">
         <a href="/privacy">מדיניות פרטיות</a>
         <span class="footer-divider">|</span>
-        <a href="/terms">תנאי שימוש</a><span class="separator">|</span>
-            <a href="/return-policy" aria-label="מדיניות החזרות">
-              מדיניות החזרות
-            </a>
+        <a href="/terms">תנאי שימוש</a>
         <span class="footer-divider">|</span>
         <a href="/accessibility">נגישות</a>
         <span class="footer-divider">|</span>
@@ -1248,6 +1245,148 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
           observer.observe(menu, { attributes: true, attributeFilter: ['class', 'style'] });
         });
       }, 500);
+    })();
+    </script>
+
+    <script>
+    (function(){
+      var _applied=false;
+      function _isHeroBg(w){var img=w.querySelector('img');if(img&&(img.getAttribute('data-hero-bg')==='true'||img.getAttribute('data-hero-background')==='true'))return true;var p=(w.style.position||'').replace(/\s*!important\s*/g,'').trim();var ww=(w.style.width||'').replace(/\s*!important\s*/g,'').trim();var hh=(w.style.height||'').replace(/\s*!important\s*/g,'').trim();return p==='absolute'&&ww==='100%'&&hh==='100%';}
+      function fixDesktopWrappers(){
+        // No-op: desktop wrapper restoration is handled by ZAPPY_PUBLISHED_ZOOM_WRAPPER_RUNTIME
+        // in script.js (restoreWrapperDimensions). The old inflation logic here was expanding
+        // small wrappers (e.g. 139px logo wrappers) to their parent width, conflicting with
+        // the correct stored dimensions.
+      }
+      function _parsePos(s){var x=50,y=50;try{var m=(s||'').match(/(-?d+(?:.d+)?)%s+(-?d+(?:.d+)?)%/);if(m){x=parseFloat(m[1]);y=parseFloat(m[2]);}}catch(e){}if(!isFinite(x))x=50;if(!isFinite(y))y=50;return{x:Math.max(0,Math.min(100,x)),y:Math.max(0,Math.min(100,y))};}
+      function _coverPct(iA,cA){if(!isFinite(iA)||iA<=0||!isFinite(cA)||cA<=0)return{w:100,h:100};if(iA>=cA)return{w:(iA/cA)*100,h:100};return{w:100,h:(cA/iA)*100};}
+      function applyMobile(){
+        if(_applied)return;_applied=true;
+        document.querySelectorAll('[data-zappy-zoom-wrapper="true"]').forEach(function(w){
+          if(_isHeroBg(w))return;
+          var cw=w.style.getPropertyValue('width');
+          var _sW=parseFloat(w.getAttribute('data-zappy-zoom-wrapper-width'))||0;
+          var _sH=parseFloat(w.getAttribute('data-zappy-zoom-wrapper-height'))||0;
+          if(!cw&&!(_sW>0&&_sH>0))return;
+          if(!w._zappyDesktop)w._zappyDesktop={wStyle:w.getAttribute('style')};
+          var img=w.querySelector('img');
+          if(!img)return;
+          if(!img._zappyDesktop)img._zappyDesktop={src:img.getAttribute('src'),style:img.getAttribute('style')};
+          var mobileZoomStr=img.getAttribute('data-zappy-mobile-zoom');
+          var mobileZoom=parseFloat(mobileZoomStr);
+          var mobileSrc=img.getAttribute('data-zappy-mobile-src');
+          var mobilePos=img.getAttribute('data-zappy-mobile-object-position');
+          var parentOvf=w.parentElement?((w.parentElement.style.overflow||'')+(window.getComputedStyle(w.parentElement).overflow||'')).trim():'';
+          var inConstrainedParent=parentOvf.indexOf('hidden')!==-1||parentOvf.indexOf('clip')!==-1;
+          if(inConstrainedParent){
+            w.style.setProperty('max-width','100%','important');
+          }else{
+            w.style.setProperty('width','100%','important');
+            w.style.setProperty('max-width','100%','important');
+          }
+          if(mobileSrc)img.src=mobileSrc;
+          function _applyZoomCrop(_img,_w,_ePos,_eZoom){
+            var rect=_w.getBoundingClientRect();
+            if(!rect||!rect.width||!rect.height)return;
+            var nW=_img.naturalWidth||0,nH=_img.naturalHeight||0;
+            if(!(nW>0&&nH>0))return;
+            var iA=nW/nH,cA=rect.width/rect.height;
+            var cv=_coverPct(iA,cA);
+            var wP=100,hP=100;
+            if(_eZoom>=1){wP=cv.w*_eZoom;hP=cv.h*_eZoom;}
+            else{var t2=(_eZoom-0.5)/0.5;if(!isFinite(t2))t2=0;t2=Math.max(0,Math.min(1,t2));wP=100+t2*(cv.w-100);hP=100+t2*(cv.h-100);}
+            var p2=_parsePos(_ePos);
+            var lP=(100-wP)*(p2.x/100);
+            var tP=(100-hP)*(p2.y/100);
+            _img.style.setProperty('position','absolute','important');
+            _img.style.setProperty('left',lP+'%','important');
+            _img.style.setProperty('top',tP+'%','important');
+            _img.style.setProperty('width',wP+'%','important');
+            _img.style.setProperty('height',hP+'%','important');
+            _img.style.setProperty('max-width','none','important');
+            _img.style.setProperty('max-height','none','important');
+            _img.style.setProperty('display','block','important');
+            _img.style.setProperty('object-fit',_eZoom<1?'fill':'cover','important');
+            _img.style.setProperty('transform','none','important');
+            _img.style.setProperty('margin','0','important');
+          }
+          if(_sW>0&&_sH>0){
+            var effZoom=(isFinite(mobileZoom)&&mobileZoom>0)?mobileZoom:(parseFloat(img.getAttribute('data-zappy-zoom'))||1);
+            var effPos=mobilePos||img.getAttribute('data-zappy-object-position')||img.style.objectPosition||'50% 50%';
+            w.style.setProperty('overflow','hidden','important');
+            w.style.setProperty('position','relative','important');
+            w.style.setProperty('width','100%','important');
+            w.style.setProperty('max-width','100%','important');
+            if(_sW>0&&_sH>0){w.style.setProperty('padding-bottom','0','important');w.style.setProperty('aspect-ratio',_sW+'/'+_sH,'important');w.style.setProperty('height','auto','important');}
+            _applyZoomCrop(img,w,effPos,effZoom);
+            if(!(img.complete&&img.naturalWidth>0)){
+              (function(_i,_w2,_p,_z){_i.addEventListener('load',function _ol(){_i.removeEventListener('load',_ol);try{_applyZoomCrop(_i,_w2,_p,_z);}catch(e){}});
+              })(img,w,effPos,effZoom);
+            }
+          }else{
+            if(!inConstrainedParent)w.style.setProperty('height','auto','important');
+            img.style.setProperty('position','relative','important');
+            img.style.setProperty('width','100%','important');
+            img.style.setProperty('height','auto','important');
+            img.style.setProperty('max-width','100%','important');
+            img.style.setProperty('max-height',inConstrainedParent?'none':'400px','important');
+            img.style.setProperty('object-fit','cover','important');
+            img.style.setProperty('left','0','important');
+            img.style.setProperty('top','0','important');
+            img.style.setProperty('transform','none','important');
+          }
+        });
+        document.querySelectorAll('img[data-zappy-mobile-src],img[data-zappy-mobile-object-position],img[data-zappy-mobile-zoom]').forEach(function(img){
+          var zw=img.closest('[data-zappy-zoom-wrapper="true"]');
+          if(zw&&!_isHeroBg(zw))return;
+          if(!img._zappyDesktop)img._zappyDesktop={src:img.getAttribute('src'),style:img.getAttribute('style')};
+          var mobileSrc=img.getAttribute('data-zappy-mobile-src');
+          var mobilePos=img.getAttribute('data-zappy-mobile-object-position');
+          var mobileZoom=parseFloat(img.getAttribute('data-zappy-mobile-zoom'));
+          if(mobileSrc)img.src=mobileSrc;
+          if(mobilePos)img.style.setProperty('object-position',mobilePos,'important');
+          if(mobileZoom>1){
+            img.style.setProperty('transform','scale('+mobileZoom+')','important');
+            img.style.setProperty('transform-origin',mobilePos||'50% 50%','important');
+            var p=img.parentElement;
+            if(p)p.style.setProperty('overflow','hidden','important');
+          }
+        });
+      }
+      function revertDesktop(){
+        if(!_applied)return;_applied=false;
+        document.querySelectorAll('[data-zappy-zoom-wrapper="true"]').forEach(function(w){
+          if(w._zappyDesktop&&w._zappyDesktop.wStyle!=null){w.setAttribute('style',w._zappyDesktop.wStyle);}
+          var img=w.querySelector('img');
+          if(img&&img._zappyDesktop){
+            if(img._zappyDesktop.src!=null)img.setAttribute('src',img._zappyDesktop.src);
+            if(img._zappyDesktop.style!=null)img.setAttribute('style',img._zappyDesktop.style);
+            else img.removeAttribute('style');
+          }
+        });
+        document.querySelectorAll('img[data-zappy-mobile-src],img[data-zappy-mobile-object-position],img[data-zappy-mobile-zoom]').forEach(function(img){
+          var zw=img.closest('[data-zappy-zoom-wrapper="true"]');
+          if(zw&&!_isHeroBg(zw))return;
+          if(img._zappyDesktop){
+            if(img._zappyDesktop.src!=null)img.setAttribute('src',img._zappyDesktop.src);
+            if(img._zappyDesktop.style!=null)img.setAttribute('style',img._zappyDesktop.style);
+            else img.removeAttribute('style');
+          }
+        });
+        _fixHeroBgWrappers();
+        fixDesktopWrappers();
+      }
+      function _fixHeroBgWrappers(){var isMob=window.innerWidth<=768;document.querySelectorAll('[data-zappy-zoom-wrapper="true"]').forEach(function(w){if(!_isHeroBg(w))return;w.style.setProperty('position','absolute','important');w.style.setProperty('top','0','important');w.style.setProperty('left','0','important');w.style.setProperty('width','100%','important');w.style.setProperty('height','100%','important');w.style.setProperty('max-width','none','important');w.style.setProperty('overflow','hidden','important');w.setAttribute('data-zappy-zoom-wrapper-width-mode','full');var img=w.querySelector('img');if(img){img.style.setProperty('width','100%','important');img.style.setProperty('height','100%','important');img.style.setProperty('object-fit','cover','important');img.style.setProperty('position','relative','important');img.style.setProperty('top','0','important');img.style.setProperty('left','0','important');img.style.setProperty('max-width','none','important');img.style.setProperty('max-height','none','important');img.style.setProperty('display','block','important');if(isMob){var mSrc=img.getAttribute('data-zappy-mobile-src');var mPos=img.getAttribute('data-zappy-mobile-object-position');var mZoom=parseFloat(img.getAttribute('data-zappy-mobile-zoom'));if(mSrc){if(!img._zappyDesktop)img._zappyDesktop={src:img.getAttribute('src'),style:img.getAttribute('style')};img.src=mSrc;}if(mPos)img.style.setProperty('object-position',mPos,'important');if(mZoom>1){img.style.setProperty('transform','scale('+mZoom+')','important');img.style.setProperty('transform-origin',mPos||'50% 50%','important');}}}});}
+      function init(){
+        _fixHeroBgWrappers();
+        var mq=window.matchMedia('(max-width:768px)');
+        function onChange(e){if(e.matches)applyMobile();else revertDesktop();}
+        if(mq.matches)applyMobile();
+        else fixDesktopWrappers();
+        try{mq.addEventListener('change',onChange);}catch(e){mq.addListener(onChange);}
+      }
+      if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);
+      else setTimeout(init,50);
     })();
     </script>
 </body></html>
