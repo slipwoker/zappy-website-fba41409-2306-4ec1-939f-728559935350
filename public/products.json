@@ -1,10 +1,35 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-14T21:57:24.554Z",
+  "generated_at": "2026-07-14T21:58:16.594Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
-  "count": 25,
+  "count": 26,
   "products": [
+    {
+      "id": "834eae61-5a00-4b19-a445-050a312f5def",
+      "slug": "cloha-edpnlo",
+      "name": "cloha",
+      "name_translations": {
+        "en": "cloha",
+        "he": "קלוהה"
+      },
+      "description": "",
+      "short_description": null,
+      "sku": null,
+      "brand": null,
+      "price": 2500,
+      "base_price": 3300,
+      "sale_price": 2500,
+      "currency": "ILS",
+      "images": [
+        "https://casa-verona.zappy5.app/assets/product-1784066237367-joiasq.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://casa-verona.zappy5.app/product/cloha-edpnlo",
+      "categories": [],
+      "updated_at": "2026-07-14T21:57:44.599Z"
+    },
     {
       "id": "7db9d13f-52e2-455a-ac92-d271b2378c72",
       "slug": "milano-bq4vyn",

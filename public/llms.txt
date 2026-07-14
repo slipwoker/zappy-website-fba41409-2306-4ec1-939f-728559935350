@@ -64,7 +64,13 @@ Information about WCAG compliance and accessibility features.
 
 ## Products
 
-**Total active products: 25**
+**Total active products: 26**
+
+### cloha
+https://casa-verona.zappy5.app/product/cloha-edpnlo
+- Price: 2500.00 ILS (sale, was 3300.00 ILS)
+- Availability: In stock
+- Image: https://casa-verona.zappy5.app/assets/product-1784066237367-joiasq.webp
 
 ### milano
 https://casa-verona.zappy5.app/product/milano-bq4vyn

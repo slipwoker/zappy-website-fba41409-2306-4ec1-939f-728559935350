@@ -4,7 +4,20 @@
     <title>casa verona</title>
     <link>https://casa-verona.zappy5.app</link>
     <description>Product feed for casa verona</description>
-    <lastBuildDate>Tue, 14 Jul 2026 21:57:24 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jul 2026 21:58:16 GMT</lastBuildDate>
+    <item>
+      <g:id>834eae61-5a00-4b19-a445-050a312f5def</g:id>
+      <g:title>cloha</g:title>
+      <g:description>cloha</g:description>
+      <g:link>https://casa-verona.zappy5.app/product/cloha-edpnlo</g:link>
+      <g:image_link>https://casa-verona.zappy5.app/assets/product-1784066237367-joiasq.webp</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>3300.00 ILS</g:price>
+      <g:sale_price>2500.00 ILS</g:sale_price>
+      <g:condition>new</g:condition>
+      <g:brand>casa verona</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+    </item>
     <item>
       <g:id>7db9d13f-52e2-455a-ac92-d271b2378c72</g:id>
       <g:title>milano</g:title>
