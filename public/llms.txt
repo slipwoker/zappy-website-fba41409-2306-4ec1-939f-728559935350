@@ -64,7 +64,13 @@ Information about WCAG compliance and accessibility features.
 
 ## Products
 
-**Total active products: 20**
+**Total active products: 21**
+
+### Plaza
+https://casa-verona.zappy5.app/product/plaza-4bwgvf
+- Price: 3000.00 ILS (sale, was 3800.00 ILS)
+- Availability: In stock
+- Image: https://casa-verona.zappy5.app/assets/product-1784065290517-epja88.webp
 
 ### verona 
 https://casa-verona.zappy5.app/product/verona-g0wr6e

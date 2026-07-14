@@ -4,7 +4,20 @@
     <title>casa verona</title>
     <link>https://casa-verona.zappy5.app</link>
     <description>Product feed for casa verona</description>
-    <lastBuildDate>Tue, 14 Jul 2026 21:41:32 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jul 2026 21:42:20 GMT</lastBuildDate>
+    <item>
+      <g:id>3e478c7f-c194-4a42-9ead-87f8d08b0545</g:id>
+      <g:title>Plaza</g:title>
+      <g:description>Plaza</g:description>
+      <g:link>https://casa-verona.zappy5.app/product/plaza-4bwgvf</g:link>
+      <g:image_link>https://casa-verona.zappy5.app/assets/product-1784065290517-epja88.webp</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>3800.00 ILS</g:price>
+      <g:sale_price>3000.00 ILS</g:sale_price>
+      <g:condition>new</g:condition>
+      <g:brand>casa verona</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+    </item>
     <item>
       <g:id>80ee526d-43ec-463d-b554-9977bed78069</g:id>
       <g:title>verona </g:title>

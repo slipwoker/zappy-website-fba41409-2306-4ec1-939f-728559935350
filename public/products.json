@@ -1,10 +1,35 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-14T21:41:32.657Z",
+  "generated_at": "2026-07-14T21:42:20.381Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
-  "count": 20,
+  "count": 21,
   "products": [
+    {
+      "id": "3e478c7f-c194-4a42-9ead-87f8d08b0545",
+      "slug": "plaza-4bwgvf",
+      "name": "Plaza",
+      "name_translations": {
+        "en": "Plaza",
+        "he": "פלאזה"
+      },
+      "description": "",
+      "short_description": null,
+      "sku": null,
+      "brand": null,
+      "price": 3000,
+      "base_price": 3800,
+      "sale_price": 3000,
+      "currency": "ILS",
+      "images": [
+        "https://casa-verona.zappy5.app/assets/product-1784065290517-epja88.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://casa-verona.zappy5.app/product/plaza-4bwgvf",
+      "categories": [],
+      "updated_at": "2026-07-14T21:41:48.588Z"
+    },
     {
       "id": "80ee526d-43ec-463d-b554-9977bed78069",
       "slug": "verona-g0wr6e",
