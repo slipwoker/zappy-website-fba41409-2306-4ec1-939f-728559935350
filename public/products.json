@@ -1,22 +1,22 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-14T20:51:50.869Z",
+  "generated_at": "2026-07-14T20:52:25.241Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
   "count": 9,
   "products": [
     {
       "id": "b9d2f56b-8dc1-448b-a489-114f4cd2326a",
-      "slug": "orion-43fcpb",
+      "slug": "orion-u2gfl4",
       "name": "Orion",
       "name_translations": {},
       "description": "",
       "short_description": "סלון רביצה פינתי בעיצוב אלגנטי עם מושבים עמוקים ומפנקים, רגלי שולחן מודרניות וגימור יוקרתי. מיוצר מחומרי גלם איכותיים לנוחות מרבית, עמידות לאורך שנים ומראה שמשדר יוקרה בכל חלל.",
       "sku": null,
       "brand": null,
-      "price": 0,
-      "base_price": 0,
-      "sale_price": null,
+      "price": 8000,
+      "base_price": 10300,
+      "sale_price": 8000,
       "currency": "ILS",
       "images": [
         "https://casa-verona.zappy5.app/assets/product-1784061584546-io5v9g.webp",
@@ -24,9 +24,9 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://casa-verona.zappy5.app/product/orion-43fcpb",
+      "url": "https://casa-verona.zappy5.app/product/orion-u2gfl4",
       "categories": [],
-      "updated_at": "2026-07-14T20:51:04.699Z"
+      "updated_at": "2026-07-14T20:51:53.436Z"
     },
     {
       "id": "3c0ca378-36f9-47ab-a2a7-3aeae6dfd34e",
