@@ -1,10 +1,30 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-14T17:47:19.661Z",
+  "generated_at": "2026-07-14T17:49:09.427Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
-  "count": 5,
+  "count": 6,
   "products": [
+    {
+      "id": "8d579147-0269-43af-839a-abaf4bbbc7a3",
+      "slug": "amr-pmoe4n",
+      "name": "אםר",
+      "name_translations": {},
+      "description": "",
+      "short_description": null,
+      "sku": null,
+      "brand": null,
+      "price": 0,
+      "base_price": 0,
+      "sale_price": null,
+      "currency": "ILS",
+      "images": [],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://casa-verona.zappy5.app/product/amr-pmoe4n",
+      "categories": [],
+      "updated_at": "2026-07-14T17:48:38.045Z"
+    },
     {
       "id": "f377df2f-a090-4f8b-b402-c687e3c1e7f5",
       "slug": "cloud-stone-3bocw8",
