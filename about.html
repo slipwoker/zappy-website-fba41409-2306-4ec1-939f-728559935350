@@ -1,19 +1,19 @@
 <!DOCTYPE html><html data-zappy-site-type="ecommerce" lang="he" dir="rtl"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
     <title>הסיפור מאחורי המותג המוביל — casa verona</title>
-    <meta name="description" content="casa verona היא חנות רהיטים יוקרתית המחברת בין איכות ללא פשרות לעיצוב על-זמני. הכירו את הפילוסופיה, החומרים והחזון שמאחורי כל פריט שאנו יוצרים.">
-    <meta name="keywords" content="אודות, casa verona, ריהוט, 2xl furniture &amp; home decor, עיצוב יוקרתי">
+    <meta name="description" content="casa verona היא חנות רהיטים יוקרתית המחברת בין איכות ללא פשרות לעיצוב על-זמני. הכירו את הפילוסופיה, החומרים והחזון שמאחורי כל פריט שאנו יוצרים." />
+    <meta name="keywords" content="אודות, casa verona, ריהוט, 2xl furniture &amp; home decor, עיצוב יוקרתי" />
     
     <!-- Favicons -->
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon-512x512.png">
-    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon-512x512.png" />
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
     <!-- Zappy Analytics -->
 <script>
 (function() {
@@ -221,14 +221,385 @@
 })();
 </script>
 <!-- End Zappy Analytics -->
-    <meta property="og:title" content="הסיפור מאחורי המותג המוביל — casa verona">
-    <meta property="og:description" content="casa verona היא חנות רהיטים יוקרתית המחברת בין איכות ללא פשרות לעיצוב על-זמני. הכירו את הפילוסופיה, החומרים והחזון שמאחורי כל פריט שאנו יוצרים.">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="הסיפור מאחורי המותג המוביל — casa verona">
-    <meta name="twitter:description" content="casa verona היא חנות רהיטים יוקרתית המחברת בין איכות ללא פשרות לעיצוב על-זמני. הכירו את הפילוסופיה, החומרים והחזון שמאחורי כל פריט שאנו יוצרים.">
+<!-- Zappy Marketing Events -->
+<script>
+(function() {
+  'use strict';
+  if (window.zappyFireMarketingEvent) return;
+
+  var ECOM_MODE = "catalog";
+  var IS_CATALOG = true;
+  var IS_FULL = false;
+
+  var ECOM_ALIAS = {
+    begin_checkout: 'checkout_started',
+    purchase: 'checkout_complete',
+    add_to_cart: 'add_to_cart',
+    view_product: 'view_product'
+  };
+
+  function pagePath() {
+    try {
+      if (window.ZAPPY_CONFIG && window.ZAPPY_CONFIG.currentPagePath) {
+        return window.ZAPPY_CONFIG.currentPagePath;
+      }
+    } catch (e) {}
+    try { return window.location.pathname || '/'; } catch (e2) { return '/'; }
+  }
+
+  function normalizeItems(meta) {
+    meta = meta || {};
+    var raw = meta.items || meta.cartItems || meta.cart_items || meta.lineItems || [];
+    if (!Array.isArray(raw)) raw = [];
+    var out = [];
+    for (var i = 0; i < raw.length; i++) {
+      var item = raw[i];
+      if (!item || typeof item !== 'object') continue;
+      var id = String(item.item_id || item.productId || item.product_id || item.id || '').trim();
+      var name = String(item.item_name || item.productName || item.product_name || item.name || '').trim();
+      var price = parseFloat(item.price != null ? item.price : (item.unitPrice != null ? item.unitPrice : 0)) || 0;
+      var quantity = Math.max(1, parseInt(item.quantity != null ? item.quantity : (item.qty != null ? item.qty : 1), 10) || 1);
+      if (!id && !name) continue;
+      out.push({ item_id: id || name, item_name: name || id, price: price, quantity: quantity });
+    }
+    return out;
+  }
+
+  function buildGa4Params(eventId, meta) {
+    meta = meta || {};
+    var items = normalizeItems(meta);
+    var value = parseFloat(meta.value != null ? meta.value : (meta.total != null ? meta.total : 0)) || 0;
+    var currency = String(meta.currency || 'USD').toUpperCase();
+
+    if (eventId === 'checkout_complete') {
+      return {
+        transaction_id: String(meta.transaction_id || meta.orderId || meta.order_id || meta.orderNumber || '') || undefined,
+        value: value,
+        currency: currency,
+        items: items
+      };
+    }
+    if (eventId === 'checkout_started') {
+      return { value: value, currency: currency, items: items };
+    }
+    if (eventId === 'add_to_cart') {
+      var atcItems = items.length ? items : [{
+        item_id: String(meta.productId || meta.product_id || ''),
+        item_name: String(meta.productName || meta.product_name || ''),
+        price: parseFloat(meta.value != null ? meta.value : (meta.price != null ? meta.price : 0)) || 0,
+        quantity: parseInt(meta.quantity != null ? meta.quantity : 1, 10) || 1
+      }].filter(function(x) { return x.item_id || x.item_name; });
+      return {
+        value: value || (atcItems[0] ? atcItems[0].price * atcItems[0].quantity : 0),
+        currency: currency,
+        items: atcItems
+      };
+    }
+    if (eventId === 'view_product') {
+      var vpItems = items.length ? items : [{
+        item_id: String(meta.productId || meta.product_id || ''),
+        item_name: String(meta.productName || meta.product_name || ''),
+        price: parseFloat(meta.price != null ? meta.price : (meta.value != null ? meta.value : 0)) || 0,
+        quantity: 1
+      }].filter(function(x) { return x.item_id || x.item_name; });
+      return {
+        currency: currency,
+        value: value || (vpItems[0] ? vpItems[0].price : 0),
+        items: vpItems
+      };
+    }
+    if (eventId === 'whatsapp_click' || eventId === 'phone_click') {
+      return { method: eventId === 'whatsapp_click' ? 'whatsapp' : 'phone', page_path: meta.pagePath || pagePath() };
+    }
+    if (eventId === 'contact_form_submitted' || eventId === 'product_inquiry') {
+      return { page_path: meta.pagePath || pagePath() };
+    }
+    return meta;
+  }
+
+  function buildMetaParams(eventId, meta) {
+    meta = meta || {};
+    var items = normalizeItems(meta);
+    var value = parseFloat(meta.value != null ? meta.value : (meta.total != null ? meta.total : 0)) || 0;
+    var currency = String(meta.currency || 'USD').toUpperCase();
+    var contentIds = [];
+    var numItems = 0;
+    for (var i = 0; i < items.length; i++) {
+      if (items[i].item_id) contentIds.push(items[i].item_id);
+      numItems += items[i].quantity || 1;
+    }
+
+    if (eventId === 'checkout_complete') {
+      return {
+        value: value,
+        currency: currency,
+        content_ids: contentIds.length ? contentIds : undefined,
+        content_type: 'product',
+        num_items: numItems || undefined,
+        order_id: String(meta.order_id || meta.orderId || meta.transaction_id || meta.orderNumber || '') || undefined
+      };
+    }
+    if (eventId === 'checkout_started') {
+      return {
+        value: value,
+        currency: currency,
+        content_ids: contentIds.length ? contentIds : undefined,
+        content_type: 'product',
+        num_items: numItems || parseInt(meta.itemCount != null ? meta.itemCount : 0, 10) || undefined
+      };
+    }
+    if (eventId === 'add_to_cart') {
+      var id = String(meta.productId || meta.product_id || contentIds[0] || '');
+      return {
+        value: value || (items[0] ? items[0].price * items[0].quantity : 0),
+        currency: currency,
+        content_ids: id ? [id] : (contentIds.length ? contentIds : undefined),
+        content_type: 'product',
+        content_name: meta.productName || meta.product_name || (items[0] && items[0].item_name),
+        num_items: parseInt(meta.quantity != null ? meta.quantity : (numItems || 1), 10) || 1
+      };
+    }
+    if (eventId === 'view_product') {
+      var vid = String(meta.productId || meta.product_id || contentIds[0] || '');
+      return {
+        value: value || parseFloat(meta.price != null ? meta.price : 0) || 0,
+        currency: currency,
+        content_ids: vid ? [vid] : (contentIds.length ? contentIds : undefined),
+        content_type: 'product',
+        content_name: meta.productName || meta.product_name || (items[0] && items[0].item_name)
+      };
+    }
+    if (eventId === 'whatsapp_click' || eventId === 'phone_click') {
+      return {
+        content_name: eventId === 'whatsapp_click' ? 'WhatsApp' : 'Phone',
+        content_category: 'contact'
+      };
+    }
+    if (eventId === 'contact_form_submitted' || eventId === 'product_inquiry') {
+      return {
+        content_name: eventId === 'product_inquiry' ? 'Product inquiry' : 'Contact form',
+        content_category: meta.productName || meta.product_name || undefined
+      };
+    }
+    return meta;
+  }
+
+  var PLATFORM = {
+    whatsapp_click: { ga4: 'contact', meta: 'Contact', gtm: 'whatsapp_click', ecom: false },
+    phone_click: { ga4: 'contact', meta: 'Contact', gtm: 'phone_click', ecom: false },
+    contact_form_submitted: { ga4: 'generate_lead', meta: 'Lead', gtm: 'contact_form_submitted', ecom: false },
+    checkout_started: { ga4: 'begin_checkout', meta: 'InitiateCheckout', gtm: 'begin_checkout', ecom: true },
+    checkout_complete: { ga4: 'purchase', meta: 'Purchase', gtm: 'purchase', ecom: true },
+    product_inquiry: { ga4: 'generate_lead', meta: 'Lead', gtm: 'product_inquiry', ecom: false },
+    add_to_cart: { ga4: 'add_to_cart', meta: 'AddToCart', gtm: 'add_to_cart', ecom: true },
+    view_product: { ga4: 'view_item', meta: 'ViewContent', gtm: 'view_item', ecom: true }
+  };
+
+  function purchaseDedupKey(orderId) {
+    return 'zappy_purchase_fired_' + String(orderId || '');
+  }
+
+  function alreadyFiredPurchase(orderId) {
+    if (!orderId) return false;
+    try {
+      return sessionStorage.getItem(purchaseDedupKey(orderId)) === '1';
+    } catch (e) {
+      return false;
+    }
+  }
+
+  function markPurchaseFired(orderId) {
+    if (!orderId) return;
+    try { sessionStorage.setItem(purchaseDedupKey(orderId), '1'); } catch (e) {}
+  }
+
+  /**
+   * Fire a marketing event to first-party analytics + GA4/GTM/Meta when present.
+   * @param {string} eventName marketing ID or ecommerce alias
+   * @param {object} [metadata]
+   * @param {{ skipFirstParty?: boolean }} [opts]
+   */
+  window.zappyFireMarketingEvent = function(eventName, metadata, opts) {
+    try {
+      opts = opts || {};
+      metadata = metadata || {};
+      var eventId = ECOM_ALIAS[eventName] || eventName;
+      var plat = PLATFORM[eventId];
+      if (!plat) return;
+
+      if (!metadata.pagePath && !metadata.page_path) {
+        metadata.pagePath = pagePath();
+      }
+
+      if (eventId === 'checkout_complete') {
+        var oid = String(metadata.orderId || metadata.order_id || metadata.transaction_id || '');
+        if (oid && alreadyFiredPurchase(oid)) return;
+        if (oid) markPurchaseFired(oid);
+      }
+
+      // First-party (skip when already tracked via zappyTrackEcomAnalytics path
+      // that opts out, or when caller already recorded under a different name)
+      if (!opts.skipFirstParty) {
+        try {
+          if (window.zappyAnalytics && typeof window.zappyAnalytics.track === 'function') {
+            window.zappyAnalytics.track(eventId, metadata);
+          }
+        } catch (e1) {}
+      }
+
+      // GTM / dataLayer — platform-standard ecommerce event names
+      try {
+        window.dataLayer = window.dataLayer || [];
+        if (plat.ecom) {
+          var ga4ForGtm = buildGa4Params(eventId, metadata);
+          var ecommerce = {};
+          if (ga4ForGtm.transaction_id) ecommerce.transaction_id = ga4ForGtm.transaction_id;
+          if (ga4ForGtm.value != null) ecommerce.value = ga4ForGtm.value;
+          if (ga4ForGtm.currency) ecommerce.currency = ga4ForGtm.currency;
+          if (ga4ForGtm.items) ecommerce.items = ga4ForGtm.items;
+          window.dataLayer.push({ event: plat.gtm, ecommerce: ecommerce });
+          // Secondary Zappy-specific trigger for merchants who want it
+          if (eventId === 'checkout_complete' || eventId === 'checkout_started') {
+            window.dataLayer.push({ event: eventId, ecommerce: ecommerce });
+          }
+        } else {
+          var dl = { event: plat.gtm };
+          for (var k in metadata) {
+            if (Object.prototype.hasOwnProperty.call(metadata, k)) dl[k] = metadata[k];
+          }
+          window.dataLayer.push(dl);
+        }
+      } catch (e2) {}
+
+      // GA4 gtag
+      try {
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', plat.ga4, buildGa4Params(eventId, metadata));
+        }
+      } catch (e3) {}
+
+      // Meta Pixel (only when fbq is loaded — consent-gated lazy loader)
+      try {
+        if (typeof window.fbq === 'function') {
+          window.fbq('track', plat.meta, buildMetaParams(eventId, metadata));
+        }
+      } catch (e4) {}
+    } catch (err) {}
+  };
+
+  // ---- Click listeners (capture) ----
+  var recent = Object.create(null);
+  function dedupe(key) {
+    var now = Date.now();
+    if (recent[key] && now - recent[key] < 800) return true;
+    recent[key] = now;
+    return false;
+  }
+
+  function closest(el, selector) {
+    if (!el) return null;
+    if (el.closest) return el.closest(selector);
+    return null;
+  }
+
+  function findAnchor(el) {
+    var node = el;
+    while (node && node !== document) {
+      if (node.tagName === 'A') return node;
+      node = node.parentElement;
+    }
+    return null;
+  }
+
+  function isWhatsAppHref(href) {
+    if (!href) return false;
+    var h = String(href).toLowerCase();
+    return h.indexOf('wa.me/') !== -1 ||
+      h.indexOf('api.whatsapp.com') !== -1 ||
+      h.indexOf('whatsapp.com/send') !== -1 ||
+      h.indexOf('whatsapp:') === 0;
+  }
+
+  document.addEventListener('click', function(e) {
+    try {
+      var target = e.target;
+      if (!target) return;
+
+      // WhatsApp
+      var waFloat = closest(target, '.whatsapp-float, a.whatsapp-float, [data-zappy-whatsapp]');
+      var anchor = findAnchor(target);
+      var href = (anchor && anchor.href) || '';
+      if (waFloat || (anchor && isWhatsAppHref(href))) {
+        if (!dedupe('wa:' + href)) {
+          var waSource = waFloat ? 'float' : 'link';
+          window.zappyFireMarketingEvent('whatsapp_click', {
+            source: waSource,
+            href: href || null,
+            pagePath: pagePath()
+          });
+        }
+        return;
+      }
+
+      // Phone
+      var phoneBtn = closest(target, '.phone-header-btn, .nav-phone-btn, .call-btn, [data-zappy-phone]');
+      var telHref = '';
+      if (anchor && anchor.href && String(anchor.href).toLowerCase().indexOf('tel:') === 0) {
+        telHref = anchor.href;
+      } else if (phoneBtn && phoneBtn.href && String(phoneBtn.href).toLowerCase().indexOf('tel:') === 0) {
+        telHref = phoneBtn.href;
+      }
+      if (phoneBtn || telHref) {
+        var phone = '';
+        if (telHref) {
+          phone = String(telHref).replace(/^tel:/i, '').trim();
+        }
+        if (!dedupe('tel:' + (phone || (phoneBtn && phoneBtn.id) || 'btn'))) {
+          window.zappyFireMarketingEvent('phone_click', {
+            source: phoneBtn ? 'button' : 'link',
+            phone: phone || null,
+            href: telHref || null,
+            pagePath: pagePath()
+          });
+        }
+        return;
+      }
+
+      // Catalog / product inquiry
+      if (IS_CATALOG || IS_FULL) {
+        var inq = closest(target, '.card-inquiry-btn, #zappy-pdp-inquiry-btn, a.inquiry-btn');
+        if (inq) {
+          if (!dedupe('inq:' + (inq.id || inq.className))) {
+            var product = window.currentProduct || null;
+            var productId = (inq.getAttribute && inq.getAttribute('data-product-id')) ||
+              (product && product.id) || null;
+            var productName = (inq.getAttribute && inq.getAttribute('data-product-name')) ||
+              (product && product.name) || null;
+            var channel = 'contact_page';
+            var inqHref = (inq.tagName === 'A' && inq.href) ? inq.href : '';
+            if (inqHref && String(inqHref).toLowerCase().indexOf('mailto:') === 0) channel = 'mailto';
+            window.zappyFireMarketingEvent('product_inquiry', {
+              source: inq.id === 'zappy-pdp-inquiry-btn' ? 'pdp' : 'card',
+              productId: productId,
+              productName: productName,
+              channel: channel,
+              pagePath: pagePath()
+            });
+          }
+        }
+      }
+    } catch (err) {}
+  }, true);
+})();
+</script>
+    <meta property="og:title" content="הסיפור מאחורי המותג המוביל — casa verona" />
+    <meta property="og:description" content="casa verona היא חנות רהיטים יוקרתית המחברת בין איכות ללא פשרות לעיצוב על-זמני. הכירו את הפילוסופיה, החומרים והחזון שמאחורי כל פריט שאנו יוצרים." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="הסיפור מאחורי המותג המוביל — casa verona" />
+    <meta name="twitter:description" content="casa verona היא חנות רהיטים יוקרתית המחברת בין איכות ללא פשרות לעיצוב על-זמני. הכירו את הפילוסופיה, החומרים והחזון שמאחורי כל פריט שאנו יוצרים." />
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://casa-verona.zappy5.app#organization","name":"casa verona","url":"https://casa-verona.zappy5.app","description":"A luxury furniture brand offering a wide range of high-end home furnishings including living room sets, sideboards, dining tables, coffee tables, beds, chairs, and bar stools. The brand identity is rooted in a classic-modern aesthetic with a premium, sophisticated feel. The website should be presented in Hebrew and designed to feel elegant, clear, and welcoming to customers seeking quality furniture.","contactPoint":[{"@type":"ContactPoint","contactType":"customer service","email":"casaverona33@gmail.com","telephone":"0534211370"}]},{"@type":"WebSite","@id":"https://casa-verona.zappy5.app#website","url":"https://casa-verona.zappy5.app","name":"casa verona","publisher":{"@id":"https://casa-verona.zappy5.app#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://casa-verona.zappy5.app"},{"@type":"ListItem","position":2,"name":"About","item":"https://casa-verona.zappy5.app/about"}]}]}</script>
-    <meta property="og:type" content="website">
-  <meta property="og:locale" content="he_IL">
+    <meta property="og:type" content="website" />
+  <meta property="og:locale" content="he_IL" />
   
   
   
@@ -243,22 +614,22 @@
 
   
     <!-- Favicons -->
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon-512x512.png">
-    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon-512x512.png" />
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
     <!-- Cookie Consent -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.css" />
     <!-- Mickidum Accessibility Toolbar lazy-loaded by runtime -->
     <style id="zappy-critical-above-fold-css">
-html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{box-sizing:inherit}body{margin:0;min-width:320px;overflow-x:clip}img,svg,video{max-width:100%;height:auto}main{display:block}.container{width:min(100% - 32px,1200px);margin-inline:auto}.navbar,nav.navbar,header .navbar,header[role="banner"]{position:relative;z-index:1000;width:100%}.nav-container,.navbar .container{display:flex;align-items:center;justify-content:space-between;min-height:64px}.logo,.logo-link img{display:block;width:35px;height:35px;object-fit:contain}.nav-menu,#navMenu{list-style:none}.fa,.fas,.far,.fab,.fa-solid,.fa-regular,.fa-brands{display:inline-block;min-width:1em;text-align:center}html:not(#zappy-noop)[data-zappy-site-type="ecommerce"] .phone-header-btn,html:not(#zappy-noop) .navbar:has(.nav-ecommerce-icons)>.phone-header-btn{display:none!important;visibility:hidden!important;width:0!important;height:0!important;pointer-events:none!important}.zappy-preview-empty-store-cta{display:none!important;visibility:hidden!important;height:0!important;max-height:0!important;overflow:hidden!important;margin:0!important;padding:0!important;border:0!important;box-shadow:none!important}.hero-section,.index-hero-section,section[class*="hero"]{position:relative;overflow:hidden;min-height:560px}.hero-bg-wrapper,.hero-bg-image,section[class*="hero"] [class*="hero-bg"]{position:absolute;inset:0;width:100%;height:100%}.hero-bg-wrapper img,.hero-bg-image img,section[class*="hero"] [data-hero-bg],section[class*="hero"] img[data-hero-background="true"]{width:100%!important;height:100%!important;object-fit:cover!important;display:block}.hero-content,section[class*="hero"] .container{position:relative;z-index:2}@media(max-width:768px){:root{--header-height:72px;--total-header-height:72px;--zappy-mobile-menu-top:72px}html[data-zappy-site-type="ecommerce"] body{padding-top:var(--total-header-height,72px)}html[data-zappy-site-type="ecommerce"] body>nav.navbar,html[data-zappy-site-type="ecommerce"] body>.navbar:not(.zappy-catalog-menu){position:fixed!important;top:0;left:0;right:0;z-index:100000;width:100%;margin-bottom:0}.zappy-catalog-menu{position:fixed;top:var(--header-height,72px);left:0;right:0;z-index:99999}.nav-container,.navbar .container{min-height:60px}.nav-menu,#navMenu{max-width:100vw;overflow-x:hidden}.hero-section,.index-hero-section,section[class*="hero"]{min-height:100svh}.hero-bg-wrapper,.hero-bg-image,.hero-scrim{min-height:100svh}}
+html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{box-sizing:inherit}body{margin:0;min-width:320px;overflow-x:clip}img,svg,video{max-width:100%;height:auto}main{display:block}.container{width:min(100% - 32px,1200px);margin-inline:auto}.navbar,nav.navbar,header .navbar,header[role="banner"]{position:relative;z-index:1000;width:100%}.nav-container,.navbar .container{display:flex;align-items:center;justify-content:space-between;min-height:64px}.logo,.logo-link img{display:block;width:35px;height:35px;object-fit:contain}.nav-menu,#navMenu{list-style:none;margin:0;padding:0}.navbar a,.nav-menu a,#navMenu a,.navbar .nav-links a{color:inherit;text-decoration:none}.navbar .sub-menu,.nav-menu .sub-menu,#navMenu .sub-menu{display:none}.fa,.fas,.far,.fab,.fa-solid,.fa-regular,.fa-brands{display:inline-block;min-width:1em;text-align:center}html:not(#zappy-noop)[data-zappy-site-type="ecommerce"] .phone-header-btn,html:not(#zappy-noop) .navbar:has(.nav-ecommerce-icons)>.phone-header-btn{display:none!important;visibility:hidden!important;width:0!important;height:0!important;pointer-events:none!important}.zappy-preview-empty-store-cta{display:none!important;visibility:hidden!important;height:0!important;max-height:0!important;overflow:hidden!important;margin:0!important;padding:0!important;border:0!important;box-shadow:none!important}.zappy-catalog-menu{background:var(--surface-color,var(--surface,linear-gradient(135deg,#f8f9fa 0%,#fff 100%)));border-bottom:1px solid var(--border-color,#e5e7eb);padding:0;position:sticky;top:0;z-index:90}.zappy-catalog-menu[dir=rtl],.zappy-catalog-menu.rtl{direction:rtl}.zappy-catalog-menu[dir=ltr],.zappy-catalog-menu.ltr{direction:ltr}.catalog-menu-container{max-width:1440px;margin:0 auto;display:flex;align-items:center;gap:8px;padding:10px 24px;overflow:visible}.catalog-menu-categories,.catalog-menu-list{display:flex;align-items:center;gap:4px;flex-wrap:wrap;margin:0;padding:0;list-style:none}.catalog-menu-item{display:inline-flex;align-items:center;padding:8px 16px;font-size:14px;font-weight:500;color:var(--text-color,var(--text,#374151));text-decoration:none;border-radius:20px;white-space:nowrap}.catalog-menu-all{background:var(--primary-color,var(--primary,#111));color:var(--text-light,#fff)!important}.catalog-menu-parent{position:relative;display:inline-flex;align-items:center}.catalog-menu-trigger{display:inline-flex;align-items:center;gap:6px}.catalog-menu-chevron{flex-shrink:0}.catalog-menu-parent>.sub-menu{display:none!important;visibility:hidden!important;opacity:0!important;pointer-events:none!important}.hero-section,.index-hero-section,section[class*="hero"]{position:relative;overflow:hidden;min-height:560px}.hero-bg-wrapper,.hero-bg-image,section[class*="hero"] [class*="hero-bg"]{position:absolute;inset:0;width:100%;height:100%}.hero-bg-wrapper img,.hero-bg-image img,section[class*="hero"] [data-hero-bg],section[class*="hero"] img[data-hero-background="true"]{width:100%!important;height:100%!important;object-fit:cover!important;display:block}.hero-content,section[class*="hero"] .container{position:relative;z-index:2}@media(max-width:768px){:root{--header-height:72px;--total-header-height:72px;--zappy-mobile-menu-top:72px}html[data-zappy-site-type="ecommerce"] body{padding-top:var(--total-header-height,72px)}html[data-zappy-site-type="ecommerce"] body>nav.navbar,html[data-zappy-site-type="ecommerce"] body>.navbar:not(.zappy-catalog-menu){position:fixed!important;top:0;left:0;right:0;z-index:100000;width:100%;margin-bottom:0}.zappy-catalog-menu{position:fixed;top:var(--header-height,72px);left:0;right:0;z-index:99999}.nav-container,.navbar .container{min-height:60px}.nav-menu,#navMenu{max-width:100vw;overflow-x:hidden}.hero-section,.index-hero-section,section[class*="hero"]{min-height:100svh}.hero-bg-wrapper,.hero-bg-image,.hero-scrim{min-height:100svh}}
 </style>
-    <link rel="preload" href="/styles.css" as="style">
-    <link rel="stylesheet" href="/styles.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="/styles.css"></noscript>
+    <link rel="preload" href="/styles.css" as="style" />
+    <link rel="stylesheet" href="/styles.css" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="/styles.css" /></noscript>
     
 
     <style id="zappy-dropdown-submenu-styles">
@@ -353,12 +724,12 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
 
     <div class="mobile-search-panel" id="mobile-search-panel">
       <div class="search-wrapper">
-        <input type="text" id="mobile-search-input" placeholder="חיפוש מוצרים..." autocomplete="off">
+        <input type="text" id="mobile-search-input" placeholder="חיפוש מוצרים..." autocomplete="off" />
         <button class="search-submit" id="mobile-search-submit" title="חיפוש">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
         </button>
         <button class="close-search" id="close-mobile-search">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"></path></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
         </button>
       </div>
       <div class="search-results" id="mobile-search-results"></div>
@@ -369,41 +740,41 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
   <nav class="navbar" dir="rtl">
   <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
     <svg style="display:block !important" class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
-      <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+      <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
     </svg>
     <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display:none !important">
-      <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+      <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
     </svg>
   </button>
   <button class="phone-header-btn" data-phone="0534211370" aria-label="Call">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
     </svg>
   </button>
   <div class="nav-container">
     <div class="nav-right-group"><div class="nav-brand">
-      <a href="/" class="logo-link"><img class="logo" src="/assets/site-------image-1.webp" alt="casa verona" decoding="async" width="35" height="35"></a>
+      <a href="/" class="logo-link"><img class="logo" src="/assets/site-------image-1.webp" alt="casa verona" decoding="async" width="35" height="35" /></a>
     </div><ul class="nav-menu" id="navMenu">
 
     <li class="menu-item-has-children zappy-products-dropdown">
       <a href="/products">
         מוצרים
         <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M6 9l6 6 6-6"></path>
+          <path d="M6 9l6 6 6-6"/>
         </svg>
       </a>
-      <ul class="sub-menu" id="zappy-nav-category-links">
+      <ul class="sub-menu" id="zappy-nav-category-links" dir="rtl">
         <li><a href="/products" data-i18n="ecom_products">מוצרים</a></li>
         <!-- Categories will be loaded dynamically -->
       </ul>
     </li>
   <li><a href="/">בית</a></li><li><a href="/collections">קולקציות</a></li><li><a href="/design-gallery">גלריית עיצוב</a></li><li><a href="/about">אודות</a></li><li><a href="/faq">שאלות נפוצות</a></li><li><a href="/contact">צור קשר</a></li></ul><div class="nav-ecommerce-icons nav-icons-left"><div class="nav-search-box">
-    <input type="text" class="nav-search-input" id="nav-search-input" placeholder="חיפוש מוצרים..." autocomplete="off">
+    <input type="text" class="nav-search-input" id="nav-search-input" placeholder="חיפוש מוצרים..." autocomplete="off" />
     <button class="nav-search-btn" id="nav-search-btn" title="חיפוש">
-      <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>
+      <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
     </button>
     <div class="nav-search-results" id="nav-search-results"></div>
-  </div></div><div class="nav-ecommerce-icons nav-icons-right"><button class="nav-search-toggle" id="mobile-search-toggle" title="חיפוש"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg></button></div></div>
+  </div></div><div class="nav-ecommerce-icons nav-icons-right"><button class="nav-search-toggle" id="mobile-search-toggle" title="חיפוש"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></button></div></div>
     
     
   </div>
@@ -875,11 +1246,11 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
             <!-- Gold Ornament Divider -->
             <div class="about-story-section__ornament" aria-hidden="true">
                 <svg viewBox="0 0 80 20" fill="none" xmlns="http://www.w3.org/2000/svg" data-element-type="icon" data-icon-type="svg">
-                    <line x1="0" y1="10" x2="32" y2="10" stroke="var(--accent)" stroke-width="1.5"></line>
-                    <circle cx="40" cy="10" r="2.5" fill="var(--accent)"></circle>
-                    <line x1="48" y1="10" x2="80" y2="10" stroke="var(--accent)" stroke-width="1.5"></line>
-                    <path d="M34 4 L40 10 L34 16" stroke="var(--accent)" stroke-width="1.5" fill="none"></path>
-                    <path d="M46 4 L40 10 L46 16" stroke="var(--accent)" stroke-width="1.5" fill="none"></path>
+                    <line x1="0" y1="10" x2="32" y2="10" stroke="var(--accent)" stroke-width="1.5"/>
+                    <circle cx="40" cy="10" r="2.5" fill="var(--accent)"/>
+                    <line x1="48" y1="10" x2="80" y2="10" stroke="var(--accent)" stroke-width="1.5"/>
+                    <path d="M34 4 L40 10 L34 16" stroke="var(--accent)" stroke-width="1.5" fill="none"/>
+                    <path d="M46 4 L40 10 L46 16" stroke="var(--accent)" stroke-width="1.5" fill="none"/>
                 </svg>
             </div>
 
@@ -901,14 +1272,14 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
 
         <!-- Image Column (Left side in RTL) -->
         <div class="about-story-section__media">
-            <img loading="lazy" fetchpriority="low" data-placeholder="about-story-image-1" data-context="A warm, luxurious living room showroom with elegant modern-classic furniture, soft beige and cream tones, a large arched mirror, and natural light streaming through sheer curtains. The atmosphere is refined, calm, and inviting." width="600" height="750" src="/assets/site-about-story-image-1.webp" alt="חלל תצוגה יוקרתי של קאזה ורונה עם ריהוט קלאסי-מודרני בגוונים חמים" class="about-story-section__image" data-element-type="image" data-element-id="img-1783976525881-f4mvebv7s" decoding="async">
+            <img loading="lazy" fetchpriority="low" data-placeholder="about-story-image-1" data-context="A warm, luxurious living room showroom with elegant modern-classic furniture, soft beige and cream tones, a large arched mirror, and natural light streaming through sheer curtains. The atmosphere is refined, calm, and inviting." width="600" height="750" src="/assets/site-about-story-image-1.webp" alt="חלל תצוגה יוקרתי של קאזה ורונה עם ריהוט קלאסי-מודרני בגוונים חמים" class="about-story-section__image" data-element-type="image" data-element-id="img-1783976525881-f4mvebv7s" decoding="async" />
         </div>
     </div>
 
     <!-- Bottom Divider: Shallow diagonal warm-white-to-stone transition -->
     <div class="about-story-section__divider-wrapper" aria-hidden="true">
         <svg viewBox="0 0 1200 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0,60 L0,45 L300,20 L600,35 L900,10 L1200,30 L1200,60 Z" fill="var(--bg-light)"></path>
+            <path d="M0,60 L0,45 L300,20 L600,35 L900,10 L1200,30 L1200,60 Z" fill="var(--bg-light)"/>
         </svg>
     </div>
 </section>
@@ -920,9 +1291,9 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
       <h2 class="about-values-section__title">הערכים שלנו</h2>
       <div class="about-values-section__ornament" aria-hidden="true">
         <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 80 16" xmlns="http://www.w3.org/2000/svg">
-          <line x1="0" y1="8" x2="30" y2="8" stroke="var(--accent)" stroke-width="1.5"></line>
-          <circle cx="40" cy="8" r="2.5" fill="var(--accent)"></circle>
-          <line x1="50" y1="8" x2="80" y2="8" stroke="var(--accent)" stroke-width="1.5"></line>
+          <line x1="0" y1="8" x2="30" y2="8" stroke="var(--accent)" stroke-width="1.5"/>
+          <circle cx="40" cy="8" r="2.5" fill="var(--accent)"/>
+          <line x1="50" y1="8" x2="80" y2="8" stroke="var(--accent)" stroke-width="1.5"/>
         </svg>
       </div>
       <p class="about-values-section__subtitle">ארבעת העמודים שעליהם מושתת כל יצירה של קאזה ורונה</p>
@@ -931,9 +1302,7 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
     <nav class="zappy-catalog-menu rtl" id="zappy-catalog-menu" dir="rtl" style="display:none">
       <div class="catalog-menu-container">
         <a href="/products" class="catalog-menu-item catalog-menu-all">מוצרים</a>
-        <div class="catalog-menu-categories" id="zappy-category-links">
-          <!-- Categories will be loaded dynamically -->
-        </div>
+        <div class="catalog-menu-categories" id="zappy-category-links" dir="rtl" data-zappy-catalog-baked="1"></div>
       </div>
     </nav>
   
@@ -944,9 +1313,9 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
       <article class="about-values-section__card">
         <div class="about-values-section__icon-wrapper">
           <svg data-element-type="icon" data-icon-type="svg" class="about-values-section__icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M24 6L6 18L24 30L42 18L24 6Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path>
-            <path d="M6 30L24 42L42 30" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path>
-            <path d="M6 24L24 36L42 24" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path>
+            <path d="M24 6L6 18L24 30L42 18L24 6Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            <path d="M6 30L24 42L42 30" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            <path d="M6 24L24 36L42 24" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
           </svg>
         </div>
         <h3 class="about-values-section__card-title">עיצוב על-זמני</h3>
@@ -957,9 +1326,9 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
       <article class="about-values-section__card">
         <div class="about-values-section__icon-wrapper">
           <svg data-element-type="icon" data-icon-type="svg" class="about-values-section__icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="8" y="12" width="32" height="24" rx="2" stroke="currentColor" stroke-width="1.5"></rect>
-            <path d="M16 12V8C16 6.89543 16.8954 6 18 6H30C31.1046 6 32 6.89543 32 8V12" stroke="currentColor" stroke-width="1.5"></path>
-            <path d="M20 22L23 25L28 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            <rect x="8" y="12" width="32" height="24" rx="2" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M16 12V8C16 6.89543 16.8954 6 18 6H30C31.1046 6 32 6.89543 32 8V12" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M20 22L23 25L28 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </div>
         <h3 class="about-values-section__card-title">איכות חומרים ללא פשרות</h3>
@@ -970,9 +1339,9 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
       <article class="about-values-section__card">
         <div class="about-values-section__icon-wrapper">
           <svg data-element-type="icon" data-icon-type="svg" class="about-values-section__icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 36V24C12 17.3726 17.3726 12 24 12C30.6274 12 36 17.3726 36 24V36" stroke="currentColor" stroke-width="1.5"></path>
-            <path d="M8 36H40" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
-            <path d="M20 36V28H28V36" stroke="currentColor" stroke-width="1.5"></path>
+            <path d="M12 36V24C12 17.3726 17.3726 12 24 12C30.6274 12 36 17.3726 36 24V36" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M8 36H40" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M20 36V28H28V36" stroke="currentColor" stroke-width="1.5"/>
           </svg>
         </div>
         <h3 class="about-values-section__card-title">נוחות מגורים אמיתית</h3>
@@ -983,9 +1352,9 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
       <article class="about-values-section__card">
         <div class="about-values-section__icon-wrapper">
           <svg data-element-type="icon" data-icon-type="svg" class="about-values-section__icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="24" cy="16" r="6" stroke="currentColor" stroke-width="1.5"></circle>
-            <path d="M12 38C12 31.3726 17.3726 26 24 26C30.6274 26 36 31.3726 36 38" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
-            <path d="M24 22V26" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            <circle cx="24" cy="16" r="6" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M12 38C12 31.3726 17.3726 26 24 26C30.6274 26 36 31.3726 36 38" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M24 22V26" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
           </svg>
         </div>
         <h3 class="about-values-section__card-title">שירות אישי ומותאם</h3>
@@ -997,7 +1366,7 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
   <!-- Bottom ornamental arch divider transitioning to the next section -->
   <div class="about-values-section__divider-wrapper" aria-hidden="true">
     <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0,80 L0,30 Q150,50 300,28 Q450,44 600,25 Q750,46 900,26 Q1050,48 1200,28 L1200,80 Z" fill="var(--bg-dark)"></path>
+      <path d="M0,80 L0,30 Q150,50 300,28 Q450,44 600,25 Q750,46 900,26 Q1050,48 1200,28 L1200,80 Z" fill="var(--bg-dark)"/>
     </svg>
   </div>
 </section>
@@ -1005,7 +1374,7 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
 <section class="about-experience-section" data-layout-spec="אודות-experience" id="about-experience-section">
     <div class="about-experience-container">
         <div class="about-experience-image-wrapper">
-            <div data-zappy-zoom-wrapper="true" data-element-id="img-1783976525881-8samvhvrn" data-element-type="image" data-zappy-zoom-wrapper-width="600px" data-zappy-zoom-wrapper-height="800px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-wrapper-align="center" style="position: relative !important; overflow: hidden !important; width: 600px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 800px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true"><img decoding="async" data-placeholder="about-experience-image-1" data-context="Warm, luxurious interior showroom in Verona style with soft lighting, elegant furniture displays including a plush sofa, marble coffee table, and carefully arranged decor accessories, creating an intimate sophisticated atmosphere" width="1200" height="600" src="/assets/casa-verona-furniture-home-decor-gallery-upload-1783975020058-39tifq.webp" alt="אולם תצוגה יוקרתי של קאזה ורונה" class="about-experience-main-image" data-element-type="image" data-element-id="img-1783976525881-8samvhvrn" style="object-position: 47% 72% !important; display: block; border-radius: 8px; object-fit: cover !important; width: 100% !important; height: 100% !important; max-width: none !important; margin: 0px !important; left: 0% !important; top: 0% !important; max-height: none !important;" data-zappy-zoom="1" data-zappy-object-position="47% 72%" loading="lazy" fetchpriority="low"></div>
+            <div data-zappy-zoom-wrapper="true" data-element-id="img-1783976525881-8samvhvrn" data-element-type="image" data-zappy-zoom-wrapper-width="600px" data-zappy-zoom-wrapper-height="800px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-wrapper-align="center" style="position: relative !important; overflow: hidden !important; width: 600px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 800px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true"><img decoding="async" data-placeholder="about-experience-image-1" data-context="Warm, luxurious interior showroom in Verona style with soft lighting, elegant furniture displays including a plush sofa, marble coffee table, and carefully arranged decor accessories, creating an intimate sophisticated atmosphere" width="1200" height="600" src="/assets/casa-verona-furniture-home-decor-gallery-upload-1783975020058-39tifq.webp" alt="אולם תצוגה יוקרתי של קאזה ורונה" class="about-experience-main-image" data-element-type="image" data-element-id="img-1783976525881-8samvhvrn" style="object-position: 47% 72% !important; display: block; border-radius: 8px; object-fit: cover !important; width: 100% !important; height: 100% !important; max-width: none !important; margin: 0px !important; left: 0% !important; top: 0% !important; max-height: none !important;" data-zappy-zoom="1" data-zappy-object-position="47% 72%" loading="lazy" fetchpriority="low" /></div>
         </div>
         <div class="about-experience-content">
             <h2 class="about-experience-heading">החוויה של קאסה ורונה</h2>
@@ -1039,11 +1408,11 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
         <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
             <defs>
                 <linearGradient id="aboutExpGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" stop-color="var(--bg-dark)" stop-opacity="1"></stop>
-                    <stop offset="100%" stop-color="var(--bg-light)" stop-opacity="1"></stop>
+                    <stop offset="0%" stop-color="var(--bg-dark)" stop-opacity="1"/>
+                    <stop offset="100%" stop-color="var(--bg-light)" stop-opacity="1"/>
                 </linearGradient>
             </defs>
-            <path d="M0,80 L0,30 Q50,25 100,32 T200,28 Q250,32 300,25 T400,30 Q450,28 500,32 T600,25 Q650,30 700,28 T800,32 Q850,25 900,30 T1000,28 Q1050,32 1100,25 T1200,30 L1200,80 Z" fill="#FAF7F2"></path>
+            <path d="M0,80 L0,30 Q50,25 100,32 T200,28 Q250,32 300,25 T400,30 Q450,28 500,32 T600,25 Q650,30 700,28 T800,32 Q850,25 900,30 T1000,28 Q1050,32 1100,25 T1200,30 L1200,80 Z" fill="#FAF7F2"/>
         </svg>
     </div>
 </section>
@@ -1061,7 +1430,7 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
         <ul class="about-trust-section__trust-list">
           <li class="about-trust-section__trust-item" data-grid-item-index="0">
             <div class="about-trust-section__icon-wrap">
-              <svg class="about-trust-section__icon" data-element-type="icon" data-icon-type="svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7l-8 8-4-4"></path></svg>
+              <svg class="about-trust-section__icon" data-element-type="icon" data-icon-type="svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7l-8 8-4-4"/></svg>
             </div>
             <div class="about-trust-section__item-content">
               <h3 class="about-trust-section__item-title">קולקציות אוצרות</h3>
@@ -1070,7 +1439,7 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
           </li>
           <li class="about-trust-section__trust-item" data-grid-item-index="1">
             <div class="about-trust-section__icon-wrap">
-              <svg class="about-trust-section__icon" data-element-type="icon" data-icon-type="svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
+              <svg class="about-trust-section__icon" data-element-type="icon" data-icon-type="svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
             </div>
             <div class="about-trust-section__item-content">
               <h3 class="about-trust-section__item-title">הכוונה אישית וברורה</h3>
@@ -1079,7 +1448,7 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
           </li>
           <li class="about-trust-section__trust-item" data-grid-item-index="2">
             <div class="about-trust-section__icon-wrap">
-              <svg class="about-trust-section__icon" data-element-type="icon" data-icon-type="svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg class="about-trust-section__icon" data-element-type="icon" data-icon-type="svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
             </div>
             <div class="about-trust-section__item-content">
               <h3 class="about-trust-section__item-title">מראה יוקרתי ללא פשרות</h3>
@@ -1088,7 +1457,7 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
           </li>
           <li class="about-trust-section__trust-item" data-grid-item-index="3">
             <div class="about-trust-section__icon-wrap">
-              <svg class="about-trust-section__icon" data-element-type="icon" data-icon-type="svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+              <svg class="about-trust-section__icon" data-element-type="icon" data-icon-type="svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
             </div>
             <div class="about-trust-section__item-content">
               <h3 class="about-trust-section__item-title">התאמה מושלמת לבית</h3>
@@ -1101,11 +1470,11 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
       <!-- Image Panel -->
       <div class="about-trust-section__image-panel">
         <div class="about-trust-section__image-frame">
-          <div data-zappy-zoom-wrapper="true" data-element-id="img-1783976525881-l82p40xmi" data-element-type="image" data-zappy-zoom-wrapper-width="600px" data-zappy-zoom-wrapper-height="800px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-wrapper-align="center" style="position: relative !important; overflow: hidden !important; width: 600px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 800px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true"><img decoding="async" data-placeholder="about-trust-image-1" data-context="A warm, softly lit corner of a luxury living room featuring a plush cream sofa, a marble coffee table, and an elegant arched floor lamp. The scene conveys refined comfort and sophisticated home decor." width="600" height="750" src="/assets/casa-verona-furniture-home-decor-gallery-upload-1783973778239-usyd1u.webp?t=1783976585351" alt="פינת ישיבה יוקרתית בעיצוב ורונה" class="about-trust-section__image" data-element-type="image" data-element-id="img-1783976525881-l82p40xmi" style="object-position: 47% 95% !important; border-radius: 8px; object-fit: fill !important; width: 100% !important; height: 100% !important; max-width: none !important; display: block !important; margin: 0px !important; left: 0% !important; top: 0% !important; max-height: none !important;" data-zappy-zoom="0.5" data-zappy-object-position="47% 95%" loading="lazy" fetchpriority="low"></div>
+          <div data-zappy-zoom-wrapper="true" data-element-id="img-1783976525881-l82p40xmi" data-element-type="image" data-zappy-zoom-wrapper-width="600px" data-zappy-zoom-wrapper-height="800px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-wrapper-align="center" style="position: relative !important; overflow: hidden !important; width: 600px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 800px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true"><img decoding="async" data-placeholder="about-trust-image-1" data-context="A warm, softly lit corner of a luxury living room featuring a plush cream sofa, a marble coffee table, and an elegant arched floor lamp. The scene conveys refined comfort and sophisticated home decor." width="600" height="750" src="/assets/casa-verona-furniture-home-decor-gallery-upload-1783973778239-usyd1u.webp?t=1783976585351" alt="פינת ישיבה יוקרתית בעיצוב ורונה" class="about-trust-section__image" data-element-type="image" data-element-id="img-1783976525881-l82p40xmi" style="object-position: 47% 95% !important; border-radius: 8px; object-fit: fill !important; width: 100% !important; height: 100% !important; max-width: none !important; display: block !important; margin: 0px !important; left: 0% !important; top: 0% !important; max-height: none !important;" data-zappy-zoom="0.5" data-zappy-object-position="47% 95%" loading="lazy" fetchpriority="low" /></div>
         </div>
         <!-- Decorative overlapping tile -->
         <div class="about-trust-section__decor-tile" aria-hidden="true" style="width: 50px !important; max-width: 100% !important; height: 50px !important; flex: 0 0 auto !important; align-self: flex-start !important;" data-zappy-image-frame-synced="true">
-          <img loading="lazy" decoding="async" data-placeholder="about-trust-image-decor" data-context="A close-up detail of a textured linen cushion and a warm wool throw draped over an armchair, with soft natural light highlighting the fabric weave." width="300" height="300" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23FF0083;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23FF008320;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grad)'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial, sans-serif' font-size='18' fill='white' text-anchor='middle' dy='.3em' font-weight='500'%3Eabout-trust-image-decor%3C/text%3E%3C/svg%3E" alt="" class="about-trust-section__decor-img" data-element-type="image" data-element-id="img-1783976525881-w9dx2ixd1" style="object-position: 50% 50%; width: 50px !important; max-width: none !important; max-height: none !important; height: auto !important;" fetchpriority="low">
+          <img loading="lazy" decoding="async" data-placeholder="about-trust-image-decor" data-context="A close-up detail of a textured linen cushion and a warm wool throw draped over an armchair, with soft natural light highlighting the fabric weave." width="300" height="300" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23FF0083;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23FF008320;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23grad)'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial, sans-serif' font-size='18' fill='white' text-anchor='middle' dy='.3em' font-weight='500'%3Eabout-trust-image-decor%3C/text%3E%3C/svg%3E" alt class="about-trust-section__decor-img" data-element-type="image" data-element-id="img-1783976525881-w9dx2ixd1" style="object-position: 50% 50%; width: 50px !important; max-width: none !important; max-height: none !important; height: auto !important;" fetchpriority="low" />
         </div>
       </div>
 
@@ -1118,7 +1487,7 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
   <div class="footer-container">
     <div class="footer-top">
       <div class="footer-col footer-company-col">
-        <img src="/assets/casa-verona-furniture-home-decor-logo.webp" alt="casa verona" class="logo" data-element-type="image" data-element-id="img-1783976414867-7n8lkkexx" data-zappy-footer-image="true" decoding="async" width="35" height="35">
+        <img src="/assets/casa-verona-furniture-home-decor-logo.webp" alt="casa verona" class="logo" data-element-type="image" data-element-id="img-1783976414867-7n8lkkexx" data-zappy-footer-image="true" decoding="async" width="35" height="35" />
         <p class="footer-tagline">עיצוב יוקרתי לבית בהשראת ורונה הקלאסית. אנו מביאים לכם רהיטים ופתרונות עיצוב באיכות ללא פשרות, המשלבים אלגנטיות נצחית עם נוחות מודרנית.</p>
       </div>
       <div class="footer-col footer-links-col">
@@ -1183,10 +1552,10 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
     <i class="fab fa-whatsapp"></i>
   </a>
   
-  <div class="zappy-qv-overlay" id="zappy-qv-overlay" hidden=""></div>
-<div class="zappy-qv-modal" id="zappy-qv-modal" role="dialog" aria-modal="true" aria-label="תצוגה מהירה" hidden="">
+  <div class="zappy-qv-overlay" id="zappy-qv-overlay" hidden></div>
+<div class="zappy-qv-modal" id="zappy-qv-modal" role="dialog" aria-modal="true" aria-label="תצוגה מהירה" hidden>
   <button type="button" class="zappy-qv-close" id="zappy-qv-close" aria-label="סגור">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"></path></svg>
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
   </button>
   <div class="zappy-qv-content" id="zappy-qv-content"></div>
 </div>

@@ -1,19 +1,19 @@
 <!DOCTYPE html><html data-zappy-site-type="ecommerce" lang="he" dir="rtl"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
     <title>השראה עיצובית שתשנה את הבית — casa verona</title>
-    <meta name="description" content="גלריית העיצוב של casa verona מציגה חללי מגורים מעוררי השראה. קבלו רעיונות לשילוב רהיטים יוקרתיים בעיצוב קלאסי-מודרני. היכנסו לחוויית סטיילינג ייחודית.">
-    <meta name="keywords" content="גלריית עיצוב, ottoman home decor, רהיטים, עיצוב הבית, casa verona">
+    <meta name="description" content="גלריית העיצוב של casa verona מציגה חללי מגורים מעוררי השראה. קבלו רעיונות לשילוב רהיטים יוקרתיים בעיצוב קלאסי-מודרני. היכנסו לחוויית סטיילינג ייחודית." />
+    <meta name="keywords" content="גלריית עיצוב, ottoman home decor, רהיטים, עיצוב הבית, casa verona" />
     
     <!-- Favicons -->
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon-512x512.png">
-    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon-512x512.png" />
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
     <!-- Zappy Analytics -->
 <script>
 (function() {
@@ -221,14 +221,385 @@
 })();
 </script>
 <!-- End Zappy Analytics -->
-    <meta property="og:title" content="השראה עיצובית שתשנה את הבית — casa verona">
-    <meta property="og:description" content="גלריית העיצוב של casa verona מציגה חללי מגורים מעוררי השראה. קבלו רעיונות לשילוב רהיטים יוקרתיים בעיצוב קלאסי-מודרני. היכנסו לחוויית סטיילינג ייחודית.">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="השראה עיצובית שתשנה את הבית — casa verona">
-    <meta name="twitter:description" content="גלריית העיצוב של casa verona מציגה חללי מגורים מעוררי השראה. קבלו רעיונות לשילוב רהיטים יוקרתיים בעיצוב קלאסי-מודרני. היכנסו לחוויית סטיילינג ייחודית.">
+<!-- Zappy Marketing Events -->
+<script>
+(function() {
+  'use strict';
+  if (window.zappyFireMarketingEvent) return;
+
+  var ECOM_MODE = "catalog";
+  var IS_CATALOG = true;
+  var IS_FULL = false;
+
+  var ECOM_ALIAS = {
+    begin_checkout: 'checkout_started',
+    purchase: 'checkout_complete',
+    add_to_cart: 'add_to_cart',
+    view_product: 'view_product'
+  };
+
+  function pagePath() {
+    try {
+      if (window.ZAPPY_CONFIG && window.ZAPPY_CONFIG.currentPagePath) {
+        return window.ZAPPY_CONFIG.currentPagePath;
+      }
+    } catch (e) {}
+    try { return window.location.pathname || '/'; } catch (e2) { return '/'; }
+  }
+
+  function normalizeItems(meta) {
+    meta = meta || {};
+    var raw = meta.items || meta.cartItems || meta.cart_items || meta.lineItems || [];
+    if (!Array.isArray(raw)) raw = [];
+    var out = [];
+    for (var i = 0; i < raw.length; i++) {
+      var item = raw[i];
+      if (!item || typeof item !== 'object') continue;
+      var id = String(item.item_id || item.productId || item.product_id || item.id || '').trim();
+      var name = String(item.item_name || item.productName || item.product_name || item.name || '').trim();
+      var price = parseFloat(item.price != null ? item.price : (item.unitPrice != null ? item.unitPrice : 0)) || 0;
+      var quantity = Math.max(1, parseInt(item.quantity != null ? item.quantity : (item.qty != null ? item.qty : 1), 10) || 1);
+      if (!id && !name) continue;
+      out.push({ item_id: id || name, item_name: name || id, price: price, quantity: quantity });
+    }
+    return out;
+  }
+
+  function buildGa4Params(eventId, meta) {
+    meta = meta || {};
+    var items = normalizeItems(meta);
+    var value = parseFloat(meta.value != null ? meta.value : (meta.total != null ? meta.total : 0)) || 0;
+    var currency = String(meta.currency || 'USD').toUpperCase();
+
+    if (eventId === 'checkout_complete') {
+      return {
+        transaction_id: String(meta.transaction_id || meta.orderId || meta.order_id || meta.orderNumber || '') || undefined,
+        value: value,
+        currency: currency,
+        items: items
+      };
+    }
+    if (eventId === 'checkout_started') {
+      return { value: value, currency: currency, items: items };
+    }
+    if (eventId === 'add_to_cart') {
+      var atcItems = items.length ? items : [{
+        item_id: String(meta.productId || meta.product_id || ''),
+        item_name: String(meta.productName || meta.product_name || ''),
+        price: parseFloat(meta.value != null ? meta.value : (meta.price != null ? meta.price : 0)) || 0,
+        quantity: parseInt(meta.quantity != null ? meta.quantity : 1, 10) || 1
+      }].filter(function(x) { return x.item_id || x.item_name; });
+      return {
+        value: value || (atcItems[0] ? atcItems[0].price * atcItems[0].quantity : 0),
+        currency: currency,
+        items: atcItems
+      };
+    }
+    if (eventId === 'view_product') {
+      var vpItems = items.length ? items : [{
+        item_id: String(meta.productId || meta.product_id || ''),
+        item_name: String(meta.productName || meta.product_name || ''),
+        price: parseFloat(meta.price != null ? meta.price : (meta.value != null ? meta.value : 0)) || 0,
+        quantity: 1
+      }].filter(function(x) { return x.item_id || x.item_name; });
+      return {
+        currency: currency,
+        value: value || (vpItems[0] ? vpItems[0].price : 0),
+        items: vpItems
+      };
+    }
+    if (eventId === 'whatsapp_click' || eventId === 'phone_click') {
+      return { method: eventId === 'whatsapp_click' ? 'whatsapp' : 'phone', page_path: meta.pagePath || pagePath() };
+    }
+    if (eventId === 'contact_form_submitted' || eventId === 'product_inquiry') {
+      return { page_path: meta.pagePath || pagePath() };
+    }
+    return meta;
+  }
+
+  function buildMetaParams(eventId, meta) {
+    meta = meta || {};
+    var items = normalizeItems(meta);
+    var value = parseFloat(meta.value != null ? meta.value : (meta.total != null ? meta.total : 0)) || 0;
+    var currency = String(meta.currency || 'USD').toUpperCase();
+    var contentIds = [];
+    var numItems = 0;
+    for (var i = 0; i < items.length; i++) {
+      if (items[i].item_id) contentIds.push(items[i].item_id);
+      numItems += items[i].quantity || 1;
+    }
+
+    if (eventId === 'checkout_complete') {
+      return {
+        value: value,
+        currency: currency,
+        content_ids: contentIds.length ? contentIds : undefined,
+        content_type: 'product',
+        num_items: numItems || undefined,
+        order_id: String(meta.order_id || meta.orderId || meta.transaction_id || meta.orderNumber || '') || undefined
+      };
+    }
+    if (eventId === 'checkout_started') {
+      return {
+        value: value,
+        currency: currency,
+        content_ids: contentIds.length ? contentIds : undefined,
+        content_type: 'product',
+        num_items: numItems || parseInt(meta.itemCount != null ? meta.itemCount : 0, 10) || undefined
+      };
+    }
+    if (eventId === 'add_to_cart') {
+      var id = String(meta.productId || meta.product_id || contentIds[0] || '');
+      return {
+        value: value || (items[0] ? items[0].price * items[0].quantity : 0),
+        currency: currency,
+        content_ids: id ? [id] : (contentIds.length ? contentIds : undefined),
+        content_type: 'product',
+        content_name: meta.productName || meta.product_name || (items[0] && items[0].item_name),
+        num_items: parseInt(meta.quantity != null ? meta.quantity : (numItems || 1), 10) || 1
+      };
+    }
+    if (eventId === 'view_product') {
+      var vid = String(meta.productId || meta.product_id || contentIds[0] || '');
+      return {
+        value: value || parseFloat(meta.price != null ? meta.price : 0) || 0,
+        currency: currency,
+        content_ids: vid ? [vid] : (contentIds.length ? contentIds : undefined),
+        content_type: 'product',
+        content_name: meta.productName || meta.product_name || (items[0] && items[0].item_name)
+      };
+    }
+    if (eventId === 'whatsapp_click' || eventId === 'phone_click') {
+      return {
+        content_name: eventId === 'whatsapp_click' ? 'WhatsApp' : 'Phone',
+        content_category: 'contact'
+      };
+    }
+    if (eventId === 'contact_form_submitted' || eventId === 'product_inquiry') {
+      return {
+        content_name: eventId === 'product_inquiry' ? 'Product inquiry' : 'Contact form',
+        content_category: meta.productName || meta.product_name || undefined
+      };
+    }
+    return meta;
+  }
+
+  var PLATFORM = {
+    whatsapp_click: { ga4: 'contact', meta: 'Contact', gtm: 'whatsapp_click', ecom: false },
+    phone_click: { ga4: 'contact', meta: 'Contact', gtm: 'phone_click', ecom: false },
+    contact_form_submitted: { ga4: 'generate_lead', meta: 'Lead', gtm: 'contact_form_submitted', ecom: false },
+    checkout_started: { ga4: 'begin_checkout', meta: 'InitiateCheckout', gtm: 'begin_checkout', ecom: true },
+    checkout_complete: { ga4: 'purchase', meta: 'Purchase', gtm: 'purchase', ecom: true },
+    product_inquiry: { ga4: 'generate_lead', meta: 'Lead', gtm: 'product_inquiry', ecom: false },
+    add_to_cart: { ga4: 'add_to_cart', meta: 'AddToCart', gtm: 'add_to_cart', ecom: true },
+    view_product: { ga4: 'view_item', meta: 'ViewContent', gtm: 'view_item', ecom: true }
+  };
+
+  function purchaseDedupKey(orderId) {
+    return 'zappy_purchase_fired_' + String(orderId || '');
+  }
+
+  function alreadyFiredPurchase(orderId) {
+    if (!orderId) return false;
+    try {
+      return sessionStorage.getItem(purchaseDedupKey(orderId)) === '1';
+    } catch (e) {
+      return false;
+    }
+  }
+
+  function markPurchaseFired(orderId) {
+    if (!orderId) return;
+    try { sessionStorage.setItem(purchaseDedupKey(orderId), '1'); } catch (e) {}
+  }
+
+  /**
+   * Fire a marketing event to first-party analytics + GA4/GTM/Meta when present.
+   * @param {string} eventName marketing ID or ecommerce alias
+   * @param {object} [metadata]
+   * @param {{ skipFirstParty?: boolean }} [opts]
+   */
+  window.zappyFireMarketingEvent = function(eventName, metadata, opts) {
+    try {
+      opts = opts || {};
+      metadata = metadata || {};
+      var eventId = ECOM_ALIAS[eventName] || eventName;
+      var plat = PLATFORM[eventId];
+      if (!plat) return;
+
+      if (!metadata.pagePath && !metadata.page_path) {
+        metadata.pagePath = pagePath();
+      }
+
+      if (eventId === 'checkout_complete') {
+        var oid = String(metadata.orderId || metadata.order_id || metadata.transaction_id || '');
+        if (oid && alreadyFiredPurchase(oid)) return;
+        if (oid) markPurchaseFired(oid);
+      }
+
+      // First-party (skip when already tracked via zappyTrackEcomAnalytics path
+      // that opts out, or when caller already recorded under a different name)
+      if (!opts.skipFirstParty) {
+        try {
+          if (window.zappyAnalytics && typeof window.zappyAnalytics.track === 'function') {
+            window.zappyAnalytics.track(eventId, metadata);
+          }
+        } catch (e1) {}
+      }
+
+      // GTM / dataLayer — platform-standard ecommerce event names
+      try {
+        window.dataLayer = window.dataLayer || [];
+        if (plat.ecom) {
+          var ga4ForGtm = buildGa4Params(eventId, metadata);
+          var ecommerce = {};
+          if (ga4ForGtm.transaction_id) ecommerce.transaction_id = ga4ForGtm.transaction_id;
+          if (ga4ForGtm.value != null) ecommerce.value = ga4ForGtm.value;
+          if (ga4ForGtm.currency) ecommerce.currency = ga4ForGtm.currency;
+          if (ga4ForGtm.items) ecommerce.items = ga4ForGtm.items;
+          window.dataLayer.push({ event: plat.gtm, ecommerce: ecommerce });
+          // Secondary Zappy-specific trigger for merchants who want it
+          if (eventId === 'checkout_complete' || eventId === 'checkout_started') {
+            window.dataLayer.push({ event: eventId, ecommerce: ecommerce });
+          }
+        } else {
+          var dl = { event: plat.gtm };
+          for (var k in metadata) {
+            if (Object.prototype.hasOwnProperty.call(metadata, k)) dl[k] = metadata[k];
+          }
+          window.dataLayer.push(dl);
+        }
+      } catch (e2) {}
+
+      // GA4 gtag
+      try {
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', plat.ga4, buildGa4Params(eventId, metadata));
+        }
+      } catch (e3) {}
+
+      // Meta Pixel (only when fbq is loaded — consent-gated lazy loader)
+      try {
+        if (typeof window.fbq === 'function') {
+          window.fbq('track', plat.meta, buildMetaParams(eventId, metadata));
+        }
+      } catch (e4) {}
+    } catch (err) {}
+  };
+
+  // ---- Click listeners (capture) ----
+  var recent = Object.create(null);
+  function dedupe(key) {
+    var now = Date.now();
+    if (recent[key] && now - recent[key] < 800) return true;
+    recent[key] = now;
+    return false;
+  }
+
+  function closest(el, selector) {
+    if (!el) return null;
+    if (el.closest) return el.closest(selector);
+    return null;
+  }
+
+  function findAnchor(el) {
+    var node = el;
+    while (node && node !== document) {
+      if (node.tagName === 'A') return node;
+      node = node.parentElement;
+    }
+    return null;
+  }
+
+  function isWhatsAppHref(href) {
+    if (!href) return false;
+    var h = String(href).toLowerCase();
+    return h.indexOf('wa.me/') !== -1 ||
+      h.indexOf('api.whatsapp.com') !== -1 ||
+      h.indexOf('whatsapp.com/send') !== -1 ||
+      h.indexOf('whatsapp:') === 0;
+  }
+
+  document.addEventListener('click', function(e) {
+    try {
+      var target = e.target;
+      if (!target) return;
+
+      // WhatsApp
+      var waFloat = closest(target, '.whatsapp-float, a.whatsapp-float, [data-zappy-whatsapp]');
+      var anchor = findAnchor(target);
+      var href = (anchor && anchor.href) || '';
+      if (waFloat || (anchor && isWhatsAppHref(href))) {
+        if (!dedupe('wa:' + href)) {
+          var waSource = waFloat ? 'float' : 'link';
+          window.zappyFireMarketingEvent('whatsapp_click', {
+            source: waSource,
+            href: href || null,
+            pagePath: pagePath()
+          });
+        }
+        return;
+      }
+
+      // Phone
+      var phoneBtn = closest(target, '.phone-header-btn, .nav-phone-btn, .call-btn, [data-zappy-phone]');
+      var telHref = '';
+      if (anchor && anchor.href && String(anchor.href).toLowerCase().indexOf('tel:') === 0) {
+        telHref = anchor.href;
+      } else if (phoneBtn && phoneBtn.href && String(phoneBtn.href).toLowerCase().indexOf('tel:') === 0) {
+        telHref = phoneBtn.href;
+      }
+      if (phoneBtn || telHref) {
+        var phone = '';
+        if (telHref) {
+          phone = String(telHref).replace(/^tel:/i, '').trim();
+        }
+        if (!dedupe('tel:' + (phone || (phoneBtn && phoneBtn.id) || 'btn'))) {
+          window.zappyFireMarketingEvent('phone_click', {
+            source: phoneBtn ? 'button' : 'link',
+            phone: phone || null,
+            href: telHref || null,
+            pagePath: pagePath()
+          });
+        }
+        return;
+      }
+
+      // Catalog / product inquiry
+      if (IS_CATALOG || IS_FULL) {
+        var inq = closest(target, '.card-inquiry-btn, #zappy-pdp-inquiry-btn, a.inquiry-btn');
+        if (inq) {
+          if (!dedupe('inq:' + (inq.id || inq.className))) {
+            var product = window.currentProduct || null;
+            var productId = (inq.getAttribute && inq.getAttribute('data-product-id')) ||
+              (product && product.id) || null;
+            var productName = (inq.getAttribute && inq.getAttribute('data-product-name')) ||
+              (product && product.name) || null;
+            var channel = 'contact_page';
+            var inqHref = (inq.tagName === 'A' && inq.href) ? inq.href : '';
+            if (inqHref && String(inqHref).toLowerCase().indexOf('mailto:') === 0) channel = 'mailto';
+            window.zappyFireMarketingEvent('product_inquiry', {
+              source: inq.id === 'zappy-pdp-inquiry-btn' ? 'pdp' : 'card',
+              productId: productId,
+              productName: productName,
+              channel: channel,
+              pagePath: pagePath()
+            });
+          }
+        }
+      }
+    } catch (err) {}
+  }, true);
+})();
+</script>
+    <meta property="og:title" content="השראה עיצובית שתשנה את הבית — casa verona" />
+    <meta property="og:description" content="גלריית העיצוב של casa verona מציגה חללי מגורים מעוררי השראה. קבלו רעיונות לשילוב רהיטים יוקרתיים בעיצוב קלאסי-מודרני. היכנסו לחוויית סטיילינג ייחודית." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="השראה עיצובית שתשנה את הבית — casa verona" />
+    <meta name="twitter:description" content="גלריית העיצוב של casa verona מציגה חללי מגורים מעוררי השראה. קבלו רעיונות לשילוב רהיטים יוקרתיים בעיצוב קלאסי-מודרני. היכנסו לחוויית סטיילינג ייחודית." />
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://casa-verona.zappy5.app#organization","name":"casa verona","url":"https://casa-verona.zappy5.app","description":"A luxury furniture brand offering a wide range of high-end home furnishings including living room sets, sideboards, dining tables, coffee tables, beds, chairs, and bar stools. The brand identity is rooted in a classic-modern aesthetic with a premium, sophisticated feel. The website should be presented in Hebrew and designed to feel elegant, clear, and welcoming to customers seeking quality furniture.","contactPoint":[{"@type":"ContactPoint","contactType":"customer service","email":"casaverona33@gmail.com","telephone":"0534211370"}]},{"@type":"WebSite","@id":"https://casa-verona.zappy5.app#website","url":"https://casa-verona.zappy5.app","name":"casa verona","publisher":{"@id":"https://casa-verona.zappy5.app#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://casa-verona.zappy5.app"},{"@type":"ListItem","position":2,"name":"Design Gallery","item":"https://casa-verona.zappy5.app/design-gallery"}]}]}</script>
-    <meta property="og:type" content="website">
-  <meta property="og:locale" content="he_IL">
+    <meta property="og:type" content="website" />
+  <meta property="og:locale" content="he_IL" />
   
   
   
@@ -243,22 +614,22 @@
 
   
     <!-- Favicons -->
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon-512x512.png">
-    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon-512x512.png" />
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
     <!-- Cookie Consent -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.css" />
     <!-- Mickidum Accessibility Toolbar lazy-loaded by runtime -->
     <style id="zappy-critical-above-fold-css">
-html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{box-sizing:inherit}body{margin:0;min-width:320px;overflow-x:clip}img,svg,video{max-width:100%;height:auto}main{display:block}.container{width:min(100% - 32px,1200px);margin-inline:auto}.navbar,nav.navbar,header .navbar,header[role="banner"]{position:relative;z-index:1000;width:100%}.nav-container,.navbar .container{display:flex;align-items:center;justify-content:space-between;min-height:64px}.logo,.logo-link img{display:block;width:35px;height:35px;object-fit:contain}.nav-menu,#navMenu{list-style:none}.fa,.fas,.far,.fab,.fa-solid,.fa-regular,.fa-brands{display:inline-block;min-width:1em;text-align:center}html:not(#zappy-noop)[data-zappy-site-type="ecommerce"] .phone-header-btn,html:not(#zappy-noop) .navbar:has(.nav-ecommerce-icons)>.phone-header-btn{display:none!important;visibility:hidden!important;width:0!important;height:0!important;pointer-events:none!important}.zappy-preview-empty-store-cta{display:none!important;visibility:hidden!important;height:0!important;max-height:0!important;overflow:hidden!important;margin:0!important;padding:0!important;border:0!important;box-shadow:none!important}.hero-section,.index-hero-section,section[class*="hero"]{position:relative;overflow:hidden;min-height:560px}.hero-bg-wrapper,.hero-bg-image,section[class*="hero"] [class*="hero-bg"]{position:absolute;inset:0;width:100%;height:100%}.hero-bg-wrapper img,.hero-bg-image img,section[class*="hero"] [data-hero-bg],section[class*="hero"] img[data-hero-background="true"]{width:100%!important;height:100%!important;object-fit:cover!important;display:block}.hero-content,section[class*="hero"] .container{position:relative;z-index:2}@media(max-width:768px){:root{--header-height:72px;--total-header-height:72px;--zappy-mobile-menu-top:72px}html[data-zappy-site-type="ecommerce"] body{padding-top:var(--total-header-height,72px)}html[data-zappy-site-type="ecommerce"] body>nav.navbar,html[data-zappy-site-type="ecommerce"] body>.navbar:not(.zappy-catalog-menu){position:fixed!important;top:0;left:0;right:0;z-index:100000;width:100%;margin-bottom:0}.zappy-catalog-menu{position:fixed;top:var(--header-height,72px);left:0;right:0;z-index:99999}.nav-container,.navbar .container{min-height:60px}.nav-menu,#navMenu{max-width:100vw;overflow-x:hidden}.hero-section,.index-hero-section,section[class*="hero"]{min-height:100svh}.hero-bg-wrapper,.hero-bg-image,.hero-scrim{min-height:100svh}}
+html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{box-sizing:inherit}body{margin:0;min-width:320px;overflow-x:clip}img,svg,video{max-width:100%;height:auto}main{display:block}.container{width:min(100% - 32px,1200px);margin-inline:auto}.navbar,nav.navbar,header .navbar,header[role="banner"]{position:relative;z-index:1000;width:100%}.nav-container,.navbar .container{display:flex;align-items:center;justify-content:space-between;min-height:64px}.logo,.logo-link img{display:block;width:35px;height:35px;object-fit:contain}.nav-menu,#navMenu{list-style:none;margin:0;padding:0}.navbar a,.nav-menu a,#navMenu a,.navbar .nav-links a{color:inherit;text-decoration:none}.navbar .sub-menu,.nav-menu .sub-menu,#navMenu .sub-menu{display:none}.fa,.fas,.far,.fab,.fa-solid,.fa-regular,.fa-brands{display:inline-block;min-width:1em;text-align:center}html:not(#zappy-noop)[data-zappy-site-type="ecommerce"] .phone-header-btn,html:not(#zappy-noop) .navbar:has(.nav-ecommerce-icons)>.phone-header-btn{display:none!important;visibility:hidden!important;width:0!important;height:0!important;pointer-events:none!important}.zappy-preview-empty-store-cta{display:none!important;visibility:hidden!important;height:0!important;max-height:0!important;overflow:hidden!important;margin:0!important;padding:0!important;border:0!important;box-shadow:none!important}.zappy-catalog-menu{background:var(--surface-color,var(--surface,linear-gradient(135deg,#f8f9fa 0%,#fff 100%)));border-bottom:1px solid var(--border-color,#e5e7eb);padding:0;position:sticky;top:0;z-index:90}.zappy-catalog-menu[dir=rtl],.zappy-catalog-menu.rtl{direction:rtl}.zappy-catalog-menu[dir=ltr],.zappy-catalog-menu.ltr{direction:ltr}.catalog-menu-container{max-width:1440px;margin:0 auto;display:flex;align-items:center;gap:8px;padding:10px 24px;overflow:visible}.catalog-menu-categories,.catalog-menu-list{display:flex;align-items:center;gap:4px;flex-wrap:wrap;margin:0;padding:0;list-style:none}.catalog-menu-item{display:inline-flex;align-items:center;padding:8px 16px;font-size:14px;font-weight:500;color:var(--text-color,var(--text,#374151));text-decoration:none;border-radius:20px;white-space:nowrap}.catalog-menu-all{background:var(--primary-color,var(--primary,#111));color:var(--text-light,#fff)!important}.catalog-menu-parent{position:relative;display:inline-flex;align-items:center}.catalog-menu-trigger{display:inline-flex;align-items:center;gap:6px}.catalog-menu-chevron{flex-shrink:0}.catalog-menu-parent>.sub-menu{display:none!important;visibility:hidden!important;opacity:0!important;pointer-events:none!important}.hero-section,.index-hero-section,section[class*="hero"]{position:relative;overflow:hidden;min-height:560px}.hero-bg-wrapper,.hero-bg-image,section[class*="hero"] [class*="hero-bg"]{position:absolute;inset:0;width:100%;height:100%}.hero-bg-wrapper img,.hero-bg-image img,section[class*="hero"] [data-hero-bg],section[class*="hero"] img[data-hero-background="true"]{width:100%!important;height:100%!important;object-fit:cover!important;display:block}.hero-content,section[class*="hero"] .container{position:relative;z-index:2}@media(max-width:768px){:root{--header-height:72px;--total-header-height:72px;--zappy-mobile-menu-top:72px}html[data-zappy-site-type="ecommerce"] body{padding-top:var(--total-header-height,72px)}html[data-zappy-site-type="ecommerce"] body>nav.navbar,html[data-zappy-site-type="ecommerce"] body>.navbar:not(.zappy-catalog-menu){position:fixed!important;top:0;left:0;right:0;z-index:100000;width:100%;margin-bottom:0}.zappy-catalog-menu{position:fixed;top:var(--header-height,72px);left:0;right:0;z-index:99999}.nav-container,.navbar .container{min-height:60px}.nav-menu,#navMenu{max-width:100vw;overflow-x:hidden}.hero-section,.index-hero-section,section[class*="hero"]{min-height:100svh}.hero-bg-wrapper,.hero-bg-image,.hero-scrim{min-height:100svh}}
 </style>
-    <link rel="preload" href="/styles.css" as="style">
-    <link rel="stylesheet" href="/styles.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="/styles.css"></noscript>
+    <link rel="preload" href="/styles.css" as="style" />
+    <link rel="stylesheet" href="/styles.css" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="/styles.css" /></noscript>
     
 
     <style id="zappy-dropdown-submenu-styles">
@@ -353,12 +724,12 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
 
     <div class="mobile-search-panel" id="mobile-search-panel">
       <div class="search-wrapper">
-        <input type="text" id="mobile-search-input" placeholder="חיפוש מוצרים..." autocomplete="off">
+        <input type="text" id="mobile-search-input" placeholder="חיפוש מוצרים..." autocomplete="off" />
         <button class="search-submit" id="mobile-search-submit" title="חיפוש">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
         </button>
         <button class="close-search" id="close-mobile-search">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"></path></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
         </button>
       </div>
       <div class="search-results" id="mobile-search-results"></div>
@@ -369,41 +740,41 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
   <nav class="navbar" dir="rtl">
   <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
     <svg style="display:block !important" class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
-      <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+      <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
     </svg>
     <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display:none !important">
-      <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+      <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
     </svg>
   </button>
   <button class="phone-header-btn" data-phone="0534211370" aria-label="Call">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
     </svg>
   </button>
   <div class="nav-container">
     <div class="nav-right-group"><div class="nav-brand">
-      <a href="/" class="logo-link"><img class="logo" src="/assets/site--------------image-1.webp" alt="casa verona" decoding="async" width="35" height="35"></a>
+      <a href="/" class="logo-link"><img class="logo" src="/assets/site--------------image-1.webp" alt="casa verona" decoding="async" width="35" height="35" /></a>
     </div><ul class="nav-menu" id="navMenu">
 
     <li class="menu-item-has-children zappy-products-dropdown">
       <a href="/products">
         מוצרים
         <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M6 9l6 6 6-6"></path>
+          <path d="M6 9l6 6 6-6"/>
         </svg>
       </a>
-      <ul class="sub-menu" id="zappy-nav-category-links">
+      <ul class="sub-menu" id="zappy-nav-category-links" dir="rtl">
         <li><a href="/products" data-i18n="ecom_products">מוצרים</a></li>
         <!-- Categories will be loaded dynamically -->
       </ul>
     </li>
   <li><a href="/">בית</a></li><li><a href="/collections">קולקציות</a></li><li><a href="/design-gallery">גלריית עיצוב</a></li><li><a href="/about">אודות</a></li><li><a href="/faq">שאלות נפוצות</a></li><li><a href="/contact">צור קשר</a></li></ul><div class="nav-ecommerce-icons nav-icons-left"><div class="nav-search-box">
-    <input type="text" class="nav-search-input" id="nav-search-input" placeholder="חיפוש מוצרים..." autocomplete="off">
+    <input type="text" class="nav-search-input" id="nav-search-input" placeholder="חיפוש מוצרים..." autocomplete="off" />
     <button class="nav-search-btn" id="nav-search-btn" title="חיפוש">
-      <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>
+      <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
     </button>
     <div class="nav-search-results" id="nav-search-results"></div>
-  </div></div><div class="nav-ecommerce-icons nav-icons-right"><button class="nav-search-toggle" id="mobile-search-toggle" title="חיפוש"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg></button></div></div>
+  </div></div><div class="nav-ecommerce-icons nav-icons-right"><button class="nav-search-toggle" id="mobile-search-toggle" title="חיפוש"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></button></div></div>
     
     
   </div>
@@ -412,9 +783,7 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
     <nav class="zappy-catalog-menu rtl" id="zappy-catalog-menu" dir="rtl" style="display:none">
       <div class="catalog-menu-container">
         <a href="/products" class="catalog-menu-item catalog-menu-all">מוצרים</a>
-        <div class="catalog-menu-categories" id="zappy-category-links">
-          <!-- Categories will be loaded dynamically -->
-        </div>
+        <div class="catalog-menu-categories" id="zappy-category-links" dir="rtl" data-zappy-catalog-baked="1"></div>
       </div>
     </nav>
   
@@ -883,9 +1252,9 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
             <p>הצצה אל תוך עולם העיצוב של casa verona – חללים מעוררי השראה, קווים נקיים ואווירה חמימה שמזמינה אתכם לגור ביופי.</p>
             <div class="header-ornament" aria-hidden="true">
                 <svg data-element-type="icon" data-icon-type="svg" viewBox="0 0 80 20" width="80" height="20" xmlns="http://www.w3.org/2000/svg">
-                    <line x1="0" y1="10" x2="35" y2="10" stroke="var(--accent)" stroke-width="1.5"></line>
-                    <circle cx="40" cy="10" r="3" fill="var(--accent)"></circle>
-                    <line x1="45" y1="10" x2="80" y2="10" stroke="var(--accent)" stroke-width="1.5"></line>
+                    <line x1="0" y1="10" x2="35" y2="10" stroke="var(--accent)" stroke-width="1.5"/>
+                    <circle cx="40" cy="10" r="3" fill="var(--accent)"/>
+                    <line x1="45" y1="10" x2="80" y2="10" stroke="var(--accent)" stroke-width="1.5"/>
                 </svg>
             </div>
         </div>
@@ -894,7 +1263,7 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
             <!-- Oversized Living Room Image -->
             <div class="gallery-item gallery-item--large" data-grid-item-index="0" style="overflow: hidden !important;">
                 <div class="gallery-item-inner">
-                    <div data-zappy-zoom-wrapper="true" data-element-id="img-1783974974685-30n456gd4" data-element-type="image" data-zappy-zoom-wrapper-width="628px" data-zappy-zoom-wrapper-height="584px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-wrapper-align="center" style="position: relative !important; overflow: hidden !important; width: 628px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 584px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true"><img fetchpriority="low" data-placeholder="design-gallery-gallery-image-1" data-context="A luxurious and spacious living room setup by casa verona featuring a large L-shaped sofa in warm beige fabric, a marble coffee table, elegant sideboard, and soft natural daylight streaming through sheer curtains. The atmosphere is refined, calm, and inviting." width="800" height="600" src="/assets/casa-verona-furniture-home-decor-gallery-upload-1783975020058-39tifq.webp" alt="סלון יוקרתי בעיצוב casa verona" data-element-type="image" data-element-id="img-1783974974685-30n456gd4" style="object-position: 63% 77% !important; width: 100% !important; height: 126.027397% !important; object-fit: fill !important; max-width: none !important; display: block !important; margin: 0px !important; left: 0% !important; top: -20.041096% !important; max-height: none !important;" data-zappy-original-width="628" data-zappy-original-height="584" data-zappy-zoom="0.8" data-zappy-object-position="63% 77%" loading="lazy" decoding="async"></div>
+                    <div data-zappy-zoom-wrapper="true" data-element-id="img-1783974974685-30n456gd4" data-element-type="image" data-zappy-zoom-wrapper-width="628px" data-zappy-zoom-wrapper-height="584px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-wrapper-align="center" style="position: relative !important; overflow: hidden !important; width: 628px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 584px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true"><img fetchpriority="low" data-placeholder="design-gallery-gallery-image-1" data-context="A luxurious and spacious living room setup by casa verona featuring a large L-shaped sofa in warm beige fabric, a marble coffee table, elegant sideboard, and soft natural daylight streaming through sheer curtains. The atmosphere is refined, calm, and inviting." width="800" height="600" src="/assets/casa-verona-furniture-home-decor-gallery-upload-1783975020058-39tifq.webp" alt="סלון יוקרתי בעיצוב casa verona" data-element-type="image" data-element-id="img-1783974974685-30n456gd4" style="object-position: 63% 77% !important; width: 100% !important; height: 126.027397% !important; object-fit: fill !important; max-width: none !important; display: block !important; margin: 0px !important; left: 0% !important; top: -20.041096% !important; max-height: none !important;" data-zappy-original-width="628" data-zappy-original-height="584" data-zappy-zoom="0.8" data-zappy-object-position="63% 77%" loading="lazy" decoding="async" /></div>
                     <div class="gallery-caption">
                         <span class="caption-title" style="color: rgb(36, 33, 30) !important;">הסלון המושלם</span>
                         <span class="caption-sub" style="color: rgb(36, 33, 30) !important;">אוסף סלונים</span>
@@ -905,7 +1274,7 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
             <!-- Dining Area Image -->
             <div class="gallery-item gallery-item--tall" data-grid-item-index="1">
                 <div class="gallery-item-inner">
-                    <img loading="lazy" decoding="async" data-placeholder="design-gallery-gallery-image-2" data-context="An elegant dining room by casa verona with a long wooden dining table, upholstered chairs in a soft taupe color, a modern chandelier above, and a textured rug underneath. Warm neutral tones dominate the scene." width="600" height="800" src="/assets/site-design-gallery-gallery-image-2.webp" alt="פינת אוכל אלגנטית" data-element-type="image" data-element-id="img-1783974974685-8swx4phjc" fetchpriority="low">
+                    <img loading="lazy" decoding="async" data-placeholder="design-gallery-gallery-image-2" data-context="An elegant dining room by casa verona with a long wooden dining table, upholstered chairs in a soft taupe color, a modern chandelier above, and a textured rug underneath. Warm neutral tones dominate the scene." width="600" height="800" src="/assets/site-design-gallery-gallery-image-2.webp" alt="פינת אוכל אלגנטית" data-element-type="image" data-element-id="img-1783974974685-8swx4phjc" fetchpriority="low" />
                     <div class="gallery-caption">
                         <span class="caption-title" style="color: rgb(36, 33, 30) !important;">אירוח בסטייל</span>
                         <span class="caption-sub" style="color: rgb(36, 33, 30) !important;">שולחנות אוכל</span>
@@ -916,7 +1285,7 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
             <!-- Bedroom Image -->
             <div class="gallery-item gallery-item--wide" data-grid-item-index="2" style="overflow: hidden !important;">
                 <div class="gallery-item-inner">
-                    <div data-zappy-zoom-wrapper="true" data-element-id="img-1783974974685-5xbvtey5x" data-element-type="image" data-zappy-zoom-wrapper-width="628px" data-zappy-zoom-wrapper-height="280px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-wrapper-align="center" style="position: relative !important; overflow: hidden !important; width: 628px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 280px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true"><img decoding="async" data-placeholder="design-gallery-gallery-image-3" data-context="A serene bedroom interior by casa verona showcasing a plush upholstered bed with a tall headboard, crisp white linens, wooden nightstands, and soft ambient lighting creating a peaceful retreat." width="800" height="500" src="/assets/casa-verona-furniture-home-decor-gallery-upload-1783975139918-ptuhkg.webp" alt="חדר שינה מעוצב" data-element-type="image" data-element-id="img-1783974974685-5xbvtey5x" style="object-position: 50% 50% !important; width: 100% !important; height: 156.988417% !important; object-fit: fill !important; max-width: none !important; display: block !important; margin: 0px !important; left: 0% !important; top: -28.494208% !important; max-height: none !important;" data-zappy-original-width="628" data-zappy-original-height="280" data-zappy-zoom="0.7" data-zappy-object-position="50% 50%" loading="lazy" fetchpriority="low"></div>
+                    <div data-zappy-zoom-wrapper="true" data-element-id="img-1783974974685-5xbvtey5x" data-element-type="image" data-zappy-zoom-wrapper-width="628px" data-zappy-zoom-wrapper-height="280px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-wrapper-align="center" style="position: relative !important; overflow: hidden !important; width: 628px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 280px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true"><img decoding="async" data-placeholder="design-gallery-gallery-image-3" data-context="A serene bedroom interior by casa verona showcasing a plush upholstered bed with a tall headboard, crisp white linens, wooden nightstands, and soft ambient lighting creating a peaceful retreat." width="800" height="500" src="/assets/casa-verona-furniture-home-decor-gallery-upload-1783975139918-ptuhkg.webp" alt="חדר שינה מעוצב" data-element-type="image" data-element-id="img-1783974974685-5xbvtey5x" style="object-position: 50% 50% !important; width: 100% !important; height: 156.988417% !important; object-fit: fill !important; max-width: none !important; display: block !important; margin: 0px !important; left: 0% !important; top: -28.494208% !important; max-height: none !important;" data-zappy-original-width="628" data-zappy-original-height="280" data-zappy-zoom="0.7" data-zappy-object-position="50% 50%" loading="lazy" fetchpriority="low" /></div>
                     <div class="gallery-caption">
                         <span class="caption-title" style="color: rgb(36, 33, 30) !important;"></span><span style="color: #ffffff !important"><span class="caption-title">מפלט אישי</span>
                         <span class="caption-sub"></span></span><span class="caption-sub" style="color: rgb(36, 33, 30) !important;"><span style="color: #ffffff !important">מיטות</span></span>
@@ -927,7 +1296,7 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
             <!-- Detail Shot 1: Coffee Table Styling -->
             <div class="gallery-item" data-grid-item-index="3" style="overflow: hidden !important;">
                 <div class="gallery-item-inner">
-                    <div data-zappy-zoom-wrapper="true" data-element-id="img-1783974974685-hdwb03d2i" data-element-type="image" data-zappy-zoom-wrapper-width="302px" data-zappy-zoom-wrapper-height="280px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-wrapper-align="center" style="position: relative !important; overflow: hidden !important; width: 302px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 280px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true"><img decoding="async" data-placeholder="design-gallery-gallery-image-4" data-context="A close-up detail shot of a round coffee table by casa verona, styled with a ceramic vase, a stack of art books, and a small decorative tray. The lighting is soft and natural." width="500" height="500" src="/assets/casa-verona-furniture-home-decor-gallery-upload-1783975216213-cq7v23.webp" alt="שולחן קפה מעוצב" data-element-type="image" data-element-id="img-1783974974685-hdwb03d2i" style="object-position: 50% 72% !important; width: 100% !important; height: 100% !important; object-fit: cover !important; max-width: none !important; display: block !important; margin: 0px !important; left: 0% !important; top: 0% !important; max-height: none !important;" data-zappy-original-width="302" data-zappy-original-height="280" data-zappy-zoom="1" data-zappy-object-position="50% 72%" loading="lazy" fetchpriority="low"></div>
+                    <div data-zappy-zoom-wrapper="true" data-element-id="img-1783974974685-hdwb03d2i" data-element-type="image" data-zappy-zoom-wrapper-width="302px" data-zappy-zoom-wrapper-height="280px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-wrapper-align="center" style="position: relative !important; overflow: hidden !important; width: 302px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 280px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true"><img decoding="async" data-placeholder="design-gallery-gallery-image-4" data-context="A close-up detail shot of a round coffee table by casa verona, styled with a ceramic vase, a stack of art books, and a small decorative tray. The lighting is soft and natural." width="500" height="500" src="/assets/casa-verona-furniture-home-decor-gallery-upload-1783975216213-cq7v23.webp" alt="שולחן קפה מעוצב" data-element-type="image" data-element-id="img-1783974974685-hdwb03d2i" style="object-position: 50% 72% !important; width: 100% !important; height: 100% !important; object-fit: cover !important; max-width: none !important; display: block !important; margin: 0px !important; left: 0% !important; top: 0% !important; max-height: none !important;" data-zappy-original-width="302" data-zappy-original-height="280" data-zappy-zoom="1" data-zappy-object-position="50% 72%" loading="lazy" fetchpriority="low" /></div>
                     <div class="gallery-caption">
                         <span class="caption-title" style="color: rgb(36, 33, 30) !important;">פרטים קטנים</span>
                         <span class="caption-sub" style="color: rgb(36, 33, 30) !important;">שולחנות סלון</span>
@@ -938,7 +1307,7 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
             <!-- Detail Shot 2: Bar Stools -->
             <div class="gallery-item" data-grid-item-index="4" style="overflow: hidden !important;">
                 <div class="gallery-item-inner">
-                    <div data-zappy-zoom-wrapper="true" data-element-id="img-1783974974685-770bax12e" data-element-type="image" data-zappy-zoom-wrapper-width="302px" data-zappy-zoom-wrapper-height="280px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-wrapper-align="center" style="position: relative !important; overflow: hidden !important; width: 302px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 280px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true"><img decoding="async" data-placeholder="design-gallery-gallery-image-5" data-context="A stylish kitchen island with two elegant bar stools by casa verona, featuring velvet upholstery and brass footrests. The background shows a modern kitchen with marble countertops." width="500" height="500" src="/assets/casa-verona-furniture-home-decor-gallery-upload-1783974861435-p01n9i.webp" alt="כיסאות בר יוקרתיים" data-element-type="image" data-element-id="img-1783974974685-770bax12e" style="object-position: 52% 100% !important; width: 100% !important; height: 132.607784% !important; object-fit: fill !important; max-width: none !important; display: block !important; margin: 0px !important; left: 0% !important; top: -32.607784% !important; max-height: none !important;" data-zappy-original-width="302" data-zappy-original-height="280" data-zappy-zoom="0.9" data-zappy-object-position="52% 100%" loading="lazy" fetchpriority="low"></div>
+                    <div data-zappy-zoom-wrapper="true" data-element-id="img-1783974974685-770bax12e" data-element-type="image" data-zappy-zoom-wrapper-width="302px" data-zappy-zoom-wrapper-height="280px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-wrapper-align="center" style="position: relative !important; overflow: hidden !important; width: 302px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 280px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true"><img decoding="async" data-placeholder="design-gallery-gallery-image-5" data-context="A stylish kitchen island with two elegant bar stools by casa verona, featuring velvet upholstery and brass footrests. The background shows a modern kitchen with marble countertops." width="500" height="500" src="/assets/casa-verona-furniture-home-decor-gallery-upload-1783974861435-p01n9i.webp" alt="כיסאות בר יוקרתיים" data-element-type="image" data-element-id="img-1783974974685-770bax12e" style="object-position: 52% 100% !important; width: 100% !important; height: 132.607784% !important; object-fit: fill !important; max-width: none !important; display: block !important; margin: 0px !important; left: 0% !important; top: -32.607784% !important; max-height: none !important;" data-zappy-original-width="302" data-zappy-original-height="280" data-zappy-zoom="0.9" data-zappy-object-position="52% 100%" loading="lazy" fetchpriority="low" /></div>
                     <div class="gallery-caption">
                         <span class="caption-title" style="color: rgb(36, 33, 30) !important;">י</span><span style="color: #f5f5dc !important"><span class="caption-title">שיבה בגובה</span>
                         <span class="caption-sub">כיסאות בר</span></span><span class="caption-sub" style="color: rgb(36, 33, 30) !important;"></span>
@@ -949,7 +1318,7 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
             <!-- Detail Shot 3: Sideboard Decor -->
             <div class="gallery-item" data-grid-item-index="5" style="overflow: hidden !important;">
                 <div class="gallery-item-inner">
-                    <div data-zappy-zoom-wrapper="true" data-element-id="img-1783974974685-akatbpvzo" data-element-type="image" data-zappy-zoom-wrapper-width="302px" data-zappy-zoom-wrapper-height="280px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-wrapper-align="center" style="position: relative !important; overflow: hidden !important; width: 302px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 280px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true"><img decoding="async" data-placeholder="design-gallery-gallery-image-6" data-context="A beautifully styled sideboard by casa verona featuring a large round mirror above, decorative vases, and a table lamp. The wood finish is rich and warm." width="500" height="500" src="/assets/casa-verona-furniture-home-decor-gallery-upload-1783975483470-qj9n6v.webp" alt="מזנון מעוצב" data-element-type="image" data-element-id="img-1783974974685-akatbpvzo" style="object-position: 51% 63% !important; width: 110% !important; height: 112.059369% !important; object-fit: cover !important; max-width: none !important; display: block !important; margin: 0px !important; left: -5.1% !important; top: -7.597403% !important; max-height: none !important;" data-zappy-original-width="302" data-zappy-original-height="280" data-zappy-zoom="1.1" data-zappy-object-position="51% 63%" loading="lazy" fetchpriority="low"></div>
+                    <div data-zappy-zoom-wrapper="true" data-element-id="img-1783974974685-akatbpvzo" data-element-type="image" data-zappy-zoom-wrapper-width="302px" data-zappy-zoom-wrapper-height="280px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-wrapper-align="center" style="position: relative !important; overflow: hidden !important; width: 302px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 280px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true"><img decoding="async" data-placeholder="design-gallery-gallery-image-6" data-context="A beautifully styled sideboard by casa verona featuring a large round mirror above, decorative vases, and a table lamp. The wood finish is rich and warm." width="500" height="500" src="/assets/casa-verona-furniture-home-decor-gallery-upload-1783975483470-qj9n6v.webp" alt="מזנון מעוצב" data-element-type="image" data-element-id="img-1783974974685-akatbpvzo" style="object-position: 51% 63% !important; width: 110% !important; height: 112.059369% !important; object-fit: cover !important; max-width: none !important; display: block !important; margin: 0px !important; left: -5.1% !important; top: -7.597403% !important; max-height: none !important;" data-zappy-original-width="302" data-zappy-original-height="280" data-zappy-zoom="1.1" data-zappy-object-position="51% 63%" loading="lazy" fetchpriority="low" /></div>
                     <div class="gallery-caption">
                         <span class="caption-title" style="color: rgb(36, 33, 30) !important;"><span style="color: #ffffff !important">אחסון יוקרתי</span></span>
                         <span class="caption-sub" style="color: #ffffff !important">מזנונים</span>
@@ -960,7 +1329,7 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
             <!-- Detail Shot 4: Accent Chair -->
             <div class="gallery-item" data-grid-item-index="6" style="overflow: hidden !important;">
                 <div class="gallery-item-inner">
-                    <div data-zappy-zoom-wrapper="true" data-element-id="img-1783974974685-d7sfbg2zq" data-element-type="image" data-zappy-zoom-wrapper-width="302px" data-zappy-zoom-wrapper-height="280px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-wrapper-align="center" style="position: relative !important; overflow: hidden !important; width: 302px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 280px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true"><img decoding="async" data-placeholder="design-gallery-gallery-image-7" data-context="A close-up of an accent chair by casa verona with curved wooden armrests and a textured boucle fabric in cream. Placed near a window with soft daylight highlighting the texture." width="500" height="500" src="/assets/casa-verona-furniture-home-decor-gallery-upload-1783975381069-pcv0wt.webp" alt="כורסת אקסנט" data-element-type="image" data-element-id="img-1783974974685-d7sfbg2zq" style="object-position: 57% 71% !important; width: 100% !important; height: 100% !important; object-fit: cover !important; max-width: none !important; display: block !important; margin: 0px !important; left: 0% !important; top: 0% !important; max-height: none !important;" data-zappy-original-width="302" data-zappy-original-height="280" data-zappy-zoom="1" data-zappy-object-position="57% 71%" loading="lazy" fetchpriority="low"></div>
+                    <div data-zappy-zoom-wrapper="true" data-element-id="img-1783974974685-d7sfbg2zq" data-element-type="image" data-zappy-zoom-wrapper-width="302px" data-zappy-zoom-wrapper-height="280px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-wrapper-align="center" style="position: relative !important; overflow: hidden !important; width: 302px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 280px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true"><img decoding="async" data-placeholder="design-gallery-gallery-image-7" data-context="A close-up of an accent chair by casa verona with curved wooden armrests and a textured boucle fabric in cream. Placed near a window with soft daylight highlighting the texture." width="500" height="500" src="/assets/casa-verona-furniture-home-decor-gallery-upload-1783975381069-pcv0wt.webp" alt="כורסת אקסנט" data-element-type="image" data-element-id="img-1783974974685-d7sfbg2zq" style="object-position: 57% 71% !important; width: 100% !important; height: 100% !important; object-fit: cover !important; max-width: none !important; display: block !important; margin: 0px !important; left: 0% !important; top: 0% !important; max-height: none !important;" data-zappy-original-width="302" data-zappy-original-height="280" data-zappy-zoom="1" data-zappy-object-position="57% 71%" loading="lazy" fetchpriority="low" /></div>
                     <div class="gallery-caption" style="text-align: end;">
                         <span class="caption-title" style="color: rgb(36, 33, 30) !important;">נגיעה של רכות</span>
                         <span class="caption-sub" style="color: rgb(36, 33, 30) !important;">כיסאות</span>
@@ -971,7 +1340,7 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
             <!-- Detail Shot 5: Lighting & Ambiance -->
             <div class="gallery-item" data-grid-item-index="7">
                 <div class="gallery-item-inner">
-                    <img loading="lazy" decoding="async" data-placeholder="design-gallery-gallery-image-8" data-context="An ambient shot of a living corner by casa verona featuring a floor lamp with a warm glow, a small side table, and a comfortable armchair. The mood is cozy and sophisticated." width="500" height="500" src="/assets/site-design-gallery-gallery-image-8.webp" alt="תאורה ואווירה" data-element-type="image" data-element-id="img-1783974974685-mec0o1f0k" style="object-position: 50% 50%;" fetchpriority="low">
+                    <img loading="lazy" decoding="async" data-placeholder="design-gallery-gallery-image-8" data-context="An ambient shot of a living corner by casa verona featuring a floor lamp with a warm glow, a small side table, and a comfortable armchair. The mood is cozy and sophisticated." width="500" height="500" src="/assets/site-design-gallery-gallery-image-8.webp" alt="תאורה ואווירה" data-element-type="image" data-element-id="img-1783974974685-mec0o1f0k" style="object-position: 50% 50%;" fetchpriority="low" />
                     <div class="gallery-caption" style="text-align: end;">
                         <span class="caption-title" style="color: rgb(36, 33, 30) !important;"><span style="color: #f5f5dc !important">אווירה חמימה</span></span>
                         <span class="caption-sub" style="color: #f5f5dc !important">תאורה ואקססוריז</span>
@@ -984,7 +1353,7 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
     <!-- Bottom Wave Divider -->
     <div class="gallery-divider-wrapper">
         <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0,80 L0,35 Q50,28 100,35 T200,32 Q250,35 300,28 T400,35 Q450,32 500,35 T600,28 Q650,35 700,32 T800,35 Q850,28 900,35 T1000,32 Q1050,35 1100,28 T1200,35 L1200,80 Z" fill="var(--bg-light)"></path>
+            <path d="M0,80 L0,35 Q50,28 100,35 T200,32 Q250,35 300,28 T400,35 Q450,32 500,35 T600,28 Q650,35 700,32 T800,35 Q850,28 900,35 T1000,32 Q1050,35 1100,28 T1200,35 L1200,80 Z" fill="var(--bg-light)"/>
         </svg>
     </div>
 </section>
@@ -996,11 +1365,11 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
     <div class="dg-row dg-row--image-start">
       <div class="dg-row__media">
         <div class="dg-media__main">
-          <div data-zappy-zoom-wrapper="true" data-element-id="img-1783974974685-pz98jn8db" data-element-type="image" data-zappy-zoom-wrapper-width="642px" data-zappy-zoom-wrapper-height="441px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-wrapper-align="center" style="position: relative !important; overflow: hidden !important; width: 642px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 441px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true"><img decoding="async" data-placeholder="design-gallery-portfolio-image-1" data-context="Classic modern living room with a large beige sectional sofa, marble coffee table, and warm ambient lighting in a luxury interior showroom setting" width="600" height="400" src="/assets/casa-verona-furniture-home-decor-gallery-upload-1783975900315-g68ntn.webp?t=1783975916332" alt="סלון קלאסי מודרני מרווח עם ספה בגוון בז" ושולחן="" קפה="" משיש'="" data-element-type="image" data-element-id="img-1783974974685-pz98jn8db" style="object-position: 56% 72% !important; margin: 0px !important; left: 0% !important; top: 0% !important; width: 100% !important; height: 100% !important; max-width: none !important; max-height: none !important; display: block !important; object-fit: fill !important;" data-zappy-zoom="0.5" data-zappy-original-width="642.40625" data-zappy-original-height="441" data-zappy-object-position="56% 72%" loading="lazy" fetchpriority="low"></div>
+          <div data-zappy-zoom-wrapper="true" data-element-id="img-1783974974685-pz98jn8db" data-element-type="image" data-zappy-zoom-wrapper-width="642px" data-zappy-zoom-wrapper-height="441px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-wrapper-align="center" style="position: relative !important; overflow: hidden !important; width: 642px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 441px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true"><img decoding="async" data-placeholder="design-gallery-portfolio-image-1" data-context="Classic modern living room with a large beige sectional sofa, marble coffee table, and warm ambient lighting in a luxury interior showroom setting" width="600" height="400" src="/assets/casa-verona-furniture-home-decor-gallery-upload-1783975900315-g68ntn.webp?t=1783975916332" alt="סלון קלאסי מודרני מרווח עם ספה בגוון בז" ושולחן קפה משיש' data-element-type="image" data-element-id="img-1783974974685-pz98jn8db" style="object-position: 56% 72% !important; margin: 0px !important; left: 0% !important; top: 0% !important; width: 100% !important; height: 100% !important; max-width: none !important; max-height: none !important; display: block !important; object-fit: fill !important;" data-zappy-zoom="0.5" data-zappy-original-width="642.40625" data-zappy-original-height="441" data-zappy-object-position="56% 72%" loading="lazy" fetchpriority="low" /></div>
         </div>
         <div class="dg-media__details zappy-preserve-css-grid" id="zappy-auto-grid-1783974974706-ohy5an" data-zappy-auto-grid="true" data-original-item-width="313" data-original-gap="16px" style="display: grid; --zappy-grid-cols: repeat(auto-fit, minmax(min(100%, 313px), 1fr)); grid-template-columns: repeat(auto-fit, minmax(min(100%, 313px), 1fr)); align-items: stretch !important;" data-zappy-explicit-columns="true">
-          <div data-zappy-media-grid-item="true" style="position: relative; display: block; height: 219px !important; overflow: hidden !important;" class="zappy-grid-item-media-only" data-grid-item-index="0" data-zappy-original-height="219"><div data-zappy-zoom-wrapper="true" data-element-id="img-1783974974685-hbcrf1hbr" data-element-type="image" data-zappy-zoom-wrapper-width="313px" data-zappy-zoom-wrapper-height="219px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-wrapper-align="center" style="position: relative !important; overflow: hidden !important; width: 313px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 219px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true"><img decoding="async" data-placeholder="design-gallery-portfolio-image-2" data-context="Close-up detail of a textured bouclé throw pillow on a velvet sofa, soft golden hour light in a luxury home" width="300" height="200" src="/assets/casa-verona-furniture-home-decor-gallery-upload-1783976260037-w849u4.webp" alt="תקריב של כרית נוי מבד בוקלה על ספת קטיפה" data-element-type="image" data-element-id="img-1783974974685-hbcrf1hbr" style="object-position: 49% 71% !important; margin: 0px !important; left: 0% !important; top: 0% !important; width: 100% !important; height: 100% !important; max-width: none !important; max-height: none !important; display: block !important; object-fit: cover !important;" data-zappy-zoom="1" data-zappy-original-width="313.203125" data-zappy-original-height="219" data-zappy-object-position="49% 71%" loading="lazy" fetchpriority="low"></div></div>
-          <div data-zappy-media-grid-item="true" style="position: relative; display: block; height: 219px !important; overflow: hidden !important;" class="zappy-grid-item-media-only" data-grid-item-index="1" data-zappy-original-height="219"><div data-zappy-zoom-wrapper="true" data-element-id="img-1783974974685-htiejlqeq" data-element-type="image" data-zappy-zoom-wrapper-width="313px" data-zappy-zoom-wrapper-height="219px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-wrapper-align="center" style="position: relative !important; overflow: hidden !important; width: 313px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 219px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true"><img decoding="async" data-placeholder="design-gallery-portfolio-image-3" data-context="Elegant marble and brass side table with a sculptural vase and dried pampas grass arrangement" width="300" height="200" src="/assets/casa-verona-furniture-home-decor-gallery-upload-1783976008930-kxpsdn.webp" alt="שולחן צד משיש ופליז עם אגרטל פיסולי ועשבי פמפס" data-element-type="image" data-element-id="img-1783974974685-htiejlqeq" style="object-position: 52% 82% !important; margin: 0px !important; left: -2.445976% !important; top: -69.961646% !important; width: 104.7038% !important; height: 185.31908% !important; max-width: none !important; max-height: none !important; display: block !important; object-fit: cover !important;" data-zappy-zoom="1.047038" data-zappy-original-width="313.203125" data-zappy-original-height="219" data-zappy-object-position="52% 82%" loading="lazy" fetchpriority="low"></div></div>
+          <div data-zappy-media-grid-item="true" style="position: relative; display: block; height: 219px !important; overflow: hidden !important;" class="zappy-grid-item-media-only" data-grid-item-index="0" data-zappy-original-height="219"><div data-zappy-zoom-wrapper="true" data-element-id="img-1783974974685-hbcrf1hbr" data-element-type="image" data-zappy-zoom-wrapper-width="313px" data-zappy-zoom-wrapper-height="219px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-wrapper-align="center" style="position: relative !important; overflow: hidden !important; width: 313px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 219px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true"><img decoding="async" data-placeholder="design-gallery-portfolio-image-2" data-context="Close-up detail of a textured bouclé throw pillow on a velvet sofa, soft golden hour light in a luxury home" width="300" height="200" src="/assets/casa-verona-furniture-home-decor-gallery-upload-1783976260037-w849u4.webp" alt="תקריב של כרית נוי מבד בוקלה על ספת קטיפה" data-element-type="image" data-element-id="img-1783974974685-hbcrf1hbr" style="object-position: 49% 71% !important; margin: 0px !important; left: 0% !important; top: 0% !important; width: 100% !important; height: 100% !important; max-width: none !important; max-height: none !important; display: block !important; object-fit: cover !important;" data-zappy-zoom="1" data-zappy-original-width="313.203125" data-zappy-original-height="219" data-zappy-object-position="49% 71%" loading="lazy" fetchpriority="low" /></div></div>
+          <div data-zappy-media-grid-item="true" style="position: relative; display: block; height: 219px !important; overflow: hidden !important;" class="zappy-grid-item-media-only" data-grid-item-index="1" data-zappy-original-height="219"><div data-zappy-zoom-wrapper="true" data-element-id="img-1783974974685-htiejlqeq" data-element-type="image" data-zappy-zoom-wrapper-width="313px" data-zappy-zoom-wrapper-height="219px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-wrapper-align="center" style="position: relative !important; overflow: hidden !important; width: 313px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 219px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true"><img decoding="async" data-placeholder="design-gallery-portfolio-image-3" data-context="Elegant marble and brass side table with a sculptural vase and dried pampas grass arrangement" width="300" height="200" src="/assets/casa-verona-furniture-home-decor-gallery-upload-1783976008930-kxpsdn.webp" alt="שולחן צד משיש ופליז עם אגרטל פיסולי ועשבי פמפס" data-element-type="image" data-element-id="img-1783974974685-htiejlqeq" style="object-position: 52% 82% !important; margin: 0px !important; left: -2.445976% !important; top: -69.961646% !important; width: 104.7038% !important; height: 185.31908% !important; max-width: none !important; max-height: none !important; display: block !important; object-fit: cover !important;" data-zappy-zoom="1.047038" data-zappy-original-width="313.203125" data-zappy-original-height="219" data-zappy-object-position="52% 82%" loading="lazy" fetchpriority="low" /></div></div>
         </div>
       </div>
       <div class="dg-row__content">
@@ -1010,7 +1379,7 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
         </p>
         <p class="zappy-editable"><a href="#category-living" class="dg-content__link" style="color: rgb(36, 33, 30) !important;">
           <span style="color: #1A1A1A !important">גלו את קולקציית הסלונים</span>
-          <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 4L7 8L11 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 4L7 8L11 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
       </p></div>
     </div>
@@ -1024,16 +1393,16 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
         </p>
         <p><a href="#category-dining" class="dg-content__link" style="color: rgb(36, 33, 30) !important;">
           <span style="color: #1A1A1A !important">גלו את קולקציית פינות האוכל</span>
-          <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="cursor: pointer;"><path d="M11 4L7 8L11 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="cursor: pointer;"><path d="M11 4L7 8L11 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
       </p></div>
       <div class="dg-row__media">
         <div class="dg-media__main">
-          <div data-zappy-zoom-wrapper="true" data-element-id="img-1783974974685-7wu1vqa3s" data-element-type="image" data-zappy-zoom-wrapper-width="662px" data-zappy-zoom-wrapper-height="441px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-wrapper-align="center" style="position: relative !important; overflow: hidden !important; width: 662px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 441px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true"><img loading="lazy" decoding="async" data-placeholder="design-gallery-portfolio-image-4" data-context="Elegant dining room with a long dark wood table, upholstered chairs, and a crystal chandelier in a refined interior" width="600" height="400" src="/assets/site-design-gallery-portfolio-image-4.webp" alt="חדר אוכל אלגנטי עם שולחן עץ כהה, כיסאות מרופדים ונברשת קריסטל" data-element-type="image" data-element-id="img-1783974974685-7wu1vqa3s" style="object-position: 50% 50%; margin: 0px !important; left: -1.26115% !important; top: -4.510777% !important; width: 102.5223% !important; height: 109.021554% !important; max-width: none !important; max-height: none !important; display: block !important; object-fit: cover !important;" data-zappy-zoom="1.025223" fetchpriority="low"></div>
+          <div data-zappy-zoom-wrapper="true" data-element-id="img-1783974974685-7wu1vqa3s" data-element-type="image" data-zappy-zoom-wrapper-width="662px" data-zappy-zoom-wrapper-height="441px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-wrapper-align="center" style="position: relative !important; overflow: hidden !important; width: 662px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 441px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true"><img loading="lazy" decoding="async" data-placeholder="design-gallery-portfolio-image-4" data-context="Elegant dining room with a long dark wood table, upholstered chairs, and a crystal chandelier in a refined interior" width="600" height="400" src="/assets/site-design-gallery-portfolio-image-4.webp" alt="חדר אוכל אלגנטי עם שולחן עץ כהה, כיסאות מרופדים ונברשת קריסטל" data-element-type="image" data-element-id="img-1783974974685-7wu1vqa3s" style="object-position: 50% 50%; margin: 0px !important; left: -1.26115% !important; top: -4.510777% !important; width: 102.5223% !important; height: 109.021554% !important; max-width: none !important; max-height: none !important; display: block !important; object-fit: cover !important;" data-zappy-zoom="1.025223" fetchpriority="low" /></div>
         </div>
         <div class="dg-media__details zappy-preserve-css-grid" id="zappy-auto-grid-1783974974709-031kjz" data-zappy-auto-grid="true" data-original-item-width="313" data-original-gap="16px" style="display: grid; --zappy-grid-cols: repeat(auto-fit, minmax(min(100%, 313px), 1fr)); grid-template-columns: repeat(auto-fit, minmax(min(100%, 313px), 1fr)); align-items: stretch !important;" data-zappy-explicit-columns="true">
-          <div data-zappy-media-grid-item="true" style="position: relative; display: block;" class="zappy-grid-item-media-only" data-grid-item-index="0"><img loading="lazy" decoding="async" data-placeholder="design-gallery-portfolio-image-5" data-context="Detail of a polished wooden dining table surface with a single elegant place setting and folded linen napkin" width="300" height="200" src="/assets/site-design-gallery-portfolio-image-5.webp" alt="תקריב של משטח שולחן אוכל מעץ מלוטש עם עריכת מקום אלגנטית" data-element-type="image" data-element-id="img-1783974974685-xu6r8mu0f" fetchpriority="low"></div>
-          <div data-zappy-media-grid-item="true" style="position: relative; display: block;" class="zappy-grid-item-media-only" data-grid-item-index="1"><div data-zappy-zoom-wrapper="true" data-element-id="img-1783974974685-zzs3564ve" data-element-type="image" data-zappy-zoom-wrapper-width="313px" data-zappy-zoom-wrapper-height="219px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-wrapper-align="center" style="position: relative !important; overflow: hidden !important; width: 313px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 219px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true"><img decoding="async" data-placeholder="design-gallery-portfolio-image-6" data-context="Close-up of a velvet dining chair back with elegant stitching and brass nailhead trim" width="300" height="200" src="/assets/site-design-gallery-gallery-image-2.webp?t=1783976139530" alt="תקריב של גב כיסא אוכל מקטיפה עם תפירה אלגנטית ועיטורי פליז" data-element-type="image" data-element-id="img-1783974974685-zzs3564ve" style="object-position: 50% 50%; margin: 0px !important; left: -2.23775% !important; top: -52.273195% !important; width: 104.4755% !important; height: 204.546391% !important; max-width: none !important; max-height: none !important; display: block !important; object-fit: cover !important;" data-zappy-zoom="1.044755" data-zappy-original-width="313.203125" data-zappy-original-height="219" loading="lazy" fetchpriority="low"></div></div>
+          <div data-zappy-media-grid-item="true" style="position: relative; display: block;" class="zappy-grid-item-media-only" data-grid-item-index="0"><img loading="lazy" decoding="async" data-placeholder="design-gallery-portfolio-image-5" data-context="Detail of a polished wooden dining table surface with a single elegant place setting and folded linen napkin" width="300" height="200" src="/assets/site-design-gallery-portfolio-image-5.webp" alt="תקריב של משטח שולחן אוכל מעץ מלוטש עם עריכת מקום אלגנטית" data-element-type="image" data-element-id="img-1783974974685-xu6r8mu0f" fetchpriority="low" /></div>
+          <div data-zappy-media-grid-item="true" style="position: relative; display: block;" class="zappy-grid-item-media-only" data-grid-item-index="1"><div data-zappy-zoom-wrapper="true" data-element-id="img-1783974974685-zzs3564ve" data-element-type="image" data-zappy-zoom-wrapper-width="313px" data-zappy-zoom-wrapper-height="219px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-wrapper-align="center" style="position: relative !important; overflow: hidden !important; width: 313px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 219px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true"><img decoding="async" data-placeholder="design-gallery-portfolio-image-6" data-context="Close-up of a velvet dining chair back with elegant stitching and brass nailhead trim" width="300" height="200" src="/assets/site-design-gallery-gallery-image-2.webp?t=1783976139530" alt="תקריב של גב כיסא אוכל מקטיפה עם תפירה אלגנטית ועיטורי פליז" data-element-type="image" data-element-id="img-1783974974685-zzs3564ve" style="object-position: 50% 50%; margin: 0px !important; left: -2.23775% !important; top: -52.273195% !important; width: 104.4755% !important; height: 204.546391% !important; max-width: none !important; max-height: none !important; display: block !important; object-fit: cover !important;" data-zappy-zoom="1.044755" data-zappy-original-width="313.203125" data-zappy-original-height="219" loading="lazy" fetchpriority="low" /></div></div>
         </div>
       </div>
     </div>
@@ -1042,11 +1411,11 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
     <div class="dg-row dg-row--image-start">
       <div class="dg-row__media">
         <div class="dg-media__main">
-          <div data-zappy-zoom-wrapper="true" data-element-id="img-1783974974685-ysdjqbe9o" data-element-type="image" data-zappy-zoom-wrapper-width="642px" data-zappy-zoom-wrapper-height="441px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-wrapper-align="center" style="position: relative !important; overflow: hidden !important; width: 642px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 441px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true"><img decoding="async" data-placeholder="design-gallery-portfolio-image-7" data-context="Serene luxury bedroom with an upholstered bed frame, crisp white linens, and soft layered lighting in a calming palette" width="600" height="400" src="/assets/casa-verona-furniture-home-decor-gallery-upload-1783975116638-aj4lic.webp?t=1783976198532" alt="חדר שינה יוקרתי ושליו עם מיטה מרופדת, מצעים לבנים ותאורה רכה" data-element-type="image" data-element-id="img-1783974974685-ysdjqbe9o" style="object-position: 50% 50%; margin: 0px !important; left: -1.39845% !important; top: -8.456996% !important; width: 102.7969% !important; height: 116.913991% !important; max-width: none !important; max-height: none !important; display: block !important; object-fit: cover !important;" data-zappy-zoom="1.027969" data-zappy-original-width="642.40625" data-zappy-original-height="441" loading="lazy" fetchpriority="low"></div>
+          <div data-zappy-zoom-wrapper="true" data-element-id="img-1783974974685-ysdjqbe9o" data-element-type="image" data-zappy-zoom-wrapper-width="642px" data-zappy-zoom-wrapper-height="441px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-wrapper-align="center" style="position: relative !important; overflow: hidden !important; width: 642px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 441px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true"><img decoding="async" data-placeholder="design-gallery-portfolio-image-7" data-context="Serene luxury bedroom with an upholstered bed frame, crisp white linens, and soft layered lighting in a calming palette" width="600" height="400" src="/assets/casa-verona-furniture-home-decor-gallery-upload-1783975116638-aj4lic.webp?t=1783976198532" alt="חדר שינה יוקרתי ושליו עם מיטה מרופדת, מצעים לבנים ותאורה רכה" data-element-type="image" data-element-id="img-1783974974685-ysdjqbe9o" style="object-position: 50% 50%; margin: 0px !important; left: -1.39845% !important; top: -8.456996% !important; width: 102.7969% !important; height: 116.913991% !important; max-width: none !important; max-height: none !important; display: block !important; object-fit: cover !important;" data-zappy-zoom="1.027969" data-zappy-original-width="642.40625" data-zappy-original-height="441" loading="lazy" fetchpriority="low" /></div>
         </div>
         <div class="dg-media__details zappy-preserve-css-grid" id="zappy-auto-grid-1783974974712-h5k93v" data-zappy-auto-grid="true" data-original-item-width="313" data-original-gap="16px" style="display: grid; --zappy-grid-cols: repeat(auto-fit, minmax(min(100%, 313px), 1fr)); grid-template-columns: repeat(auto-fit, minmax(min(100%, 313px), 1fr)); align-items: stretch !important;" data-zappy-explicit-columns="true">
-          <div data-zappy-media-grid-item="true" style="position: relative; display: block;" class="zappy-grid-item-media-only" data-grid-item-index="0"><img loading="lazy" decoding="async" data-placeholder="design-gallery-portfolio-image-8" data-context="Detail of a bedside table with a designer lamp, a stack of art books, and a small ceramic vase" width="300" height="200" src="/assets/site-design-gallery-portfolio-image-8.webp" alt="תקריב של שידת לילה עם מנורת מעצבים, ספרי אמנות ואגרטל קרמי" data-element-type="image" data-element-id="img-1783974974685-cy5g4tsof" fetchpriority="low"></div>
-          <div data-zappy-media-grid-item="true" style="position: relative; display: block;" class="zappy-grid-item-media-only" data-grid-item-index="1"><img loading="lazy" decoding="async" data-placeholder="design-gallery-portfolio-image-9" data-context="Close-up of luxurious bedding texture, linen and cotton layers with a soft cashmere throw blanket" width="300" height="200" src="/assets/site-design-gallery-portfolio-image-9.webp" alt="תקריב של טקסטורת מצעים יוקרתיים, שכבות פשתן וכותנה עם שמיכת קשמיר רכה" data-element-type="image" data-element-id="img-1783974974685-ff2b3g8l6" fetchpriority="low"></div>
+          <div data-zappy-media-grid-item="true" style="position: relative; display: block;" class="zappy-grid-item-media-only" data-grid-item-index="0"><img loading="lazy" decoding="async" data-placeholder="design-gallery-portfolio-image-8" data-context="Detail of a bedside table with a designer lamp, a stack of art books, and a small ceramic vase" width="300" height="200" src="/assets/site-design-gallery-portfolio-image-8.webp" alt="תקריב של שידת לילה עם מנורת מעצבים, ספרי אמנות ואגרטל קרמי" data-element-type="image" data-element-id="img-1783974974685-cy5g4tsof" fetchpriority="low" /></div>
+          <div data-zappy-media-grid-item="true" style="position: relative; display: block;" class="zappy-grid-item-media-only" data-grid-item-index="1"><img loading="lazy" decoding="async" data-placeholder="design-gallery-portfolio-image-9" data-context="Close-up of luxurious bedding texture, linen and cotton layers with a soft cashmere throw blanket" width="300" height="200" src="/assets/site-design-gallery-portfolio-image-9.webp" alt="תקריב של טקסטורת מצעים יוקרתיים, שכבות פשתן וכותנה עם שמיכת קשמיר רכה" data-element-type="image" data-element-id="img-1783974974685-ff2b3g8l6" fetchpriority="low" /></div>
         </div>
       </div>
       <div class="dg-row__content">
@@ -1056,7 +1425,7 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
         </p>
         <p class="zappy-editable"><a href="#category-bedroom" class="dg-content__link" style="color: rgb(36, 33, 30) !important;">
           <span style="color: #1A1A1A !important">גלו את קולקציית חדרי השינה</span>
-          <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 4L7 8L11 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 4L7 8L11 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
       </p></div>
     </div>
@@ -1066,10 +1435,10 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
   <!-- Bottom Divider: Thin champagne line with three square accents -->
   <div class="design-gallery-portfolio-section__divider-wrapper">
     <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 40" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <line x1="0" y1="20" x2="1200" y2="20" stroke="var(--accent)" stroke-width="1" opacity="0.6"></line>
-      <rect x="440" y="12" width="16" height="16" fill="var(--accent)" opacity="0.8"></rect>
-      <rect x="592" y="12" width="16" height="16" fill="var(--accent)" opacity="0.8"></rect>
-      <rect x="744" y="12" width="16" height="16" fill="var(--accent)" opacity="0.8"></rect>
+      <line x1="0" y1="20" x2="1200" y2="20" stroke="var(--accent)" stroke-width="1" opacity="0.6"/>
+      <rect x="440" y="12" width="16" height="16" fill="var(--accent)" opacity="0.8"/>
+      <rect x="592" y="12" width="16" height="16" fill="var(--accent)" opacity="0.8"/>
+      <rect x="744" y="12" width="16" height="16" fill="var(--accent)" opacity="0.8"/>
     </svg>
   </div>
 </section>
@@ -1112,7 +1481,7 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
   <div class="footer-container">
     <div class="footer-top">
       <div class="footer-col footer-company-col">
-        <img src="/assets/casa-verona-furniture-home-decor-logo.webp" alt="casa verona" class="logo" data-element-type="image" data-element-id="img-1783976414867-7n8lkkexx" data-zappy-footer-image="true" decoding="async" width="35" height="35">
+        <img src="/assets/casa-verona-furniture-home-decor-logo.webp" alt="casa verona" class="logo" data-element-type="image" data-element-id="img-1783976414867-7n8lkkexx" data-zappy-footer-image="true" decoding="async" width="35" height="35" />
         <p class="footer-tagline">עיצוב יוקרתי לבית בהשראת ורונה הקלאסית. אנו מביאים לכם רהיטים ופתרונות עיצוב באיכות ללא פשרות, המשלבים אלגנטיות נצחית עם נוחות מודרנית.</p>
       </div>
       <div class="footer-col footer-links-col">
@@ -1177,10 +1546,10 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%}*,*::before,*::after{bo
     <i class="fab fa-whatsapp"></i>
   </a>
   
-  <div class="zappy-qv-overlay" id="zappy-qv-overlay" hidden=""></div>
-<div class="zappy-qv-modal" id="zappy-qv-modal" role="dialog" aria-modal="true" aria-label="תצוגה מהירה" hidden="">
+  <div class="zappy-qv-overlay" id="zappy-qv-overlay" hidden></div>
+<div class="zappy-qv-modal" id="zappy-qv-modal" role="dialog" aria-modal="true" aria-label="תצוגה מהירה" hidden>
   <button type="button" class="zappy-qv-close" id="zappy-qv-close" aria-label="סגור">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"></path></svg>
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
   </button>
   <div class="zappy-qv-content" id="zappy-qv-content"></div>
 </div>
