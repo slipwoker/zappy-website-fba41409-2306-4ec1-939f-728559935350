@@ -64,7 +64,14 @@ Information about WCAG compliance and accessibility features.
 
 ## Products
 
-**Total active products: 8**
+**Total active products: 9**
+
+### Orion
+https://casa-verona.zappy5.app/product/orion-43fcpb
+- Price: 0.00 ILS
+- Availability: In stock
+- Description: סלון רביצה פינתי בעיצוב אלגנטי עם מושבים עמוקים ומפנקים, רגלי שולחן מודרניות וגימור יוקרתי. מיוצר מחומרי גלם איכותיים לנוחות מרבית, עמידות לאורך שנים ומראה שמשדר יוקרה בכל חלל.
+- Image: https://casa-verona.zappy5.app/assets/product-1784061584546-io5v9g.webp
 
 ### Casas
 https://casa-verona.zappy5.app/product/casas-2lr6q5
