@@ -4461,6 +4461,13 @@ Description: casa verona - תודה שפניתם אלינו
 
 ## Product Catalog
 
+### Axis
+URL: https://casa-verona.zappy5.app/product/axis-tm3jt8
+Price: 8100.00 ILS (sale, was 12700.00 ILS)
+Availability: In stock
+
+---
+
 ### classico
 URL: https://casa-verona.zappy5.app/product/classico-ibg030
 Price: 7900.00 ILS (sale, was 10200.00 ILS)

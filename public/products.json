@@ -1,10 +1,34 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-14T17:20:57.471Z",
+  "generated_at": "2026-07-14T17:36:16.085Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
-  "count": 3,
+  "count": 4,
   "products": [
+    {
+      "id": "446a201b-0885-4717-8d2f-d47358e12089",
+      "slug": "axis-tm3jt8",
+      "name": "Axis",
+      "name_translations": {},
+      "description": "",
+      "short_description": "סלון קלאסי ומדורני בגימורים מיוחדים ושונים בנוחות מקסימלית.",
+      "sku": null,
+      "brand": null,
+      "price": 8100,
+      "base_price": 12700,
+      "sale_price": 8100,
+      "currency": "ILS",
+      "images": [
+        "https://casa-verona.zappy5.app/assets/product-1784049782607-giulzh.webp",
+        "https://casa-verona.zappy5.app/assets/product-1784049796754-qjofnf.webp",
+        "https://casa-verona.zappy5.app/assets/product-1784050394486-ozf6hq.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://casa-verona.zappy5.app/product/axis-tm3jt8",
+      "categories": [],
+      "updated_at": "2026-07-14T17:35:44.376Z"
+    },
     {
       "id": "ba9fd494-bc18-43a2-abb7-fd6b124bd4ad",
       "slug": "classico-ibg030",

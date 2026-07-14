@@ -64,7 +64,14 @@ Information about WCAG compliance and accessibility features.
 
 ## Products
 
-**Total active products: 3**
+**Total active products: 4**
+
+### Axis
+https://casa-verona.zappy5.app/product/axis-tm3jt8
+- Price: 8100.00 ILS (sale, was 12700.00 ILS)
+- Availability: In stock
+- Description: סלון קלאסי ומדורני בגימורים מיוחדים ושונים בנוחות מקסימלית.
+- Image: https://casa-verona.zappy5.app/assets/product-1784049782607-giulzh.webp
 
 ### classico
 https://casa-verona.zappy5.app/product/classico-ibg030
