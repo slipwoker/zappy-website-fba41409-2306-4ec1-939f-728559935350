@@ -66,10 +66,11 @@ Information about WCAG compliance and accessibility features.
 
 **Total active products: 22**
 
-### paprika 
-https://casa-verona.zappy5.app/product/paprika-t0ctf7
-- Price: 0.00 ILS
+### paprdla
+https://casa-verona.zappy5.app/product/paprdla-gua16f
+- Price: 2800.00 ILS (sale, was 3300.00 ILS)
 - Availability: In stock
+- Image: https://casa-verona.zappy5.app/assets/product-1784065423392-mxb0m6.webp
 
 ### Plaza
 https://casa-verona.zappy5.app/product/plaza-4bwgvf

@@ -1,32 +1,34 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-14T21:43:51.183Z",
+  "generated_at": "2026-07-14T21:44:48.393Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
   "count": 22,
   "products": [
     {
       "id": "64db42c3-4104-472b-883e-6be4b30a8073",
-      "slug": "paprika-t0ctf7",
-      "name": "paprika ",
+      "slug": "paprdla-gua16f",
+      "name": "paprdla",
       "name_translations": {
-        "en": "paprika ",
-        "he": "פפריקה "
+        "en": "paprdla",
+        "he": "פאפרדלה"
       },
       "description": "",
       "short_description": null,
       "sku": null,
       "brand": null,
-      "price": 0,
-      "base_price": 0,
-      "sale_price": null,
+      "price": 2800,
+      "base_price": 3300,
+      "sale_price": 2800,
       "currency": "ILS",
-      "images": [],
+      "images": [
+        "https://casa-verona.zappy5.app/assets/product-1784065423392-mxb0m6.webp"
+      ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://casa-verona.zappy5.app/product/paprika-t0ctf7",
+      "url": "https://casa-verona.zappy5.app/product/paprdla-gua16f",
       "categories": [],
-      "updated_at": "2026-07-14T21:43:18.864Z"
+      "updated_at": "2026-07-14T21:44:15.889Z"
     },
     {
       "id": "3e478c7f-c194-4a42-9ead-87f8d08b0545",
