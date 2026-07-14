@@ -1,10 +1,33 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-14T21:07:17.782Z",
+  "generated_at": "2026-07-14T21:12:52.167Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
-  "count": 12,
+  "count": 13,
   "products": [
+    {
+      "id": "01b5c08e-159d-4001-8924-72ebf71214e9",
+      "slug": "curva-ghkvp9",
+      "name": "Curva",
+      "name_translations": {},
+      "description": "",
+      "short_description": "סלון Curva משלב בצורה מושלמת בין קווים מרובעים ונקיים לבין מבנה מקומר וייחודי.\nמושבי רביצה מפנקים וגימור יוקרתי.\nשילוב מושלם של נוחות , איכות ועיצוב ייחודי שמתאים לכל חלל מעוצב ",
+      "sku": null,
+      "brand": null,
+      "price": 7000,
+      "base_price": 9000,
+      "sale_price": 7000,
+      "currency": "ILS",
+      "images": [
+        "https://casa-verona.zappy5.app/assets/product-1784063248760-edswh8.webp",
+        "https://casa-verona.zappy5.app/assets/product-1784063227785-9rwkw.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://casa-verona.zappy5.app/product/curva-ghkvp9",
+      "categories": [],
+      "updated_at": "2026-07-14T21:12:20.528Z"
+    },
     {
       "id": "913b37d8-aa2d-4e83-9305-a95e6cafc9c6",
       "slug": "capri-187umg",
