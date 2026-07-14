@@ -4478,6 +4478,13 @@ Description: casa verona - תודה שפניתם אלינו
 
 ## Product Catalog
 
+### Plaza Athena
+URL: https://casa-verona.zappy5.app/product/plaza-athena-8yach8
+Price: 8600.00 ILS (sale, was 11500.00 ILS)
+Availability: In stock
+
+---
+
 ### Urban
 URL: https://casa-verona.zappy5.app/product/urban-ek8n3c
 Price: 9100.00 ILS (sale, was 12000.00 ILS)

@@ -1,10 +1,33 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-14T21:35:23.984Z",
+  "generated_at": "2026-07-14T21:40:15.789Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
-  "count": 18,
+  "count": 19,
   "products": [
+    {
+      "id": "03d5c1d0-9ef5-41c3-a910-b5e6734ea769",
+      "slug": "plaza-athena-8yach8",
+      "name": "Plaza Athena",
+      "name_translations": {},
+      "description": "",
+      "short_description": "סלון רביצה פינתי עם שזלונג עגול, המשלב קווים אלגנטיים, נוחות מפנקת ועיצוב ייחודי. ניתן להתאמה אישית במידות, בבדים ובצבעים , ליצירת הסלון המושלם לבחירתכם...",
+      "sku": null,
+      "brand": null,
+      "price": 8600,
+      "base_price": 11500,
+      "sale_price": 8600,
+      "currency": "ILS",
+      "images": [
+        "https://casa-verona.zappy5.app/assets/product-1784064931285-rr0o0k.webp",
+        "https://casa-verona.zappy5.app/assets/product-1784064974893-t3ceu.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://casa-verona.zappy5.app/product/plaza-athena-8yach8",
+      "categories": [],
+      "updated_at": "2026-07-14T21:39:44.289Z"
+    },
     {
       "id": "0c372098-fbbf-4bc5-b1d5-812fb07ab068",
       "slug": "urban-ek8n3c",
