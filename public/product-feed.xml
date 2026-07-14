@@ -4,7 +4,22 @@
     <title>casa verona</title>
     <link>https://casa-verona.zappy5.app</link>
     <description>Product feed for casa verona</description>
-    <lastBuildDate>Tue, 14 Jul 2026 17:06:53 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jul 2026 17:20:57 GMT</lastBuildDate>
+    <item>
+      <g:id>ba9fd494-bc18-43a2-abb7-fd6b124bd4ad</g:id>
+      <g:title>classico</g:title>
+      <g:description>ספה קלאסית בשילוב אדום עגול שמתחבר לספה בקו אפס ומתפרק לפי בחירתכם. ספה שאין יותר מידי מה להסביר במילים...</g:description>
+      <g:link>https://casa-verona.zappy5.app/product/classico-ibg030</g:link>
+      <g:image_link>https://casa-verona.zappy5.app/assets/product-1784049404154-2wwo9.webp</g:image_link>
+      <g:additional_image_link>https://casa-verona.zappy5.app/assets/product-1784049371220-fcs32e.webp</g:additional_image_link>
+      <g:additional_image_link>https://casa-verona.zappy5.app/assets/product-1784049438602-mr0x3d.webp</g:additional_image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>10200.00 ILS</g:price>
+      <g:sale_price>7900.00 ILS</g:sale_price>
+      <g:condition>new</g:condition>
+      <g:brand>casa verona</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+    </item>
     <item>
       <g:id>5ff2f5b9-fb11-4ad1-888e-a484c1ba3a2d</g:id>
       <g:title>Mon cheri</g:title>
