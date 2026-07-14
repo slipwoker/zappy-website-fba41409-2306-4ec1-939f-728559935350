@@ -64,7 +64,14 @@ Information about WCAG compliance and accessibility features.
 
 ## Products
 
-**Total active products: 13**
+**Total active products: 14**
+
+### Modena
+https://casa-verona.zappy5.app/product/modena-6duhnc
+- Price: 8500.00 ILS (sale, was 11300.00 ILS)
+- Availability: In stock
+- Description: סלון מודולרי יוקרתי עם מושבי רביצה מפנקים, עיצוב מודרני ואפשרות להתאמה אישית של סידור היחידות. שילוב מושלם0 של גמישות, נוחות ואיכות ללא פשרות
+- Image: https://casa-verona.zappy5.app/assets/product-1784063577892-88rkz5.webp
 
 ### Curva
 https://casa-verona.zappy5.app/product/curva-ghkvp9

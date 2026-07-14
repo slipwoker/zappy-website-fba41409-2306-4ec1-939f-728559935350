@@ -4478,6 +4478,13 @@ Description: casa verona - תודה שפניתם אלינו
 
 ## Product Catalog
 
+### Modena
+URL: https://casa-verona.zappy5.app/product/modena-6duhnc
+Price: 8500.00 ILS (sale, was 11300.00 ILS)
+Availability: In stock
+
+---
+
 ### Curva
 URL: https://casa-verona.zappy5.app/product/curva-ghkvp9
 Price: 7000.00 ILS (sale, was 9000.00 ILS)

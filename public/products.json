@@ -1,10 +1,33 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-14T21:12:52.167Z",
+  "generated_at": "2026-07-14T21:16:17.052Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
-  "count": 13,
+  "count": 14,
   "products": [
+    {
+      "id": "7de93f02-a9c6-44b1-88be-30b928ac0353",
+      "slug": "modena-6duhnc",
+      "name": "Modena",
+      "name_translations": {},
+      "description": "",
+      "short_description": "סלון מודולרי יוקרתי עם מושבי רביצה מפנקים, עיצוב מודרני ואפשרות להתאמה אישית של סידור היחידות. שילוב מושלם0 של גמישות, נוחות ואיכות ללא פשרות",
+      "sku": null,
+      "brand": null,
+      "price": 8500,
+      "base_price": 11300,
+      "sale_price": 8500,
+      "currency": "ILS",
+      "images": [
+        "https://casa-verona.zappy5.app/assets/product-1784063577892-88rkz5.webp",
+        "https://casa-verona.zappy5.app/assets/product-1784063599287-7lokqw.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://casa-verona.zappy5.app/product/modena-6duhnc",
+      "categories": [],
+      "updated_at": "2026-07-14T21:15:45.694Z"
+    },
     {
       "id": "01b5c08e-159d-4001-8924-72ebf71214e9",
       "slug": "curva-ghkvp9",
