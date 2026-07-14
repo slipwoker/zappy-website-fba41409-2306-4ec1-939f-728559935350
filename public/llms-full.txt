@@ -4479,8 +4479,8 @@ Description: casa verona - תודה שפניתם אלינו
 ## Product Catalog
 
 ### Milano cube
-URL: https://casa-verona.zappy5.app/product/milano-cube-v3hrm5
-Price: 0.00 ILS
+URL: https://casa-verona.zappy5.app/product/milano-cube-tqd21r
+Price: 8400.00 ILS (sale, was 10700.00 ILS)
 Availability: In stock
 
 ---
