@@ -64,7 +64,21 @@ Information about WCAG compliance and accessibility features.
 
 ## Products
 
-_No products are currently configured._
+**Total active products: 2**
+
+### DiVano LaGo CoMo (Copy)
+https://casa-verona.zappy5.app/product/divano-lago-como-copy-agpqzp
+- Price: 0.00 ILS
+- Availability: In stock
+- Description: סלון פינתי מפנק ומיוחד במיוחד לאנשים שואהבים לסיים את היום ברביצה ונחות&nbsp;הסלון מגיע בגימורים מיוחדים ומושלמים.
+- Image: https://casa-verona.zappy5.app/assets/product-1784045442491-z4jc7z.webp
+
+### DiVano LaGo CoMo
+https://casa-verona.zappy5.app/product/divano-lago-como-iwp4ha
+- Price: 0.00 ILS
+- Availability: In stock
+- Description: סלון פינתי מפנק ומיוחד במיוחד לאנשים שואהבים לסיים את היום ברביצה ונחות הסלון מגיע בגימורים מיוחדים ומושלמים.
+- Image: https://casa-verona.zappy5.app/assets/product-1784045442491-z4jc7z.webp
 
 ---
 
