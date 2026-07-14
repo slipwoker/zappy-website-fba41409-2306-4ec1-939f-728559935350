@@ -1,10 +1,33 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-14T21:28:10.782Z",
+  "generated_at": "2026-07-14T21:30:13.238Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
-  "count": 16,
+  "count": 17,
   "products": [
+    {
+      "id": "8bef5445-4528-48ea-b2ff-d3e81897887c",
+      "slug": "poo-y0dlbv",
+      "name": "Poo",
+      "name_translations": {},
+      "description": "",
+      "short_description": "את Poo  אין איך לתאר .......",
+      "sku": null,
+      "brand": null,
+      "price": 10000,
+      "base_price": 13000,
+      "sale_price": 10000,
+      "currency": "ILS",
+      "images": [
+        "https://casa-verona.zappy5.app/assets/product-1784064507709-y3l2mo.webp",
+        "https://casa-verona.zappy5.app/assets/product-1784064541128-h80kv8.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://casa-verona.zappy5.app/product/poo-y0dlbv",
+      "categories": [],
+      "updated_at": "2026-07-14T21:29:41.469Z"
+    },
     {
       "id": "2202b5ea-20c5-431a-bb23-66ff7b8cc05d",
       "slug": "morbido-de6e7b",

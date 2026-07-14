@@ -4,7 +4,21 @@
     <title>casa verona</title>
     <link>https://casa-verona.zappy5.app</link>
     <description>Product feed for casa verona</description>
-    <lastBuildDate>Tue, 14 Jul 2026 21:28:10 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jul 2026 21:30:13 GMT</lastBuildDate>
+    <item>
+      <g:id>8bef5445-4528-48ea-b2ff-d3e81897887c</g:id>
+      <g:title>Poo</g:title>
+      <g:description>את Poo אין איך לתאר .......</g:description>
+      <g:link>https://casa-verona.zappy5.app/product/poo-y0dlbv</g:link>
+      <g:image_link>https://casa-verona.zappy5.app/assets/product-1784064507709-y3l2mo.webp</g:image_link>
+      <g:additional_image_link>https://casa-verona.zappy5.app/assets/product-1784064541128-h80kv8.webp</g:additional_image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>13000.00 ILS</g:price>
+      <g:sale_price>10000.00 ILS</g:sale_price>
+      <g:condition>new</g:condition>
+      <g:brand>casa verona</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+    </item>
     <item>
       <g:id>2202b5ea-20c5-431a-bb23-66ff7b8cc05d</g:id>
       <g:title>Morbido</g:title>

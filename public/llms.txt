@@ -64,7 +64,14 @@ Information about WCAG compliance and accessibility features.
 
 ## Products
 
-**Total active products: 16**
+**Total active products: 17**
+
+### Poo
+https://casa-verona.zappy5.app/product/poo-y0dlbv
+- Price: 10000.00 ILS (sale, was 13000.00 ILS)
+- Availability: In stock
+- Description: את Poo אין איך לתאר .......
+- Image: https://casa-verona.zappy5.app/assets/product-1784064507709-y3l2mo.webp
 
 ### Morbido
 https://casa-verona.zappy5.app/product/morbido-de6e7b
