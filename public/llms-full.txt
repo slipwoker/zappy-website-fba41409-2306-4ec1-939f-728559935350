@@ -4478,6 +4478,13 @@ Description: casa verona - תודה שפניתם אלינו
 
 ## Product Catalog
 
+### Urban
+URL: https://casa-verona.zappy5.app/product/urban-ek8n3c
+Price: 9100.00 ILS (sale, was 12000.00 ILS)
+Availability: In stock
+
+---
+
 ### Poo
 URL: https://casa-verona.zappy5.app/product/poo-y0dlbv
 Price: 10000.00 ILS (sale, was 13000.00 ILS)

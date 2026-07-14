@@ -64,7 +64,14 @@ Information about WCAG compliance and accessibility features.
 
 ## Products
 
-**Total active products: 17**
+**Total active products: 18**
+
+### Urban
+https://casa-verona.zappy5.app/product/urban-ek8n3c
+- Price: 9100.00 ILS (sale, was 12000.00 ILS)
+- Availability: In stock
+- Description: סלון רביצה יוקרתי עם שזלונג, קוביות ישיבה ושולחן צד ושולחן אמצע . עצוב מודרני, נוחות מקסימלית ואפשרות להתאמה אישית.
+- Image: https://casa-verona.zappy5.app/assets/product-1784064659077-73inp9.webp
 
 ### Poo
 https://casa-verona.zappy5.app/product/poo-y0dlbv
