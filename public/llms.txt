@@ -64,34 +64,41 @@ Information about WCAG compliance and accessibility features.
 
 ## Products
 
-**Total active products: 15**
+**Total active products: 16**
+
+### Morbido
+https://casa-verona.zappy5.app/product/morbido-de6e7b
+- Price: 8700.00 ILS (sale, was 11000.00 ILS)
+- Availability: In stock
+- Description: סלון רביצה יוקרתי עם קוביות ישיבה מודולריות, המעניק שילוב מושלם של נוחות, פונקציונליות ועיצוב אלגנטי. זמין בהתאמה אישית של מידות, בדים וצבעים
+- Image: https://casa-verona.zappy5.app/assets/product-1784063983970-sg0mfc.webp
 
 ### Alba 
-https://casa-verona.zappy5.app/product/alba-tb74y2
+https://casa-verona.zappy5.app/product/alba-1o8dke
 - Price: 8200.00 ILS (sale, was 10000.00 ILS)
 - Availability: In stock
-- Description: סלון מודולרי יוקרתי עם מסגרת ורגלי עץ, שולחן מרכזי משולב ומושבי רביצה מפנקים, שילוב מושלם של עיצוב מודרני, נוחות ופנקציונליות, המעניק לכל חלל מראה ייחודי ואלגנטי.
+- Description: סלון מודולרי יוקרתי עם מסגרת ורגלי עץ, שולחן מרכזי משולב ומושבי רביצה מפנקים, שילוב מושלם של עיצוב מודרני, נוחות ופנקציונליות, המעניק לכל חלל מראה ייחודי ואלגנטי. זמין בהתאמה אישית של מידות, בדים וצבעים
 - Image: https://casa-verona.zappy5.app/assets/product-1784063793272-1anmb.webp
 
 ### Modena
-https://casa-verona.zappy5.app/product/modena-6duhnc
+https://casa-verona.zappy5.app/product/modena-davhj3
 - Price: 8500.00 ILS (sale, was 11300.00 ILS)
 - Availability: In stock
-- Description: סלון מודולרי יוקרתי עם מושבי רביצה מפנקים, עיצוב מודרני ואפשרות להתאמה אישית של סידור היחידות. שילוב מושלם0 של גמישות, נוחות ואיכות ללא פשרות
+- Description: סלון מודולרי יוקרתי עם מושבי רביצה מפנקים, עיצוב מודרני ואפשרות להתאמה אישית של סידור היחידות. שילוב מושלם של גמישות, נוחות ואיכות ללא פשרות. זמין בהתאמה אישית של מידות, בדים וצבעים.
 - Image: https://casa-verona.zappy5.app/assets/product-1784063577892-88rkz5.webp
 
 ### Curva
-https://casa-verona.zappy5.app/product/curva-ghkvp9
+https://casa-verona.zappy5.app/product/curva-jefpgo
 - Price: 7000.00 ILS (sale, was 9000.00 ILS)
 - Availability: In stock
-- Description: סלון Curva משלב בצורה מושלמת בין קווים מרובעים ונקיים לבין מבנה מקומר וייחודי. מושבי רביצה מפנקים וגימור יוקרתי. שילוב מושלם של נוחות , איכות ועיצוב ייחודי שמתאים לכל חלל מעוצב
+- Description: סלון Curva משלב בצורה מושלמת בין קווים מרובעים ונקיים לבין מבנה מקומר וייחודי. מושבי רביצה מפנקים וגימור יוקרתי. שילוב מושלם של נוחות , איכות ועיצוב ייחודי שמתאים לכל חלל מעוצב. זמין בהתאמה אישית של מידות, בדים וצבעים.
 - Image: https://casa-verona.zappy5.app/assets/product-1784063248760-edswh8.webp
 
 ### Capri
-https://casa-verona.zappy5.app/product/capri-187umg
+https://casa-verona.zappy5.app/product/capri-x0mdwv
 - Price: 7800.00 ILS (sale, was 9300.00 ILS)
 - Availability: In stock
-- Description: סלון רביצה פינתי בעיצוב אלגנטי עם מושבים עמוקים ומפנקים, מיוצר מחומרי גלם איכותיים לנוחות מרבית, עמידות לאורך שנים ומראה שמשדר יוקרה בכל חלל.
+- Description: סלון רביצה פינתי בעיצוב אלגנטי עם מושבים עמוקים ומפנקים, מיוצר מחומרי גלם איכותיים לנוחות מרבית, עמידות לאורך שנים ומראה שמשדר יוקרה בכל חלל. זמין בהתאמה אישית של מידות, בדים וצבעים.
 - Image: https://casa-verona.zappy5.app/assets/product-1784063032197-435ov.webp
 
 ### Milano cube

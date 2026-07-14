@@ -4478,29 +4478,36 @@ Description: casa verona - תודה שפניתם אלינו
 
 ## Product Catalog
 
+### Morbido
+URL: https://casa-verona.zappy5.app/product/morbido-de6e7b
+Price: 8700.00 ILS (sale, was 11000.00 ILS)
+Availability: In stock
+
+---
+
 ### Alba 
-URL: https://casa-verona.zappy5.app/product/alba-tb74y2
+URL: https://casa-verona.zappy5.app/product/alba-1o8dke
 Price: 8200.00 ILS (sale, was 10000.00 ILS)
 Availability: In stock
 
 ---
 
 ### Modena
-URL: https://casa-verona.zappy5.app/product/modena-6duhnc
+URL: https://casa-verona.zappy5.app/product/modena-davhj3
 Price: 8500.00 ILS (sale, was 11300.00 ILS)
 Availability: In stock
 
 ---
 
 ### Curva
-URL: https://casa-verona.zappy5.app/product/curva-ghkvp9
+URL: https://casa-verona.zappy5.app/product/curva-jefpgo
 Price: 7000.00 ILS (sale, was 9000.00 ILS)
 Availability: In stock
 
 ---
 
 ### Capri
-URL: https://casa-verona.zappy5.app/product/capri-187umg
+URL: https://casa-verona.zappy5.app/product/capri-x0mdwv
 Price: 7800.00 ILS (sale, was 9300.00 ILS)
 Availability: In stock
 

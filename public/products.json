@@ -1,17 +1,39 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-14T21:19:38.868Z",
+  "generated_at": "2026-07-14T21:24:31.395Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
-  "count": 15,
+  "count": 16,
   "products": [
     {
+      "id": "2202b5ea-20c5-431a-bb23-66ff7b8cc05d",
+      "slug": "morbido-de6e7b",
+      "name": "Morbido",
+      "name_translations": {},
+      "description": "",
+      "short_description": "סלון רביצה יוקרתי עם קוביות ישיבה מודולריות, המעניק שילוב מושלם של נוחות, פונקציונליות ועיצוב אלגנטי. זמין בהתאמה אישית של מידות, בדים וצבעים ",
+      "sku": null,
+      "brand": null,
+      "price": 8700,
+      "base_price": 11000,
+      "sale_price": 8700,
+      "currency": "ILS",
+      "images": [
+        "https://casa-verona.zappy5.app/assets/product-1784063983970-sg0mfc.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://casa-verona.zappy5.app/product/morbido-de6e7b",
+      "categories": [],
+      "updated_at": "2026-07-14T21:23:28.957Z"
+    },
+    {
       "id": "0168cb1e-d851-455e-a93d-62372a9e4c80",
-      "slug": "alba-tb74y2",
+      "slug": "alba-1o8dke",
       "name": "Alba ",
       "name_translations": {},
       "description": "",
-      "short_description": "סלון מודולרי יוקרתי עם מסגרת ורגלי עץ, שולחן מרכזי משולב ומושבי רביצה מפנקים, שילוב מושלם של עיצוב מודרני, נוחות ופנקציונליות, המעניק לכל חלל מראה ייחודי ואלגנטי.",
+      "short_description": "סלון מודולרי יוקרתי עם מסגרת ורגלי עץ, שולחן מרכזי משולב ומושבי רביצה מפנקים, שילוב מושלם של עיצוב מודרני, נוחות ופנקציונליות, המעניק לכל חלל מראה ייחודי ואלגנטי.\nזמין בהתאמה אישית של מידות, בדים וצבעים",
       "sku": null,
       "brand": null,
       "price": 8200,
@@ -23,17 +45,17 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://casa-verona.zappy5.app/product/alba-tb74y2",
+      "url": "https://casa-verona.zappy5.app/product/alba-1o8dke",
       "categories": [],
-      "updated_at": "2026-07-14T21:19:07.269Z"
+      "updated_at": "2026-07-14T21:23:44.321Z"
     },
     {
       "id": "7de93f02-a9c6-44b1-88be-30b928ac0353",
-      "slug": "modena-6duhnc",
+      "slug": "modena-davhj3",
       "name": "Modena",
       "name_translations": {},
       "description": "",
-      "short_description": "סלון מודולרי יוקרתי עם מושבי רביצה מפנקים, עיצוב מודרני ואפשרות להתאמה אישית של סידור היחידות. שילוב מושלם0 של גמישות, נוחות ואיכות ללא פשרות",
+      "short_description": "סלון מודולרי יוקרתי עם מושבי רביצה מפנקים, עיצוב מודרני ואפשרות להתאמה אישית של סידור היחידות. שילוב מושלם של גמישות, נוחות ואיכות ללא פשרות.\nזמין בהתאמה אישית של מידות, בדים וצבעים.",
       "sku": null,
       "brand": null,
       "price": 8500,
@@ -46,17 +68,17 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://casa-verona.zappy5.app/product/modena-6duhnc",
+      "url": "https://casa-verona.zappy5.app/product/modena-davhj3",
       "categories": [],
-      "updated_at": "2026-07-14T21:15:45.694Z"
+      "updated_at": "2026-07-14T21:24:04.876Z"
     },
     {
       "id": "01b5c08e-159d-4001-8924-72ebf71214e9",
-      "slug": "curva-ghkvp9",
+      "slug": "curva-jefpgo",
       "name": "Curva",
       "name_translations": {},
       "description": "",
-      "short_description": "סלון Curva משלב בצורה מושלמת בין קווים מרובעים ונקיים לבין מבנה מקומר וייחודי.\nמושבי רביצה מפנקים וגימור יוקרתי.\nשילוב מושלם של נוחות , איכות ועיצוב ייחודי שמתאים לכל חלל מעוצב ",
+      "short_description": "סלון Curva משלב בצורה מושלמת בין קווים מרובעים ונקיים לבין מבנה מקומר וייחודי.\nמושבי רביצה מפנקים וגימור יוקרתי.\nשילוב מושלם של נוחות , איכות ועיצוב ייחודי שמתאים לכל חלל מעוצב.\nזמין בהתאמה אישית של מידות, בדים וצבעים.",
       "sku": null,
       "brand": null,
       "price": 7000,
@@ -69,17 +91,17 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://casa-verona.zappy5.app/product/curva-ghkvp9",
+      "url": "https://casa-verona.zappy5.app/product/curva-jefpgo",
       "categories": [],
-      "updated_at": "2026-07-14T21:12:20.528Z"
+      "updated_at": "2026-07-14T21:24:18.166Z"
     },
     {
       "id": "913b37d8-aa2d-4e83-9305-a95e6cafc9c6",
-      "slug": "capri-187umg",
+      "slug": "capri-x0mdwv",
       "name": "Capri",
       "name_translations": {},
       "description": "",
-      "short_description": "סלון רביצה פינתי בעיצוב אלגנטי עם מושבים עמוקים ומפנקים, \nמיוצר מחומרי גלם איכותיים לנוחות מרבית, עמידות לאורך שנים ומראה שמשדר יוקרה בכל חלל.",
+      "short_description": "סלון רביצה פינתי בעיצוב אלגנטי עם מושבים עמוקים ומפנקים, \nמיוצר מחומרי גלם איכותיים לנוחות מרבית, עמידות לאורך שנים ומראה שמשדר יוקרה בכל חלל.\nזמין בהתאמה אישית של מידות, בדים וצבעים.",
       "sku": null,
       "brand": null,
       "price": 7800,
@@ -92,9 +114,9 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://casa-verona.zappy5.app/product/capri-187umg",
+      "url": "https://casa-verona.zappy5.app/product/capri-x0mdwv",
       "categories": [],
-      "updated_at": "2026-07-14T21:06:46.145Z"
+      "updated_at": "2026-07-14T21:24:30.684Z"
     },
     {
       "id": "466f7fd4-a82f-4ffd-bdae-64b912dd8a11",
