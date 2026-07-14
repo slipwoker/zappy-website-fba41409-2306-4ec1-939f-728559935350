@@ -66,10 +66,11 @@ Information about WCAG compliance and accessibility features.
 
 **Total active products: 10**
 
-### צםמבם 
-https://casa-verona.zappy5.app/product/tsmmbm-zhqyg1
-- Price: 0.00 ILS
+### Monco X
+https://casa-verona.zappy5.app/product/monco-x-mcgx18
+- Price: 9600.00 ILS (sale, was 12700.00 ILS)
 - Availability: In stock
+- Description: סלון רביצה פינתי המעניק שילוב מושלם בין נוחות, פונקציונלית ועיצוב יוקרתי. כולל מושבי רביצה רחבים, ריפוד איכותי ונעים למגע, שלדת עץ חזקה ושולחנות בין המושבים לנוחות בני המשפחה המשלימות את המראה המודרני. אדיאלי לאירוח, למנוחה וליצירת חלל סלון מזמין ומרשים
 - Image: https://casa-verona.zappy5.app/assets/product-1784062346771-u6uy3.webp
 
 ### Orion
