@@ -66,10 +66,12 @@ Information about WCAG compliance and accessibility features.
 
 **Total active products: 6**
 
-### אםר
-https://casa-verona.zappy5.app/product/amr-pmoe4n
+### Torino moderno 
+https://casa-verona.zappy5.app/product/torino-moderno-wjot7w
 - Price: 0.00 ILS
 - Availability: In stock
+- Description: פינת ישבה פניתית ויוקרתית בגימורים מיוחדים ויוקרתיים קווים מדויקים ונקים שנותנים מראה נקי ונעים לעין. אז רק נישאר לכם להזמין אתם מזמינים ואנחנו דואגים שהאורחים הבאים שנכנסים אליכם הבית המילה ראשונה שתשמעו זה וואוו.
+- Image: https://casa-verona.zappy5.app/assets/product-1784051488717-yufgd8.webp
 
 ### Cloud stone 
 https://casa-verona.zappy5.app/product/cloud-stone-3bocw8
