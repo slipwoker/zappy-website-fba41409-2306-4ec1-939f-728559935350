@@ -1,10 +1,32 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-14T21:16:17.052Z",
+  "generated_at": "2026-07-14T21:19:38.868Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
-  "count": 14,
+  "count": 15,
   "products": [
+    {
+      "id": "0168cb1e-d851-455e-a93d-62372a9e4c80",
+      "slug": "alba-tb74y2",
+      "name": "Alba ",
+      "name_translations": {},
+      "description": "",
+      "short_description": "סלון מודולרי יוקרתי עם מסגרת ורגלי עץ, שולחן מרכזי משולב ומושבי רביצה מפנקים, שילוב מושלם של עיצוב מודרני, נוחות ופנקציונליות, המעניק לכל חלל מראה ייחודי ואלגנטי.",
+      "sku": null,
+      "brand": null,
+      "price": 8200,
+      "base_price": 10000,
+      "sale_price": 8200,
+      "currency": "ILS",
+      "images": [
+        "https://casa-verona.zappy5.app/assets/product-1784063793272-1anmb.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://casa-verona.zappy5.app/product/alba-tb74y2",
+      "categories": [],
+      "updated_at": "2026-07-14T21:19:07.269Z"
+    },
     {
       "id": "7de93f02-a9c6-44b1-88be-30b928ac0353",
       "slug": "modena-6duhnc",

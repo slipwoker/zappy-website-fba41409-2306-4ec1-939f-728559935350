@@ -64,7 +64,14 @@ Information about WCAG compliance and accessibility features.
 
 ## Products
 
-**Total active products: 14**
+**Total active products: 15**
+
+### Alba 
+https://casa-verona.zappy5.app/product/alba-tb74y2
+- Price: 8200.00 ILS (sale, was 10000.00 ILS)
+- Availability: In stock
+- Description: סלון מודולרי יוקרתי עם מסגרת ורגלי עץ, שולחן מרכזי משולב ומושבי רביצה מפנקים, שילוב מושלם של עיצוב מודרני, נוחות ופנקציונליות, המעניק לכל חלל מראה ייחודי ואלגנטי.
+- Image: https://casa-verona.zappy5.app/assets/product-1784063793272-1anmb.webp
 
 ### Modena
 https://casa-verona.zappy5.app/product/modena-6duhnc
