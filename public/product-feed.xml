@@ -4,7 +4,20 @@
     <title>casa verona</title>
     <link>https://casa-verona.zappy5.app</link>
     <description>Product feed for casa verona</description>
-    <lastBuildDate>Tue, 14 Jul 2026 21:40:15 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jul 2026 21:41:32 GMT</lastBuildDate>
+    <item>
+      <g:id>80ee526d-43ec-463d-b554-9977bed78069</g:id>
+      <g:title>verona </g:title>
+      <g:description>verona</g:description>
+      <g:link>https://casa-verona.zappy5.app/product/verona-g0wr6e</g:link>
+      <g:image_link>https://casa-verona.zappy5.app/assets/product-1784065224849-lrv7wp.webp</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>3700.00 ILS</g:price>
+      <g:sale_price>2700.00 ILS</g:sale_price>
+      <g:condition>new</g:condition>
+      <g:brand>casa verona</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+    </item>
     <item>
       <g:id>03d5c1d0-9ef5-41c3-a910-b5e6734ea769</g:id>
       <g:title>Plaza Athena</g:title>

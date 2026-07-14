@@ -1,10 +1,35 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-14T21:40:15.789Z",
+  "generated_at": "2026-07-14T21:41:32.657Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
-  "count": 19,
+  "count": 20,
   "products": [
+    {
+      "id": "80ee526d-43ec-463d-b554-9977bed78069",
+      "slug": "verona-g0wr6e",
+      "name": "verona ",
+      "name_translations": {
+        "en": "verona ",
+        "he": "ורונה"
+      },
+      "description": "",
+      "short_description": null,
+      "sku": null,
+      "brand": null,
+      "price": 2700,
+      "base_price": 3700,
+      "sale_price": 2700,
+      "currency": "ILS",
+      "images": [
+        "https://casa-verona.zappy5.app/assets/product-1784065224849-lrv7wp.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://casa-verona.zappy5.app/product/verona-g0wr6e",
+      "categories": [],
+      "updated_at": "2026-07-14T21:40:55.609Z"
+    },
     {
       "id": "03d5c1d0-9ef5-41c3-a910-b5e6734ea769",
       "slug": "plaza-athena-8yach8",
