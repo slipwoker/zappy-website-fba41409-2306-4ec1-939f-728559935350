@@ -1,6 +1,6 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-14T19:51:50.622Z",
+  "generated_at": "2026-07-14T19:58:02.692Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
   "count": 6,
@@ -123,8 +123,8 @@
     },
     {
       "id": "e3e631a9-e97f-4f87-a788-dadf56f08bd5",
-      "slug": "divano-lago-como-copy-v8jwnh",
-      "name": "DiVano LaGo CoMo (Copy)",
+      "slug": "divano-lago-como-wajpix",
+      "name": "DiVano LaGo CoMo ",
       "name_translations": {},
       "description": "<p>סלון פינתי מפנק ומיוחד במיוחד לאנשים שואהבים לסיים את היום ברביצה ונחות&nbsp;הסלון מגיע בגימורים מיוחדים ומושלמים.</p>",
       "short_description": null,
@@ -135,14 +135,14 @@
       "sale_price": 8500,
       "currency": "ILS",
       "images": [
-        "https://casa-verona.zappy5.app/assets/product-1784051197118-oar6v9.webp",
-        "https://casa-verona.zappy5.app/assets/product-1784045442491-z4jc7z.webp"
+        "https://casa-verona.zappy5.app/assets/product-1784045442491-z4jc7z.webp",
+        "https://casa-verona.zappy5.app/assets/product-enhanced-1784059040869-x0he1j.webp"
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://casa-verona.zappy5.app/product/divano-lago-como-copy-v8jwnh",
+      "url": "https://casa-verona.zappy5.app/product/divano-lago-como-wajpix",
       "categories": [],
-      "updated_at": "2026-07-14T17:46:48.166Z"
+      "updated_at": "2026-07-14T19:57:33.776Z"
     }
   ]
 }
