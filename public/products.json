@@ -1,10 +1,35 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-14T21:46:48.610Z",
+  "generated_at": "2026-07-14T21:57:24.554Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
-  "count": 24,
+  "count": 25,
   "products": [
+    {
+      "id": "7db9d13f-52e2-455a-ac92-d271b2378c72",
+      "slug": "milano-bq4vyn",
+      "name": "milano",
+      "name_translations": {
+        "en": "milano",
+        "he": "מילאנו"
+      },
+      "description": "",
+      "short_description": null,
+      "sku": null,
+      "brand": null,
+      "price": 2700,
+      "base_price": 3400,
+      "sale_price": 2700,
+      "currency": "ILS",
+      "images": [
+        "https://casa-verona.zappy5.app/assets/product-1784066179219-q9cz4a.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://casa-verona.zappy5.app/product/milano-bq4vyn",
+      "categories": [],
+      "updated_at": "2026-07-14T21:56:53.118Z"
+    },
     {
       "id": "0204d603-84ff-4bac-9f4f-07a588976fd6",
       "slug": "kimono-3zr6c2",

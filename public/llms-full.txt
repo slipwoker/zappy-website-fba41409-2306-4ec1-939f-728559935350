@@ -4478,6 +4478,13 @@ Description: casa verona - תודה שפניתם אלינו
 
 ## Product Catalog
 
+### milano
+URL: https://casa-verona.zappy5.app/product/milano-bq4vyn
+Price: 2700.00 ILS (sale, was 3400.00 ILS)
+Availability: In stock
+
+---
+
 ### kimono
 URL: https://casa-verona.zappy5.app/product/kimono-3zr6c2
 Price: 2500.00 ILS (sale, was 3200.00 ILS)

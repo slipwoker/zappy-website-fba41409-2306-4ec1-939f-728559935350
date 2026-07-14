@@ -4,7 +4,20 @@
     <title>casa verona</title>
     <link>https://casa-verona.zappy5.app</link>
     <description>Product feed for casa verona</description>
-    <lastBuildDate>Tue, 14 Jul 2026 21:46:48 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jul 2026 21:57:24 GMT</lastBuildDate>
+    <item>
+      <g:id>7db9d13f-52e2-455a-ac92-d271b2378c72</g:id>
+      <g:title>milano</g:title>
+      <g:description>milano</g:description>
+      <g:link>https://casa-verona.zappy5.app/product/milano-bq4vyn</g:link>
+      <g:image_link>https://casa-verona.zappy5.app/assets/product-1784066179219-q9cz4a.webp</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>3400.00 ILS</g:price>
+      <g:sale_price>2700.00 ILS</g:sale_price>
+      <g:condition>new</g:condition>
+      <g:brand>casa verona</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+    </item>
     <item>
       <g:id>0204d603-84ff-4bac-9f4f-07a588976fd6</g:id>
       <g:title>kimono</g:title>
