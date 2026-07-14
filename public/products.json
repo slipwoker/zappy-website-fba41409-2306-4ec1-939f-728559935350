@@ -1,6 +1,6 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-14T21:25:23.738Z",
+  "generated_at": "2026-07-14T21:26:29.327Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
   "count": 16,
@@ -187,11 +187,11 @@
     },
     {
       "id": "3c0ca378-36f9-47ab-a2a7-3aeae6dfd34e",
-      "slug": "casas-2lr6q5",
+      "slug": "casas-rbxgrn",
       "name": "Casas",
       "name_translations": {},
       "description": "",
-      "short_description": "casas הוא סלון הבית שלום הוא סלון מאוד מרשים ויוקרתי שמתאים בעיקר לחללים גדולים ופתוחים.\nסלון רביצה מפנק ונוח .",
+      "short_description": "casas הוא סלון הבית שלום הוא סלון מאוד מרשים ויוקרתי שמתאים בעיקר לחללים גדולים ופתוחים.\n\nזמין בהתאמה אישית של מידות, בדים וצבעים. סלון רביצה מפנק ונוח .",
       "sku": null,
       "brand": null,
       "price": 9500,
@@ -203,17 +203,17 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://casa-verona.zappy5.app/product/casas-2lr6q5",
+      "url": "https://casa-verona.zappy5.app/product/casas-rbxgrn",
       "categories": [],
-      "updated_at": "2026-07-14T20:38:46.749Z"
+      "updated_at": "2026-07-14T21:25:29.975Z"
     },
     {
       "id": "b50a3ad2-930e-4876-aae6-091f2e100342",
-      "slug": "aston-psnjcb",
+      "slug": "aston-aabeml",
       "name": "Aston",
       "name_translations": {},
       "description": "",
-      "short_description": "סלון רביצה מפנק עם גימורים יוקרתיים לצד השולחן המעוצב להנחת אקסזוריז או שתיה.\n",
+      "short_description": "סלון רביצה מפנק עם גימורים יוקרתיים לצד השולחן המעוצב להנחת אקסזוריז או שתיה.\nזמין בהתאמה אישית של מידות, בדים וצבעים.\n",
       "sku": null,
       "brand": null,
       "price": 8370,
@@ -225,17 +225,17 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://casa-verona.zappy5.app/product/aston-psnjcb",
+      "url": "https://casa-verona.zappy5.app/product/aston-aabeml",
       "categories": [],
-      "updated_at": "2026-07-14T20:28:26.872Z"
+      "updated_at": "2026-07-14T21:25:44.156Z"
     },
     {
       "id": "8d579147-0269-43af-839a-abaf4bbbc7a3",
-      "slug": "torino-moderno-cl3mbt",
+      "slug": "torino-moderno-u4ripl",
       "name": "Torino moderno ",
       "name_translations": {},
       "description": "",
-      "short_description": " פינת ישבה פניתית ויוקרתית בגימורים מיוחדים ויוקרתיים קווים מדויקים ונקים שנותנים מראה נקי ונעים לעין.\nאז רק נישאר לכם להזמין אתם מזמינים ואנחנו דואגים שהאורחים הבאים שנכנסים אליכם הבית המילה ראשונה שתשמעו זה וואוו.",
+      "short_description": " פינת ישבה פניתית ויוקרתית בגימורים מיוחדים ויוקרתיים קווים מדויקים ונקים שנותנים מראה נקי ונעים לעין.\nאז רק נישאר לכם להזמין אתם מזמינים ואנחנו דואגים שהאורחים הבאים שנכנסים אליכם הבית המילה ראשונה שתשמעו זה וואוו.\nזמין בהתאמה אישית של מידות, בדים וצבעים.",
       "sku": null,
       "brand": null,
       "price": 7800,
@@ -247,17 +247,17 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://casa-verona.zappy5.app/product/torino-moderno-cl3mbt",
+      "url": "https://casa-verona.zappy5.app/product/torino-moderno-u4ripl",
       "categories": [],
-      "updated_at": "2026-07-14T17:58:06.051Z"
+      "updated_at": "2026-07-14T21:25:57.699Z"
     },
     {
       "id": "f377df2f-a090-4f8b-b402-c687e3c1e7f5",
-      "slug": "cloud-stone-3bocw8",
+      "slug": "cloud-stone-gyb73o",
       "name": "Cloud stone ",
       "name_translations": {},
       "description": "",
-      "short_description": "ספה מודולרית יוקרתית המשלבת עיצוב פיסולי עם נוחות יוצאת דופן. הקווים המעוגלים והכריות הרכות יוצרים מראה מודרני ונקי.",
+      "short_description": "ספה מודולרית יוקרתית המשלבת עיצוב פיסולי עם נוחות יוצאת דופן. הקווים המעוגלים והכריות הרכות יוצרים מראה מודרני ונקי.\nזמין בהתאמה אישית של מידות, בדים וצבעים.",
       "sku": null,
       "brand": null,
       "price": 8250,
@@ -271,17 +271,17 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://casa-verona.zappy5.app/product/cloud-stone-3bocw8",
+      "url": "https://casa-verona.zappy5.app/product/cloud-stone-gyb73o",
       "categories": [],
-      "updated_at": "2026-07-14T17:43:02.494Z"
+      "updated_at": "2026-07-14T21:26:07.650Z"
     },
     {
       "id": "446a201b-0885-4717-8d2f-d47358e12089",
-      "slug": "axis-tm3jt8",
+      "slug": "axis-otwvnl",
       "name": "Axis",
       "name_translations": {},
       "description": "",
-      "short_description": "סלון קלאסי ומדורני בגימורים מיוחדים ושונים בנוחות מקסימלית.",
+      "short_description": "סלון קלאסי ומדורני בגימורים מיוחדים ושונים בנוחות מקסימלית.\nזמין בהתאמה אישית של מידות, בדים וצבעים.",
       "sku": null,
       "brand": null,
       "price": 8100,
@@ -295,9 +295,9 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://casa-verona.zappy5.app/product/axis-tm3jt8",
+      "url": "https://casa-verona.zappy5.app/product/axis-otwvnl",
       "categories": [],
-      "updated_at": "2026-07-14T17:35:44.376Z"
+      "updated_at": "2026-07-14T21:26:20.357Z"
     },
     {
       "id": "ba9fd494-bc18-43a2-abb7-fd6b124bd4ad",
