@@ -64,7 +64,12 @@ Information about WCAG compliance and accessibility features.
 
 ## Products
 
-**Total active products: 21**
+**Total active products: 22**
+
+### paprika 
+https://casa-verona.zappy5.app/product/paprika-t0ctf7
+- Price: 0.00 ILS
+- Availability: In stock
 
 ### Plaza
 https://casa-verona.zappy5.app/product/plaza-4bwgvf

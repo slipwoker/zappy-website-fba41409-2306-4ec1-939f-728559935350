@@ -4,7 +4,18 @@
     <title>casa verona</title>
     <link>https://casa-verona.zappy5.app</link>
     <description>Product feed for casa verona</description>
-    <lastBuildDate>Tue, 14 Jul 2026 21:42:20 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jul 2026 21:43:51 GMT</lastBuildDate>
+    <item>
+      <g:id>64db42c3-4104-472b-883e-6be4b30a8073</g:id>
+      <g:title>paprika </g:title>
+      <g:description>paprika</g:description>
+      <g:link>https://casa-verona.zappy5.app/product/paprika-t0ctf7</g:link>
+      <g:availability>in_stock</g:availability>
+      <g:price>0.00 ILS</g:price>
+      <g:condition>new</g:condition>
+      <g:brand>casa verona</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+    </item>
     <item>
       <g:id>3e478c7f-c194-4a42-9ead-87f8d08b0545</g:id>
       <g:title>Plaza</g:title>
