@@ -4478,6 +4478,13 @@ Description: casa verona - תודה שפניתם אלינו
 
 ## Product Catalog
 
+### Aston
+URL: https://casa-verona.zappy5.app/product/aston-psnjcb
+Price: 8370.00 ILS (sale, was 9999.00 ILS)
+Availability: In stock
+
+---
+
 ### Torino moderno 
 URL: https://casa-verona.zappy5.app/product/torino-moderno-cl3mbt
 Price: 7800.00 ILS (sale, was 11000.00 ILS)

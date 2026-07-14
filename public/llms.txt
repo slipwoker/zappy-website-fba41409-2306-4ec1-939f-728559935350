@@ -64,7 +64,14 @@ Information about WCAG compliance and accessibility features.
 
 ## Products
 
-**Total active products: 6**
+**Total active products: 7**
+
+### Aston
+https://casa-verona.zappy5.app/product/aston-psnjcb
+- Price: 8370.00 ILS (sale, was 9999.00 ILS)
+- Availability: In stock
+- Description: סלון רביצה מפנק עם גימורים יוקרתיים לצד השולחן המעוצב להנחת אקסזוריז או שתיה.
+- Image: https://casa-verona.zappy5.app/assets/product-1784060534152-4p57h.webp
 
 ### Torino moderno 
 https://casa-verona.zappy5.app/product/torino-moderno-cl3mbt
