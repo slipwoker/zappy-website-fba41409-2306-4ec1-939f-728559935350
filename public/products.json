@@ -1,10 +1,32 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-14T20:52:25.241Z",
+  "generated_at": "2026-07-14T20:53:22.489Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
-  "count": 9,
+  "count": 10,
   "products": [
+    {
+      "id": "f9b195ab-02ed-4a88-984c-bc9470b3ee5b",
+      "slug": "tsmmbm-zhqyg1",
+      "name": "צםמבם ",
+      "name_translations": {},
+      "description": "",
+      "short_description": null,
+      "sku": null,
+      "brand": null,
+      "price": 0,
+      "base_price": 0,
+      "sale_price": null,
+      "currency": "ILS",
+      "images": [
+        "https://casa-verona.zappy5.app/assets/product-1784062346771-u6uy3.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://casa-verona.zappy5.app/product/tsmmbm-zhqyg1",
+      "categories": [],
+      "updated_at": "2026-07-14T20:52:50.898Z"
+    },
     {
       "id": "b9d2f56b-8dc1-448b-a489-114f4cd2326a",
       "slug": "orion-u2gfl4",
