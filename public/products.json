@@ -1,10 +1,34 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-14T17:36:16.085Z",
+  "generated_at": "2026-07-14T17:43:34.233Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
-  "count": 4,
+  "count": 5,
   "products": [
+    {
+      "id": "f377df2f-a090-4f8b-b402-c687e3c1e7f5",
+      "slug": "cloud-stone-3bocw8",
+      "name": "Cloud stone ",
+      "name_translations": {},
+      "description": "",
+      "short_description": "ספה מודולרית יוקרתית המשלבת עיצוב פיסולי עם נוחות יוצאת דופן. הקווים המעוגלים והכריות הרכות יוצרים מראה מודרני ונקי.",
+      "sku": null,
+      "brand": null,
+      "price": 8250,
+      "base_price": 11400,
+      "sale_price": 8250,
+      "currency": "ILS",
+      "images": [
+        "https://casa-verona.zappy5.app/assets/product-1784050712145-uzc77.webp",
+        "https://casa-verona.zappy5.app/assets/product-1784050732687-uqkwt.webp",
+        "https://casa-verona.zappy5.app/assets/product-1784050758908-262twd.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://casa-verona.zappy5.app/product/cloud-stone-3bocw8",
+      "categories": [],
+      "updated_at": "2026-07-14T17:43:02.494Z"
+    },
     {
       "id": "446a201b-0885-4717-8d2f-d47358e12089",
       "slug": "axis-tm3jt8",
