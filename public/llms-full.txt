@@ -4478,6 +4478,13 @@ Description: casa verona - תודה שפניתם אלינו
 
 ## Product Catalog
 
+### kobki
+URL: https://casa-verona.zappy5.app/product/kobki-xmskr4
+Price: 2800.00 ILS (sale, was 3600.00 ILS)
+Availability: In stock
+
+---
+
 ### cloha
 URL: https://casa-verona.zappy5.app/product/cloha-edpnlo
 Price: 2500.00 ILS (sale, was 3300.00 ILS)

@@ -1,10 +1,35 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-14T21:58:16.594Z",
+  "generated_at": "2026-07-14T21:58:35.925Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
-  "count": 26,
+  "count": 27,
   "products": [
+    {
+      "id": "4fa5a792-fc75-4a15-8f76-13f26ba740b2",
+      "slug": "kobki-xmskr4",
+      "name": "kobki",
+      "name_translations": {
+        "en": "kobki",
+        "he": "קובקי"
+      },
+      "description": "",
+      "short_description": null,
+      "sku": null,
+      "brand": null,
+      "price": 2800,
+      "base_price": 3600,
+      "sale_price": 2800,
+      "currency": "ILS",
+      "images": [
+        "https://casa-verona.zappy5.app/assets/product-1784066274582-6eoi6.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://casa-verona.zappy5.app/product/kobki-xmskr4",
+      "categories": [],
+      "updated_at": "2026-07-14T21:58:24.023Z"
+    },
     {
       "id": "834eae61-5a00-4b19-a445-050a312f5def",
       "slug": "cloha-edpnlo",

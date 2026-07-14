@@ -4,7 +4,20 @@
     <title>casa verona</title>
     <link>https://casa-verona.zappy5.app</link>
     <description>Product feed for casa verona</description>
-    <lastBuildDate>Tue, 14 Jul 2026 21:58:16 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jul 2026 21:58:35 GMT</lastBuildDate>
+    <item>
+      <g:id>4fa5a792-fc75-4a15-8f76-13f26ba740b2</g:id>
+      <g:title>kobki</g:title>
+      <g:description>kobki</g:description>
+      <g:link>https://casa-verona.zappy5.app/product/kobki-xmskr4</g:link>
+      <g:image_link>https://casa-verona.zappy5.app/assets/product-1784066274582-6eoi6.webp</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>3600.00 ILS</g:price>
+      <g:sale_price>2800.00 ILS</g:sale_price>
+      <g:condition>new</g:condition>
+      <g:brand>casa verona</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+    </item>
     <item>
       <g:id>834eae61-5a00-4b19-a445-050a312f5def</g:id>
       <g:title>cloha</g:title>

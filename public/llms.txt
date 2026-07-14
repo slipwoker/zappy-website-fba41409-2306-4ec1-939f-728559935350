@@ -64,7 +64,13 @@ Information about WCAG compliance and accessibility features.
 
 ## Products
 
-**Total active products: 26**
+**Total active products: 27**
+
+### kobki
+https://casa-verona.zappy5.app/product/kobki-xmskr4
+- Price: 2800.00 ILS (sale, was 3600.00 ILS)
+- Availability: In stock
+- Image: https://casa-verona.zappy5.app/assets/product-1784066274582-6eoi6.webp
 
 ### cloha
 https://casa-verona.zappy5.app/product/cloha-edpnlo
