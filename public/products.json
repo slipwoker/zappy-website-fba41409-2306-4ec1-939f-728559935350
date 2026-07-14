@@ -1,31 +1,31 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-14T17:57:39.211Z",
+  "generated_at": "2026-07-14T17:58:37.404Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
   "count": 6,
   "products": [
     {
       "id": "8d579147-0269-43af-839a-abaf4bbbc7a3",
-      "slug": "torino-moderno-wjot7w",
+      "slug": "torino-moderno-cl3mbt",
       "name": "Torino moderno ",
       "name_translations": {},
       "description": "",
       "short_description": " פינת ישבה פניתית ויוקרתית בגימורים מיוחדים ויוקרתיים קווים מדויקים ונקים שנותנים מראה נקי ונעים לעין.\nאז רק נישאר לכם להזמין אתם מזמינים ואנחנו דואגים שהאורחים הבאים שנכנסים אליכם הבית המילה ראשונה שתשמעו זה וואוו.",
       "sku": null,
       "brand": null,
-      "price": 0,
-      "base_price": 0,
-      "sale_price": null,
+      "price": 7800,
+      "base_price": 11000,
+      "sale_price": 7800,
       "currency": "ILS",
       "images": [
         "https://casa-verona.zappy5.app/assets/product-1784051488717-yufgd8.webp"
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://casa-verona.zappy5.app/product/torino-moderno-wjot7w",
+      "url": "https://casa-verona.zappy5.app/product/torino-moderno-cl3mbt",
       "categories": [],
-      "updated_at": "2026-07-14T17:57:07.833Z"
+      "updated_at": "2026-07-14T17:58:06.051Z"
     },
     {
       "id": "f377df2f-a090-4f8b-b402-c687e3c1e7f5",
