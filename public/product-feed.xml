@@ -4,7 +4,20 @@
     <title>casa verona</title>
     <link>https://casa-verona.zappy5.app</link>
     <description>Product feed for casa verona</description>
-    <lastBuildDate>Tue, 14 Jul 2026 21:45:52 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jul 2026 21:46:48 GMT</lastBuildDate>
+    <item>
+      <g:id>0204d603-84ff-4bac-9f4f-07a588976fd6</g:id>
+      <g:title>kimono</g:title>
+      <g:description>kimono</g:description>
+      <g:link>https://casa-verona.zappy5.app/product/kimono-3zr6c2</g:link>
+      <g:image_link>https://casa-verona.zappy5.app/assets/product-1784065547668-y42tl.webp</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>3200.00 ILS</g:price>
+      <g:sale_price>2500.00 ILS</g:sale_price>
+      <g:condition>new</g:condition>
+      <g:brand>casa verona</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+    </item>
     <item>
       <g:id>e7277a04-4fc0-4780-a6d1-489d2615e30d</g:id>
       <g:title>molino</g:title>

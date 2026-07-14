@@ -64,7 +64,13 @@ Information about WCAG compliance and accessibility features.
 
 ## Products
 
-**Total active products: 23**
+**Total active products: 24**
+
+### kimono
+https://casa-verona.zappy5.app/product/kimono-3zr6c2
+- Price: 2500.00 ILS (sale, was 3200.00 ILS)
+- Availability: In stock
+- Image: https://casa-verona.zappy5.app/assets/product-1784065547668-y42tl.webp
 
 ### molino
 https://casa-verona.zappy5.app/product/molino-o5tuvo

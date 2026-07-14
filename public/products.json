@@ -1,10 +1,35 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-14T21:45:52.174Z",
+  "generated_at": "2026-07-14T21:46:48.610Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
-  "count": 23,
+  "count": 24,
   "products": [
+    {
+      "id": "0204d603-84ff-4bac-9f4f-07a588976fd6",
+      "slug": "kimono-3zr6c2",
+      "name": "kimono",
+      "name_translations": {
+        "en": "kimono",
+        "he": "קימונו"
+      },
+      "description": "",
+      "short_description": null,
+      "sku": null,
+      "brand": null,
+      "price": 2500,
+      "base_price": 3200,
+      "sale_price": 2500,
+      "currency": "ILS",
+      "images": [
+        "https://casa-verona.zappy5.app/assets/product-1784065547668-y42tl.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://casa-verona.zappy5.app/product/kimono-3zr6c2",
+      "categories": [],
+      "updated_at": "2026-07-14T21:46:16.754Z"
+    },
     {
       "id": "e7277a04-4fc0-4780-a6d1-489d2615e30d",
       "slug": "molino-o5tuvo",
