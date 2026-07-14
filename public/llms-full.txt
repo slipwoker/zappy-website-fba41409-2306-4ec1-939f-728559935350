@@ -4478,6 +4478,13 @@ Description: casa verona - תודה שפניתם אלינו
 
 ## Product Catalog
 
+### molino
+URL: https://casa-verona.zappy5.app/product/molino-o5tuvo
+Price: 3300.00 ILS (sale, was 3800.00 ILS)
+Availability: In stock
+
+---
+
 ### paprdla
 URL: https://casa-verona.zappy5.app/product/paprdla-gua16f
 Price: 2800.00 ILS (sale, was 3300.00 ILS)

@@ -4,7 +4,20 @@
     <title>casa verona</title>
     <link>https://casa-verona.zappy5.app</link>
     <description>Product feed for casa verona</description>
-    <lastBuildDate>Tue, 14 Jul 2026 21:44:48 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jul 2026 21:45:52 GMT</lastBuildDate>
+    <item>
+      <g:id>e7277a04-4fc0-4780-a6d1-489d2615e30d</g:id>
+      <g:title>molino</g:title>
+      <g:description>molino</g:description>
+      <g:link>https://casa-verona.zappy5.app/product/molino-o5tuvo</g:link>
+      <g:image_link>https://casa-verona.zappy5.app/assets/product-1784065481746-kxltl7.webp</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>3800.00 ILS</g:price>
+      <g:sale_price>3300.00 ILS</g:sale_price>
+      <g:condition>new</g:condition>
+      <g:brand>casa verona</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+    </item>
     <item>
       <g:id>64db42c3-4104-472b-883e-6be4b30a8073</g:id>
       <g:title>paprdla</g:title>

@@ -1,10 +1,35 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-14T21:44:48.393Z",
+  "generated_at": "2026-07-14T21:45:52.174Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
-  "count": 22,
+  "count": 23,
   "products": [
+    {
+      "id": "e7277a04-4fc0-4780-a6d1-489d2615e30d",
+      "slug": "molino-o5tuvo",
+      "name": "molino",
+      "name_translations": {
+        "en": "molino",
+        "he": "מולינו"
+      },
+      "description": "",
+      "short_description": null,
+      "sku": null,
+      "brand": null,
+      "price": 3300,
+      "base_price": 3800,
+      "sale_price": 3300,
+      "currency": "ILS",
+      "images": [
+        "https://casa-verona.zappy5.app/assets/product-1784065481746-kxltl7.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://casa-verona.zappy5.app/product/molino-o5tuvo",
+      "categories": [],
+      "updated_at": "2026-07-14T21:45:20.528Z"
+    },
     {
       "id": "64db42c3-4104-472b-883e-6be4b30a8073",
       "slug": "paprdla-gua16f",
