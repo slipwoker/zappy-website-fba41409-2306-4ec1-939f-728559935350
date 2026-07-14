@@ -1,10 +1,32 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-14T20:28:58.551Z",
+  "generated_at": "2026-07-14T20:38:48.808Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
-  "count": 7,
+  "count": 8,
   "products": [
+    {
+      "id": "3c0ca378-36f9-47ab-a2a7-3aeae6dfd34e",
+      "slug": "casas-2lr6q5",
+      "name": "Casas",
+      "name_translations": {},
+      "description": "",
+      "short_description": "casas הוא סלון הבית שלום הוא סלון מאוד מרשים ויוקרתי שמתאים בעיקר לחללים גדולים ופתוחים.\nסלון רביצה מפנק ונוח .",
+      "sku": null,
+      "brand": null,
+      "price": 9500,
+      "base_price": 14000,
+      "sale_price": 9500,
+      "currency": "ILS",
+      "images": [
+        "https://casa-verona.zappy5.app/assets/product-1784061347835-90t2yr.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://casa-verona.zappy5.app/product/casas-2lr6q5",
+      "categories": [],
+      "updated_at": "2026-07-14T20:38:46.749Z"
+    },
     {
       "id": "b50a3ad2-930e-4876-aae6-091f2e100342",
       "slug": "aston-psnjcb",

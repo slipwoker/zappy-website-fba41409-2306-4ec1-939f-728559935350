@@ -64,7 +64,14 @@ Information about WCAG compliance and accessibility features.
 
 ## Products
 
-**Total active products: 7**
+**Total active products: 8**
+
+### Casas
+https://casa-verona.zappy5.app/product/casas-2lr6q5
+- Price: 9500.00 ILS (sale, was 14000.00 ILS)
+- Availability: In stock
+- Description: casas הוא סלון הבית שלום הוא סלון מאוד מרשים ויוקרתי שמתאים בעיקר לחללים גדולים ופתוחים. סלון רביצה מפנק ונוח .
+- Image: https://casa-verona.zappy5.app/assets/product-1784061347835-90t2yr.webp
 
 ### Aston
 https://casa-verona.zappy5.app/product/aston-psnjcb
