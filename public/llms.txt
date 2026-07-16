@@ -64,7 +64,14 @@ Information about WCAG compliance and accessibility features.
 
 ## Products
 
-**Total active products: 45**
+**Total active products: 46**
+
+### Vivere
+https://casa-verona.zappy5.app/product/vivere-d32915
+- Price: 5000.00 ILS (sale, was 6000.00 ILS)
+- Availability: In stock
+- Category: מזנונים
+- Image: https://casa-verona.zappy5.app/assets/product-1784211693367-63rdfca.webp
 
 ### Prestigious
 https://casa-verona.zappy5.app/product/prestigious-jhkgoo

@@ -1,10 +1,37 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-16T14:19:54.585Z",
+  "generated_at": "2026-07-16T14:24:50.381Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
-  "count": 45,
+  "count": 46,
   "products": [
+    {
+      "id": "fcbd0dcf-4f28-471f-b49a-0546f0bae5c1",
+      "slug": "vivere-d32915",
+      "name": "Vivere",
+      "name_translations": {
+        "en": "Vivere",
+        "he": "ויבֶרֶה"
+      },
+      "description": "",
+      "short_description": null,
+      "sku": null,
+      "brand": null,
+      "price": 5000,
+      "base_price": 6000,
+      "sale_price": 5000,
+      "currency": "ILS",
+      "images": [
+        "https://casa-verona.zappy5.app/assets/product-1784211693367-63rdfca.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://casa-verona.zappy5.app/product/vivere-d32915",
+      "categories": [
+        "מזנונים"
+      ],
+      "updated_at": "2026-07-16T14:24:06.906Z"
+    },
     {
       "id": "c0a362c4-2585-4f5b-bf84-62f7dcdf0ef2",
       "slug": "prestigious-jhkgoo",

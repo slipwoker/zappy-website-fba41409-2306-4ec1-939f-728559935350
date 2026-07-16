@@ -4478,6 +4478,13 @@ Description: casa verona - תודה שפניתם אלינו
 
 ## Product Catalog
 
+### Vivere
+URL: https://casa-verona.zappy5.app/product/vivere-d32915
+Price: 5000.00 ILS (sale, was 6000.00 ILS)
+Availability: In stock
+
+---
+
 ### Prestigious
 URL: https://casa-verona.zappy5.app/product/prestigious-jhkgoo
 Price: 5200.00 ILS (sale, was 6000.00 ILS)
