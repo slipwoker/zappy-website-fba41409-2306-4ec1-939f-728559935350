@@ -1,6 +1,6 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-16T12:04:53.978Z",
+  "generated_at": "2026-07-16T12:06:06.624Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
   "count": 27,
@@ -330,7 +330,7 @@
     },
     {
       "id": "7de93f02-a9c6-44b1-88be-30b928ac0353",
-      "slug": "modena-davhj3",
+      "slug": "modena-i2yzic",
       "name": "Modena",
       "name_translations": {},
       "description": "",
@@ -347,13 +347,15 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://casa-verona.zappy5.app/product/modena-davhj3",
-      "categories": [],
-      "updated_at": "2026-07-14T21:24:04.876Z"
+      "url": "https://casa-verona.zappy5.app/product/modena-i2yzic",
+      "categories": [
+        "סלונים"
+      ],
+      "updated_at": "2026-07-16T12:04:57.461Z"
     },
     {
       "id": "01b5c08e-159d-4001-8924-72ebf71214e9",
-      "slug": "curva-jefpgo",
+      "slug": "curva-sliqy5",
       "name": "Curva",
       "name_translations": {},
       "description": "",
@@ -370,13 +372,15 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://casa-verona.zappy5.app/product/curva-jefpgo",
-      "categories": [],
-      "updated_at": "2026-07-14T21:24:18.166Z"
+      "url": "https://casa-verona.zappy5.app/product/curva-sliqy5",
+      "categories": [
+        "סלונים"
+      ],
+      "updated_at": "2026-07-16T12:05:16.574Z"
     },
     {
       "id": "913b37d8-aa2d-4e83-9305-a95e6cafc9c6",
-      "slug": "capri-x0mdwv",
+      "slug": "capri-5wjefa",
       "name": "Capri",
       "name_translations": {},
       "description": "",
@@ -393,13 +397,15 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://casa-verona.zappy5.app/product/capri-x0mdwv",
-      "categories": [],
-      "updated_at": "2026-07-14T21:24:30.684Z"
+      "url": "https://casa-verona.zappy5.app/product/capri-5wjefa",
+      "categories": [
+        "סלונים"
+      ],
+      "updated_at": "2026-07-16T12:05:34.734Z"
     },
     {
       "id": "466f7fd4-a82f-4ffd-bdae-64b912dd8a11",
-      "slug": "milano-cube-s67nf3",
+      "slug": "milano-cube-8zrngu",
       "name": "Milano cube",
       "name_translations": {},
       "description": "",
@@ -415,9 +421,11 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://casa-verona.zappy5.app/product/milano-cube-s67nf3",
-      "categories": [],
-      "updated_at": "2026-07-14T21:24:52.020Z"
+      "url": "https://casa-verona.zappy5.app/product/milano-cube-8zrngu",
+      "categories": [
+        "סלונים"
+      ],
+      "updated_at": "2026-07-16T12:05:51.928Z"
     },
     {
       "id": "f9b195ab-02ed-4a88-984c-bc9470b3ee5b",

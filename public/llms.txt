@@ -155,30 +155,34 @@ https://casa-verona.zappy5.app/product/alba-qxvs4o
 - Image: https://casa-verona.zappy5.app/assets/product-1784063793272-1anmb.webp
 
 ### Modena
-https://casa-verona.zappy5.app/product/modena-davhj3
+https://casa-verona.zappy5.app/product/modena-i2yzic
 - Price: 8500.00 ILS (sale, was 11300.00 ILS)
 - Availability: In stock
+- Category: סלונים
 - Description: סלון מודולרי יוקרתי עם מושבי רביצה מפנקים, עיצוב מודרני ואפשרות להתאמה אישית של סידור היחידות. שילוב מושלם של גמישות, נוחות ואיכות ללא פשרות. זמין בהתאמה אישית של מידות, בדים וצבעים.
 - Image: https://casa-verona.zappy5.app/assets/product-1784063577892-88rkz5.webp
 
 ### Curva
-https://casa-verona.zappy5.app/product/curva-jefpgo
+https://casa-verona.zappy5.app/product/curva-sliqy5
 - Price: 7000.00 ILS (sale, was 9000.00 ILS)
 - Availability: In stock
+- Category: סלונים
 - Description: סלון Curva משלב בצורה מושלמת בין קווים מרובעים ונקיים לבין מבנה מקומר וייחודי. מושבי רביצה מפנקים וגימור יוקרתי. שילוב מושלם של נוחות , איכות ועיצוב ייחודי שמתאים לכל חלל מעוצב. זמין בהתאמה אישית של מידות, בדים וצבעים.
 - Image: https://casa-verona.zappy5.app/assets/product-1784063248760-edswh8.webp
 
 ### Capri
-https://casa-verona.zappy5.app/product/capri-x0mdwv
+https://casa-verona.zappy5.app/product/capri-5wjefa
 - Price: 7800.00 ILS (sale, was 9300.00 ILS)
 - Availability: In stock
+- Category: סלונים
 - Description: סלון רביצה פינתי בעיצוב אלגנטי עם מושבים עמוקים ומפנקים, מיוצר מחומרי גלם איכותיים לנוחות מרבית, עמידות לאורך שנים ומראה שמשדר יוקרה בכל חלל. זמין בהתאמה אישית של מידות, בדים וצבעים.
 - Image: https://casa-verona.zappy5.app/assets/product-1784063032197-435ov.webp
 
 ### Milano cube
-https://casa-verona.zappy5.app/product/milano-cube-s67nf3
+https://casa-verona.zappy5.app/product/milano-cube-8zrngu
 - Price: 8400.00 ILS (sale, was 10700.00 ILS)
 - Availability: In stock
+- Category: סלונים
 - Description: סלון רביצה מעוצב עם מושבים בתפירת קוביות יוקרתית, המעניק שילוב מושלם של נוחות, איכות ועיצוב עכשווי.. הבחירה המושלמת לכל מי שמחפש להפוך את הסלון למרכז הבית. זמין בהתאמה אישית של מידות, בדים וצבעים.
 - Image: https://casa-verona.zappy5.app/assets/product-1784062740435-uuwie7.webp
 
