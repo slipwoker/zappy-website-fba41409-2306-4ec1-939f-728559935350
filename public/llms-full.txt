@@ -4478,6 +4478,13 @@ Description: casa verona - תודה שפניתם אלינו
 
 ## Product Catalog
 
+### SRENO
+URL: https://casa-verona.zappy5.app/product/sreno-23h2hd
+Price: 0.00 ILS
+Availability: In stock
+
+---
+
 ### kobki
 URL: https://casa-verona.zappy5.app/product/kobki-xmskr4
 Price: 2800.00 ILS (sale, was 3600.00 ILS)

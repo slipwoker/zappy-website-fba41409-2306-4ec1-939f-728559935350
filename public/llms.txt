@@ -64,7 +64,15 @@ Information about WCAG compliance and accessibility features.
 
 ## Products
 
-**Total active products: 27**
+**Total active products: 28**
+
+### SRENO
+https://casa-verona.zappy5.app/product/sreno-23h2hd
+- Price: 0.00 ILS
+- Availability: In stock
+- Category: סלונים
+- Description: סלון קלאסי ושקט עם גימורים מיוחדים, וקווים מדויקים שנותנים מראה יוקרתי. בנוחות מרבית ומקסימאלית. זמין בכל מידה ובד לירצונכם.
+- Image: https://casa-verona.zappy5.app/assets/product-1784203792525-bppo1l.webp
 
 ### kobki
 https://casa-verona.zappy5.app/product/kobki-xmskr4
