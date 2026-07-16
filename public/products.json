@@ -1,33 +1,33 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-16T12:32:50.532Z",
+  "generated_at": "2026-07-16T12:34:17.319Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
   "count": 28,
   "products": [
     {
       "id": "d8b1ee6c-2a28-4b18-b55e-29906a64bc3f",
-      "slug": "sreno-23h2hd",
+      "slug": "sreno-k87vpo",
       "name": "SRENO",
       "name_translations": {},
       "description": "",
       "short_description": "סלון קלאסי ושקט עם גימורים מיוחדים, וקווים מדויקים שנותנים מראה יוקרתי.\nבנוחות מרבית ומקסימאלית.\nזמין בכל מידה ובד לירצונכם.",
       "sku": null,
       "brand": null,
-      "price": 0,
-      "base_price": 0,
-      "sale_price": null,
+      "price": 6900,
+      "base_price": 8300,
+      "sale_price": 6900,
       "currency": "ILS",
       "images": [
         "https://casa-verona.zappy5.app/assets/product-1784203792525-bppo1l.webp"
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://casa-verona.zappy5.app/product/sreno-23h2hd",
+      "url": "https://casa-verona.zappy5.app/product/sreno-k87vpo",
       "categories": [
         "סלונים"
       ],
-      "updated_at": "2026-07-16T12:13:39.700Z"
+      "updated_at": "2026-07-16T12:33:45.614Z"
     },
     {
       "id": "4fa5a792-fc75-4a15-8f76-13f26ba740b2",
