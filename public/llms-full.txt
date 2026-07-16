@@ -4478,6 +4478,13 @@ Description: casa verona - תודה שפניתם אלינו
 
 ## Product Catalog
 
+### Aurora
+URL: https://casa-verona.zappy5.app/product/aurora-qfr4hj
+Price: 5000.00 ILS (sale, was 7000.00 ILS)
+Availability: In stock
+
+---
+
 ### perla 
 URL: https://casa-verona.zappy5.app/product/perla-054yfc
 Price: 4800.00 ILS (sale, was 6000.00 ILS)

@@ -4,7 +4,20 @@
     <title>casa verona</title>
     <link>https://casa-verona.zappy5.app</link>
     <description>Product feed for casa verona</description>
-    <lastBuildDate>Thu, 16 Jul 2026 14:25:33 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jul 2026 14:26:33 GMT</lastBuildDate>
+    <item>
+      <g:id>e74e83df-e1a8-42b6-bde2-9a87f632d6e8</g:id>
+      <g:title>Aurora</g:title>
+      <g:description>Aurora</g:description>
+      <g:link>https://casa-verona.zappy5.app/product/aurora-qfr4hj</g:link>
+      <g:availability>in_stock</g:availability>
+      <g:price>7000.00 ILS</g:price>
+      <g:sale_price>5000.00 ILS</g:sale_price>
+      <g:condition>new</g:condition>
+      <g:brand>casa verona</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>מזנונים</g:product_type>
+    </item>
     <item>
       <g:id>fcbd0dcf-4f28-471f-b49a-0546f0bae5c1</g:id>
       <g:title>perla </g:title>
