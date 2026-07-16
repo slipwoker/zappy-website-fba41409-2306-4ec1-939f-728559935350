@@ -4478,6 +4478,13 @@ Description: casa verona - תודה שפניתם אלינו
 
 ## Product Catalog
 
+### MOONLIGTH
+URL: https://casa-verona.zappy5.app/product/moonligth-n58ymo
+Price: 7300.00 ILS (sale, was 9000.00 ILS)
+Availability: In stock
+
+---
+
 ### ELEGANZA 
 URL: https://casa-verona.zappy5.app/product/eleganza-bbdisf
 Price: 9200.00 ILS (sale, was 13000.00 ILS)

@@ -64,7 +64,14 @@ Information about WCAG compliance and accessibility features.
 
 ## Products
 
-**Total active products: 29**
+**Total active products: 30**
+
+### MOONLIGTH
+https://casa-verona.zappy5.app/product/moonligth-n58ymo
+- Price: 7300.00 ILS (sale, was 9000.00 ILS)
+- Availability: In stock
+- Description: ספה קלאסית עם נגיעות קסם שאי אפשר שלא לשים לב נוחות מרבית ואורטפדית. קיימת בכל הצבעים המידות והבדים.
+- Image: https://casa-verona.zappy5.app/assets/product-1784205570955-muwlec.webp
 
 ### ELEGANZA 
 https://casa-verona.zappy5.app/product/eleganza-bbdisf
