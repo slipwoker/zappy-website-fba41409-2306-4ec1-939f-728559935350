@@ -1,6 +1,6 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-16T12:14:11.447Z",
+  "generated_at": "2026-07-16T12:16:04.459Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
   "count": 28,
@@ -574,8 +574,8 @@
     },
     {
       "id": "f377df2f-a090-4f8b-b402-c687e3c1e7f5",
-      "slug": "cloud-stone-v9sye0",
-      "name": "Cloud stone ",
+      "slug": "lusso-55924o",
+      "name": "LUSSO",
       "name_translations": {},
       "description": "",
       "short_description": "ספה מודולרית יוקרתית המשלבת עיצוב פיסולי עם נוחות יוצאת דופן. הקווים המעוגלים והכריות הרכות יוצרים מראה מודרני ונקי.\nזמין בהתאמה אישית של מידות, בדים וצבעים.",
@@ -592,11 +592,11 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://casa-verona.zappy5.app/product/cloud-stone-v9sye0",
+      "url": "https://casa-verona.zappy5.app/product/lusso-55924o",
       "categories": [
         "סלונים"
       ],
-      "updated_at": "2026-07-16T12:07:55.117Z"
+      "updated_at": "2026-07-16T12:15:31.252Z"
     },
     {
       "id": "446a201b-0885-4717-8d2f-d47358e12089",
