@@ -4,7 +4,21 @@
     <title>casa verona</title>
     <link>https://casa-verona.zappy5.app</link>
     <description>Product feed for casa verona</description>
-    <lastBuildDate>Thu, 16 Jul 2026 13:23:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jul 2026 13:26:53 GMT</lastBuildDate>
+    <item>
+      <g:id>0cccae11-cc93-43ea-b1d0-4d0d32bc79d5</g:id>
+      <g:title>bilanco</g:title>
+      <g:description>bilanco</g:description>
+      <g:link>https://casa-verona.zappy5.app/product/bilanco-xnyhum</g:link>
+      <g:image_link>https://casa-verona.zappy5.app/assets/product-1784208333166-08bebo.webp</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>3000.00 ILS</g:price>
+      <g:sale_price>2300.00 ILS</g:sale_price>
+      <g:condition>new</g:condition>
+      <g:brand>casa verona</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>כורסאות</g:product_type>
+    </item>
     <item>
       <g:id>19ca3d56-b981-406e-b9c1-64635fbd8e0e</g:id>
       <g:title>Carlo </g:title>

@@ -64,7 +64,14 @@ Information about WCAG compliance and accessibility features.
 
 ## Products
 
-**Total active products: 35**
+**Total active products: 36**
+
+### bilanco
+https://casa-verona.zappy5.app/product/bilanco-xnyhum
+- Price: 2300.00 ILS (sale, was 3000.00 ILS)
+- Availability: In stock
+- Category: כורסאות
+- Image: https://casa-verona.zappy5.app/assets/product-1784208333166-08bebo.webp
 
 ### Carlo 
 https://casa-verona.zappy5.app/product/carlo-mtylgr

@@ -4478,6 +4478,13 @@ Description: casa verona - תודה שפניתם אלינו
 
 ## Product Catalog
 
+### bilanco
+URL: https://casa-verona.zappy5.app/product/bilanco-xnyhum
+Price: 2300.00 ILS (sale, was 3000.00 ILS)
+Availability: In stock
+
+---
+
 ### Carlo 
 URL: https://casa-verona.zappy5.app/product/carlo-mtylgr
 Price: 6999.00 ILS (sale, was 8700.00 ILS)
