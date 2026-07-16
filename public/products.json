@@ -1,10 +1,36 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-16T17:00:09.348Z",
+  "generated_at": "2026-07-16T17:26:11.195Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
-  "count": 49,
+  "count": 50,
   "products": [
+    {
+      "id": "18c8554a-06d0-4b14-8c77-6a284790afcc",
+      "slug": "babels-cjstsk",
+      "name": "Babels ",
+      "name_translations": {},
+      "description": "",
+      "short_description": "שוחלן כדורים עם סטייל מטורף..",
+      "sku": null,
+      "brand": null,
+      "price": 2600,
+      "base_price": 0,
+      "sale_price": 2600,
+      "currency": "ILS",
+      "images": [
+        "https://casa-verona.zappy5.app/assets/product-1784222021077-zc1sug.webp",
+        "https://casa-verona.zappy5.app/assets/product-1784222042042-2a8g9.webp",
+        "https://casa-verona.zappy5.app/assets/product-1784222063300-5rlzdj.webp",
+        "https://casa-verona.zappy5.app/assets/product-1784222087749-wv3ksk.webp",
+        "https://casa-verona.zappy5.app/assets/product-1784222243991-4w7f1p.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://casa-verona.zappy5.app/product/babels-cjstsk",
+      "categories": [],
+      "updated_at": "2026-07-16T17:25:39.564Z"
+    },
     {
       "id": "6b6a71db-a240-40ef-b7bb-1cc96377e8a4",
       "slug": "nero-zctnuy",

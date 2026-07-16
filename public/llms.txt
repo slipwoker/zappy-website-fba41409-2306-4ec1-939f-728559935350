@@ -64,7 +64,14 @@ Information about WCAG compliance and accessibility features.
 
 ## Products
 
-**Total active products: 49**
+**Total active products: 50**
+
+### Babels 
+https://casa-verona.zappy5.app/product/babels-cjstsk
+- Price: 2600.00 ILS
+- Availability: In stock
+- Description: שוחלן כדורים עם סטייל מטורף..
+- Image: https://casa-verona.zappy5.app/assets/product-1784222021077-zc1sug.webp
 
 ### Nero
 https://casa-verona.zappy5.app/product/nero-zctnuy
