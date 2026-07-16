@@ -64,7 +64,14 @@ Information about WCAG compliance and accessibility features.
 
 ## Products
 
-**Total active products: 32**
+**Total active products: 33**
+
+### Palazzo Bianco 
+https://casa-verona.zappy5.app/product/palazzo-bianco-fd71u9
+- Price: 9000.00 ILS (sale, was 12600.00 ILS)
+- Availability: In stock
+- Description: טוהר הלבן מורם לדרגת יצירת מופת. ה- Palazzo מציגה גאומטריה מרשימה וריפוד ללא דופי. מעוצבת לפנים שבהם אור ומרחב הם הדמויות הראשיות.
+- Image: https://casa-verona.zappy5.app/assets/product-1784207002644-3j3dl4.webp
 
 ### Dolce Vita Sofa
 https://casa-verona.zappy5.app/product/dolce-vita-sofa-q91dlv
