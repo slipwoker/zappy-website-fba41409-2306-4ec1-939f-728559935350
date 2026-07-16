@@ -1,13 +1,13 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-16T17:27:02.158Z",
+  "generated_at": "2026-07-16T17:27:58.993Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
   "count": 50,
   "products": [
     {
       "id": "18c8554a-06d0-4b14-8c77-6a284790afcc",
-      "slug": "babels-efv3er",
+      "slug": "babels-s23tfr",
       "name": "Babels ",
       "name_translations": {},
       "description": "",
@@ -15,7 +15,7 @@
       "sku": null,
       "brand": null,
       "price": 2600,
-      "base_price": 0,
+      "base_price": 2600,
       "sale_price": 2600,
       "currency": "ILS",
       "images": [
@@ -27,11 +27,11 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://casa-verona.zappy5.app/product/babels-efv3er",
+      "url": "https://casa-verona.zappy5.app/product/babels-s23tfr",
       "categories": [
         "שולחנות סלון"
       ],
-      "updated_at": "2026-07-16T17:26:30.746Z"
+      "updated_at": "2026-07-16T17:27:27.095Z"
     },
     {
       "id": "6b6a71db-a240-40ef-b7bb-1cc96377e8a4",
