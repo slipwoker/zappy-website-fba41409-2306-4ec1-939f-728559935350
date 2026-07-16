@@ -4478,6 +4478,13 @@ Description: casa verona - תודה שפניתם אלינו
 
 ## Product Catalog
 
+### sahara
+URL: https://casa-verona.zappy5.app/product/sahara-pwnbkh
+Price: 4399.00 ILS (sale, was 5200.00 ILS)
+Availability: In stock
+
+---
+
 ### monaco
 URL: https://casa-verona.zappy5.app/product/monaco-fjjns3
 Price: 2800.00 ILS (sale, was 3600.00 ILS)
