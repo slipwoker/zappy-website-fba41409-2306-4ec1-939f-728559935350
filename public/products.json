@@ -1,6 +1,6 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-16T12:16:04.459Z",
+  "generated_at": "2026-07-16T12:29:28.732Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
   "count": 28,
@@ -600,8 +600,8 @@
     },
     {
       "id": "446a201b-0885-4717-8d2f-d47358e12089",
-      "slug": "axis-j32hux",
-      "name": "Axis",
+      "slug": "firenze-modular-wl3y50",
+      "name": "Firenze Modular",
       "name_translations": {},
       "description": "",
       "short_description": "סלון קלאסי ומדורני בגימורים מיוחדים ושונים בנוחות מקסימלית.\nזמין בהתאמה אישית של מידות, בדים וצבעים.",
@@ -618,11 +618,11 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://casa-verona.zappy5.app/product/axis-j32hux",
+      "url": "https://casa-verona.zappy5.app/product/firenze-modular-wl3y50",
       "categories": [
         "סלונים"
       ],
-      "updated_at": "2026-07-16T12:08:13.180Z"
+      "updated_at": "2026-07-16T12:28:57.262Z"
     },
     {
       "id": "ba9fd494-bc18-43a2-abb7-fd6b124bd4ad",
