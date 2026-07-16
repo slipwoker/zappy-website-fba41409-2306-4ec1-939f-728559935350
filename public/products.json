@@ -1,10 +1,34 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-16T13:09:24.169Z",
+  "generated_at": "2026-07-16T13:16:14.474Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
-  "count": 33,
+  "count": 34,
   "products": [
+    {
+      "id": "840e722c-6671-449b-bdff-9d33094ca262",
+      "slug": "monta-6cegwz",
+      "name": "Monta",
+      "name_translations": {},
+      "description": "",
+      "short_description": "Monta היא ספה מיוחדת ומפנקת אין חלל שתכנס ולא כל העניים יהיו אליה.\nלאנשים שמחפשים נוכחות.",
+      "sku": null,
+      "brand": null,
+      "price": 6400,
+      "base_price": 8000,
+      "sale_price": 6400,
+      "currency": "ILS",
+      "images": [
+        "https://casa-verona.zappy5.app/assets/product-1784207588035-ust9wk.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://casa-verona.zappy5.app/product/monta-6cegwz",
+      "categories": [
+        "סלונים"
+      ],
+      "updated_at": "2026-07-16T13:15:42.901Z"
+    },
     {
       "id": "6f3872b7-5bb6-4d1b-8375-02b7e9ddeb89",
       "slug": "palazzo-bianco-fd71u9",

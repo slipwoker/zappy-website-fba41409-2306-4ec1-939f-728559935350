@@ -4478,6 +4478,13 @@ Description: casa verona - תודה שפניתם אלינו
 
 ## Product Catalog
 
+### Monta
+URL: https://casa-verona.zappy5.app/product/monta-6cegwz
+Price: 6400.00 ILS (sale, was 8000.00 ILS)
+Availability: In stock
+
+---
+
 ### Palazzo Bianco 
 URL: https://casa-verona.zappy5.app/product/palazzo-bianco-fd71u9
 Price: 9000.00 ILS (sale, was 12600.00 ILS)

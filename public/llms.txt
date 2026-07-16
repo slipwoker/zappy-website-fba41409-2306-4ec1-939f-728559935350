@@ -64,7 +64,15 @@ Information about WCAG compliance and accessibility features.
 
 ## Products
 
-**Total active products: 33**
+**Total active products: 34**
+
+### Monta
+https://casa-verona.zappy5.app/product/monta-6cegwz
+- Price: 6400.00 ILS (sale, was 8000.00 ILS)
+- Availability: In stock
+- Category: סלונים
+- Description: Monta היא ספה מיוחדת ומפנקת אין חלל שתכנס ולא כל העניים יהיו אליה. לאנשים שמחפשים נוכחות.
+- Image: https://casa-verona.zappy5.app/assets/product-1784207588035-ust9wk.webp
 
 ### Palazzo Bianco 
 https://casa-verona.zappy5.app/product/palazzo-bianco-fd71u9
