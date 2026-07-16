@@ -4478,6 +4478,13 @@ Description: casa verona - תודה שפניתם אלינו
 
 ## Product Catalog
 
+### Carlo 
+URL: https://casa-verona.zappy5.app/product/carlo-mtylgr
+Price: 6999.00 ILS (sale, was 8700.00 ILS)
+Availability: In stock
+
+---
+
 ### Monta
 URL: https://casa-verona.zappy5.app/product/monta-6cegwz
 Price: 6400.00 ILS (sale, was 8000.00 ILS)

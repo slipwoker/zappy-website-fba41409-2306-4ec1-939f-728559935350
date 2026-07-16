@@ -1,10 +1,37 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-16T13:16:14.474Z",
+  "generated_at": "2026-07-16T13:17:34.190Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
-  "count": 34,
+  "count": 35,
   "products": [
+    {
+      "id": "19ca3d56-b981-406e-b9c1-64635fbd8e0e",
+      "slug": "carlo-mtylgr",
+      "name": "Carlo ",
+      "name_translations": {
+        "en": "Carlo ",
+        "he": "קרלו "
+      },
+      "description": "",
+      "short_description": null,
+      "sku": null,
+      "brand": null,
+      "price": 6999,
+      "base_price": 8700,
+      "sale_price": 6999,
+      "currency": "ILS",
+      "images": [
+        "https://casa-verona.zappy5.app/assets/product-1784207763442-bw1zpo.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://casa-verona.zappy5.app/product/carlo-mtylgr",
+      "categories": [
+        "סלונים"
+      ],
+      "updated_at": "2026-07-16T13:17:02.723Z"
+    },
     {
       "id": "840e722c-6671-449b-bdff-9d33094ca262",
       "slug": "monta-6cegwz",
