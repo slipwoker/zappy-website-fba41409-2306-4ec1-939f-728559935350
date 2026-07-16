@@ -1,10 +1,32 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-16T13:38:47.564Z",
+  "generated_at": "2026-07-16T14:05:51.000Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
-  "count": 40,
+  "count": 41,
   "products": [
+    {
+      "id": "019bfa7d-8887-4e7c-8af9-ff4e9d8bdf7b",
+      "slug": "verla-i9t6wb",
+      "name": "verla ",
+      "name_translations": {},
+      "description": "",
+      "short_description": "קיים בכל המידות הגוונים והצבעים. ",
+      "sku": null,
+      "brand": null,
+      "price": 4900,
+      "base_price": 6000,
+      "sale_price": 4900,
+      "currency": "ILS",
+      "images": [
+        "https://casa-verona.zappy5.app/assets/product-1784210623771-v7je3.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://casa-verona.zappy5.app/product/verla-i9t6wb",
+      "categories": [],
+      "updated_at": "2026-07-16T14:05:19.234Z"
+    },
     {
       "id": "bdf7511e-10b9-4bf1-b75e-adc2b2343e9f",
       "slug": "modern-e0uhw7",
