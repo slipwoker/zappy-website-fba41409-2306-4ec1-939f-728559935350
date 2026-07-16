@@ -1,36 +1,37 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-16T14:24:50.381Z",
+  "generated_at": "2026-07-16T14:25:33.967Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
   "count": 46,
   "products": [
     {
       "id": "fcbd0dcf-4f28-471f-b49a-0546f0bae5c1",
-      "slug": "vivere-d32915",
-      "name": "Vivere",
+      "slug": "perla-054yfc",
+      "name": "perla ",
       "name_translations": {
-        "en": "Vivere",
-        "he": "ויבֶרֶה"
+        "en": "perla ",
+        "he": "פרלה"
       },
       "description": "",
       "short_description": null,
       "sku": null,
       "brand": null,
-      "price": 5000,
+      "price": 4800,
       "base_price": 6000,
-      "sale_price": 5000,
+      "sale_price": 4800,
       "currency": "ILS",
       "images": [
-        "https://casa-verona.zappy5.app/assets/product-1784211693367-63rdfca.webp"
+        "https://casa-verona.zappy5.app/assets/product-1784211863848-4wx05k.webp",
+        "https://casa-verona.zappy5.app/assets/product-1784211877897-h9702q.webp"
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://casa-verona.zappy5.app/product/vivere-d32915",
+      "url": "https://casa-verona.zappy5.app/product/perla-054yfc",
       "categories": [
         "מזנונים"
       ],
-      "updated_at": "2026-07-16T14:24:06.906Z"
+      "updated_at": "2026-07-16T14:25:02.317Z"
     },
     {
       "id": "c0a362c4-2585-4f5b-bf84-62f7dcdf0ef2",
