@@ -1,6 +1,6 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-16T13:17:34.190Z",
+  "generated_at": "2026-07-16T13:18:55.624Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
   "count": 35,
@@ -275,7 +275,7 @@
     },
     {
       "id": "0204d603-84ff-4bac-9f4f-07a588976fd6",
-      "slug": "kimono-3zr6c2",
+      "slug": "kimono-m6479z",
       "name": "kimono",
       "name_translations": {
         "en": "kimono",
@@ -294,13 +294,15 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://casa-verona.zappy5.app/product/kimono-3zr6c2",
-      "categories": [],
-      "updated_at": "2026-07-14T21:46:16.754Z"
+      "url": "https://casa-verona.zappy5.app/product/kimono-m6479z",
+      "categories": [
+        "סלונים "
+      ],
+      "updated_at": "2026-07-16T13:18:53.382Z"
     },
     {
       "id": "e7277a04-4fc0-4780-a6d1-489d2615e30d",
-      "slug": "molino-o5tuvo",
+      "slug": "molino-z0plmk",
       "name": "molino",
       "name_translations": {
         "en": "molino",
@@ -319,13 +321,15 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://casa-verona.zappy5.app/product/molino-o5tuvo",
-      "categories": [],
-      "updated_at": "2026-07-14T21:45:20.528Z"
+      "url": "https://casa-verona.zappy5.app/product/molino-z0plmk",
+      "categories": [
+        "סלונים "
+      ],
+      "updated_at": "2026-07-16T13:18:40.897Z"
     },
     {
       "id": "64db42c3-4104-472b-883e-6be4b30a8073",
-      "slug": "paprdla-gua16f",
+      "slug": "paprdla-ijffcc",
       "name": "paprdla",
       "name_translations": {
         "en": "paprdla",
@@ -344,13 +348,15 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://casa-verona.zappy5.app/product/paprdla-gua16f",
-      "categories": [],
-      "updated_at": "2026-07-14T21:44:15.889Z"
+      "url": "https://casa-verona.zappy5.app/product/paprdla-ijffcc",
+      "categories": [
+        "סלונים "
+      ],
+      "updated_at": "2026-07-16T13:18:23.916Z"
     },
     {
       "id": "3e478c7f-c194-4a42-9ead-87f8d08b0545",
-      "slug": "plaza-4bwgvf",
+      "slug": "plaza-o3687j",
       "name": "Plaza",
       "name_translations": {
         "en": "Plaza",
@@ -369,13 +375,15 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://casa-verona.zappy5.app/product/plaza-4bwgvf",
-      "categories": [],
-      "updated_at": "2026-07-14T21:41:48.588Z"
+      "url": "https://casa-verona.zappy5.app/product/plaza-o3687j",
+      "categories": [
+        "סלונים "
+      ],
+      "updated_at": "2026-07-16T13:18:01.526Z"
     },
     {
       "id": "80ee526d-43ec-463d-b554-9977bed78069",
-      "slug": "verona-g0wr6e",
+      "slug": "verona-fdt6as",
       "name": "verona ",
       "name_translations": {
         "en": "verona ",
@@ -394,9 +402,11 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://casa-verona.zappy5.app/product/verona-g0wr6e",
-      "categories": [],
-      "updated_at": "2026-07-14T21:40:55.609Z"
+      "url": "https://casa-verona.zappy5.app/product/verona-fdt6as",
+      "categories": [
+        "סלונים "
+      ],
+      "updated_at": "2026-07-16T13:17:45.845Z"
     },
     {
       "id": "03d5c1d0-9ef5-41c3-a910-b5e6734ea769",
