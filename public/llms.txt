@@ -64,7 +64,13 @@ Information about WCAG compliance and accessibility features.
 
 ## Products
 
-**Total active products: 41**
+**Total active products: 42**
+
+### clack 
+https://casa-verona.zappy5.app/product/clack-31m4ow
+- Price: 3900.00 ILS (sale, was 5300.00 ILS)
+- Availability: In stock
+- Image: https://casa-verona.zappy5.app/assets/product-1784210796878-vd035q.webp
 
 ### verla 
 https://casa-verona.zappy5.app/product/verla-i9t6wb

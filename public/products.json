@@ -1,10 +1,35 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-16T14:05:51.000Z",
+  "generated_at": "2026-07-16T14:09:35.612Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
-  "count": 41,
+  "count": 42,
   "products": [
+    {
+      "id": "053ed344-cea5-443f-b8f8-7100eda0e023",
+      "slug": "clack-31m4ow",
+      "name": "clack ",
+      "name_translations": {
+        "en": "clack ",
+        "he": "קלאק"
+      },
+      "description": "",
+      "short_description": null,
+      "sku": null,
+      "brand": null,
+      "price": 3900,
+      "base_price": 5300,
+      "sale_price": 3900,
+      "currency": "ILS",
+      "images": [
+        "https://casa-verona.zappy5.app/assets/product-1784210796878-vd035q.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://casa-verona.zappy5.app/product/clack-31m4ow",
+      "categories": [],
+      "updated_at": "2026-07-16T14:09:25.404Z"
+    },
     {
       "id": "019bfa7d-8887-4e7c-8af9-ff4e9d8bdf7b",
       "slug": "verla-i9t6wb",
