@@ -64,7 +64,15 @@ Information about WCAG compliance and accessibility features.
 
 ## Products
 
-**Total active products: 28**
+**Total active products: 29**
+
+### ELEGANZA 
+https://casa-verona.zappy5.app/product/eleganza-bbdisf
+- Price: 9200.00 ILS (sale, was 13000.00 ILS)
+- Availability: In stock
+- Category: סלונים
+- Description: חושך כשפה אסתטית. הELEGANZA היא ספת פינה בגוונים כהים ועמוקים עם ריפוד טכני ברמה גבוה ופרופורציות מרשימות המקרינות עוצמה ועידון.
+- Image: https://casa-verona.zappy5.app/assets/product-1784205296839-51xm5t.webp
 
 ### SRENO
 https://casa-verona.zappy5.app/product/sreno-k87vpo

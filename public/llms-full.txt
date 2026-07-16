@@ -4478,6 +4478,13 @@ Description: casa verona - תודה שפניתם אלינו
 
 ## Product Catalog
 
+### ELEGANZA 
+URL: https://casa-verona.zappy5.app/product/eleganza-bbdisf
+Price: 9200.00 ILS (sale, was 13000.00 ILS)
+Availability: In stock
+
+---
+
 ### SRENO
 URL: https://casa-verona.zappy5.app/product/sreno-k87vpo
 Price: 6900.00 ILS (sale, was 8300.00 ILS)
