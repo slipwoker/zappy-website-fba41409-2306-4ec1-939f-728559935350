@@ -1,10 +1,34 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-16T12:47:35.405Z",
+  "generated_at": "2026-07-16T12:55:22.033Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
-  "count": 30,
+  "count": 31,
   "products": [
+    {
+      "id": "d8d767ee-88b8-49e1-ad08-888c5f99ac2a",
+      "slug": "divano-verona-nuvola-42mjtt",
+      "name": "Divano Verona Nuvola",
+      "name_translations": {},
+      "description": "",
+      "short_description": "כמו לנוח על ענן. ה-Novla מציגה נפחים מעוגלים, המאזנת קלילות ויזואלית עם עומק מושב נדיב.אידאלית למרחבים בהשראה ניאו- קלאסית ועכשווית.",
+      "sku": null,
+      "brand": null,
+      "price": 8300,
+      "base_price": 11300,
+      "sale_price": 8300,
+      "currency": "ILS",
+      "images": [
+        "https://casa-verona.zappy5.app/assets/product-1784206236550-w8mo9l.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://casa-verona.zappy5.app/product/divano-verona-nuvola-42mjtt",
+      "categories": [
+        "סלונים"
+      ],
+      "updated_at": "2026-07-16T12:54:58.521Z"
+    },
     {
       "id": "6bdc5745-4341-49c9-b75a-9f0dbee150f8",
       "slug": "moonligth-ju8db2",

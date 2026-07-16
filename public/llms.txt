@@ -64,7 +64,15 @@ Information about WCAG compliance and accessibility features.
 
 ## Products
 
-**Total active products: 30**
+**Total active products: 31**
+
+### Divano Verona Nuvola
+https://casa-verona.zappy5.app/product/divano-verona-nuvola-42mjtt
+- Price: 8300.00 ILS (sale, was 11300.00 ILS)
+- Availability: In stock
+- Category: סלונים
+- Description: כמו לנוח על ענן. ה-Novla מציגה נפחים מעוגלים, המאזנת קלילות ויזואלית עם עומק מושב נדיב.אידאלית למרחבים בהשראה ניאו- קלאסית ועכשווית.
+- Image: https://casa-verona.zappy5.app/assets/product-1784206236550-w8mo9l.webp
 
 ### MOONLIGTH
 https://casa-verona.zappy5.app/product/moonligth-ju8db2
