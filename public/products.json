@@ -1,6 +1,6 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-16T12:08:44.644Z",
+  "generated_at": "2026-07-16T12:09:03.564Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
   "count": 27,
@@ -628,7 +628,7 @@
     },
     {
       "id": "5ff2f5b9-fb11-4ad1-888e-a484c1ba3a2d",
-      "slug": "mon-cheri-s9xvcs",
+      "slug": "mon-cheri-med8w5",
       "name": "Mon cheri",
       "name_translations": {},
       "description": "",
@@ -644,9 +644,11 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://casa-verona.zappy5.app/product/mon-cheri-s9xvcs",
-      "categories": [],
-      "updated_at": "2026-07-14T21:26:47.223Z"
+      "url": "https://casa-verona.zappy5.app/product/mon-cheri-med8w5",
+      "categories": [
+        "סלונים"
+      ],
+      "updated_at": "2026-07-16T12:08:48.001Z"
     },
     {
       "id": "e3e631a9-e97f-4f87-a788-dadf56f08bd5",
