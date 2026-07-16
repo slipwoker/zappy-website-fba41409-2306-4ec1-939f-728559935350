@@ -4479,8 +4479,8 @@ Description: casa verona - תודה שפניתם אלינו
 ## Product Catalog
 
 ### blacks
-URL: https://casa-verona.zappy5.app/product/blacks-uu1hev
-Price: 0.00 ILS
+URL: https://casa-verona.zappy5.app/product/blacks-ha8r1h
+Price: 4000.00 ILS (sale, was 5000.00 ILS)
 Availability: In stock
 
 ---

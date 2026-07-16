@@ -1,33 +1,33 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-16T14:11:43.236Z",
+  "generated_at": "2026-07-16T14:12:28.393Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
   "count": 43,
   "products": [
     {
       "id": "c0b92862-a569-42e8-819c-2a52fbb9a954",
-      "slug": "blacks-uu1hev",
+      "slug": "blacks-ha8r1h",
       "name": "blacks",
       "name_translations": {},
       "description": "",
       "short_description": "קיים בכל המידות הצבעים והגוונים.",
       "sku": null,
       "brand": null,
-      "price": 0,
-      "base_price": 0,
-      "sale_price": null,
+      "price": 4000,
+      "base_price": 5000,
+      "sale_price": 4000,
       "currency": "ILS",
       "images": [
         "https://casa-verona.zappy5.app/assets/product-1784210985341-gk6wm.webp"
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://casa-verona.zappy5.app/product/blacks-uu1hev",
+      "url": "https://casa-verona.zappy5.app/product/blacks-ha8r1h",
       "categories": [
         "מזנונים"
       ],
-      "updated_at": "2026-07-16T14:10:27.785Z"
+      "updated_at": "2026-07-16T14:11:57.030Z"
     },
     {
       "id": "053ed344-cea5-443f-b8f8-7100eda0e023",
