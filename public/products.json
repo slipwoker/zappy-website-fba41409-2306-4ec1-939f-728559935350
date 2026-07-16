@@ -1,13 +1,37 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-16T14:09:56.963Z",
+  "generated_at": "2026-07-16T14:11:13.895Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
-  "count": 42,
+  "count": 43,
   "products": [
     {
+      "id": "c0b92862-a569-42e8-819c-2a52fbb9a954",
+      "slug": "blacks-uu1hev",
+      "name": "blacks",
+      "name_translations": {},
+      "description": "",
+      "short_description": "קיים בכל המידות הצבעים והגוונים.",
+      "sku": null,
+      "brand": null,
+      "price": 0,
+      "base_price": 0,
+      "sale_price": null,
+      "currency": "ILS",
+      "images": [
+        "https://casa-verona.zappy5.app/assets/product-1784210985341-gk6wm.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://casa-verona.zappy5.app/product/blacks-uu1hev",
+      "categories": [
+        "מזנונים"
+      ],
+      "updated_at": "2026-07-16T14:10:27.785Z"
+    },
+    {
       "id": "053ed344-cea5-443f-b8f8-7100eda0e023",
-      "slug": "clack-31m4ow",
+      "slug": "clack-u9dx6a",
       "name": "clack ",
       "name_translations": {
         "en": "clack ",
@@ -26,13 +50,15 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://casa-verona.zappy5.app/product/clack-31m4ow",
-      "categories": [],
-      "updated_at": "2026-07-16T14:09:25.404Z"
+      "url": "https://casa-verona.zappy5.app/product/clack-u9dx6a",
+      "categories": [
+        "מזנונים"
+      ],
+      "updated_at": "2026-07-16T14:11:11.742Z"
     },
     {
       "id": "019bfa7d-8887-4e7c-8af9-ff4e9d8bdf7b",
-      "slug": "verla-i9t6wb",
+      "slug": "verla-s1e54n",
       "name": "verla ",
       "name_translations": {},
       "description": "",
@@ -48,9 +74,11 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://casa-verona.zappy5.app/product/verla-i9t6wb",
-      "categories": [],
-      "updated_at": "2026-07-16T14:05:19.234Z"
+      "url": "https://casa-verona.zappy5.app/product/verla-s1e54n",
+      "categories": [
+        "מזנונים"
+      ],
+      "updated_at": "2026-07-16T14:10:41.993Z"
     },
     {
       "id": "bdf7511e-10b9-4bf1-b75e-adc2b2343e9f",

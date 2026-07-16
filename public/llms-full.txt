@@ -4478,15 +4478,22 @@ Description: casa verona - תודה שפניתם אלינו
 
 ## Product Catalog
 
+### blacks
+URL: https://casa-verona.zappy5.app/product/blacks-uu1hev
+Price: 0.00 ILS
+Availability: In stock
+
+---
+
 ### clack 
-URL: https://casa-verona.zappy5.app/product/clack-31m4ow
+URL: https://casa-verona.zappy5.app/product/clack-u9dx6a
 Price: 3900.00 ILS (sale, was 5300.00 ILS)
 Availability: In stock
 
 ---
 
 ### verla 
-URL: https://casa-verona.zappy5.app/product/verla-i9t6wb
+URL: https://casa-verona.zappy5.app/product/verla-s1e54n
 Price: 4900.00 ILS (sale, was 6000.00 ILS)
 Availability: In stock
 

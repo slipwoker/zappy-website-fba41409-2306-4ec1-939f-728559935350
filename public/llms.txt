@@ -64,18 +64,28 @@ Information about WCAG compliance and accessibility features.
 
 ## Products
 
-**Total active products: 42**
+**Total active products: 43**
+
+### blacks
+https://casa-verona.zappy5.app/product/blacks-uu1hev
+- Price: 0.00 ILS
+- Availability: In stock
+- Category: מזנונים
+- Description: קיים בכל המידות הצבעים והגוונים.
+- Image: https://casa-verona.zappy5.app/assets/product-1784210985341-gk6wm.webp
 
 ### clack 
-https://casa-verona.zappy5.app/product/clack-31m4ow
+https://casa-verona.zappy5.app/product/clack-u9dx6a
 - Price: 3900.00 ILS (sale, was 5300.00 ILS)
 - Availability: In stock
+- Category: מזנונים
 - Image: https://casa-verona.zappy5.app/assets/product-1784210796878-vd035q.webp
 
 ### verla 
-https://casa-verona.zappy5.app/product/verla-i9t6wb
+https://casa-verona.zappy5.app/product/verla-s1e54n
 - Price: 4900.00 ILS (sale, was 6000.00 ILS)
 - Availability: In stock
+- Category: מזנונים
 - Description: קיים בכל המידות הגוונים והצבעים.
 - Image: https://casa-verona.zappy5.app/assets/product-1784210623771-v7je3.webp
 

@@ -4,12 +4,25 @@
     <title>casa verona</title>
     <link>https://casa-verona.zappy5.app</link>
     <description>Product feed for casa verona</description>
-    <lastBuildDate>Thu, 16 Jul 2026 14:09:56 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jul 2026 14:11:13 GMT</lastBuildDate>
+    <item>
+      <g:id>c0b92862-a569-42e8-819c-2a52fbb9a954</g:id>
+      <g:title>blacks</g:title>
+      <g:description>קיים בכל המידות הצבעים והגוונים.</g:description>
+      <g:link>https://casa-verona.zappy5.app/product/blacks-uu1hev</g:link>
+      <g:image_link>https://casa-verona.zappy5.app/assets/product-1784210985341-gk6wm.webp</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>0.00 ILS</g:price>
+      <g:condition>new</g:condition>
+      <g:brand>casa verona</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>מזנונים</g:product_type>
+    </item>
     <item>
       <g:id>053ed344-cea5-443f-b8f8-7100eda0e023</g:id>
       <g:title>clack </g:title>
       <g:description>clack</g:description>
-      <g:link>https://casa-verona.zappy5.app/product/clack-31m4ow</g:link>
+      <g:link>https://casa-verona.zappy5.app/product/clack-u9dx6a</g:link>
       <g:image_link>https://casa-verona.zappy5.app/assets/product-1784210796878-vd035q.webp</g:image_link>
       <g:availability>in_stock</g:availability>
       <g:price>5300.00 ILS</g:price>
@@ -17,12 +30,13 @@
       <g:condition>new</g:condition>
       <g:brand>casa verona</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>מזנונים</g:product_type>
     </item>
     <item>
       <g:id>019bfa7d-8887-4e7c-8af9-ff4e9d8bdf7b</g:id>
       <g:title>verla </g:title>
       <g:description>קיים בכל המידות הגוונים והצבעים.</g:description>
-      <g:link>https://casa-verona.zappy5.app/product/verla-i9t6wb</g:link>
+      <g:link>https://casa-verona.zappy5.app/product/verla-s1e54n</g:link>
       <g:image_link>https://casa-verona.zappy5.app/assets/product-1784210623771-v7je3.webp</g:image_link>
       <g:availability>in_stock</g:availability>
       <g:price>6000.00 ILS</g:price>
@@ -30,6 +44,7 @@
       <g:condition>new</g:condition>
       <g:brand>casa verona</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>מזנונים</g:product_type>
     </item>
     <item>
       <g:id>bdf7511e-10b9-4bf1-b75e-adc2b2343e9f</g:id>
