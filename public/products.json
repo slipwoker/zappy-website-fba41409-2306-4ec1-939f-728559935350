@@ -1,6 +1,6 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-16T12:06:06.624Z",
+  "generated_at": "2026-07-16T12:06:43.651Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
   "count": 27,
@@ -429,7 +429,7 @@
     },
     {
       "id": "f9b195ab-02ed-4a88-984c-bc9470b3ee5b",
-      "slug": "monco-x-k8ybp4",
+      "slug": "monco-x-8ciich",
       "name": "Monco X",
       "name_translations": {},
       "description": "",
@@ -445,13 +445,15 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://casa-verona.zappy5.app/product/monco-x-k8ybp4",
-      "categories": [],
-      "updated_at": "2026-07-14T21:25:03.957Z"
+      "url": "https://casa-verona.zappy5.app/product/monco-x-8ciich",
+      "categories": [
+        "סלונים"
+      ],
+      "updated_at": "2026-07-16T12:06:11.760Z"
     },
     {
       "id": "b9d2f56b-8dc1-448b-a489-114f4cd2326a",
-      "slug": "orion-y6elmv",
+      "slug": "orion-u8mjrt",
       "name": "Orion",
       "name_translations": {},
       "description": "",
@@ -468,9 +470,11 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://casa-verona.zappy5.app/product/orion-y6elmv",
-      "categories": [],
-      "updated_at": "2026-07-14T21:25:15.406Z"
+      "url": "https://casa-verona.zappy5.app/product/orion-u8mjrt",
+      "categories": [
+        "סלונים"
+      ],
+      "updated_at": "2026-07-16T12:06:38.325Z"
     },
     {
       "id": "3c0ca378-36f9-47ab-a2a7-3aeae6dfd34e",

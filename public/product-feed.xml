@@ -4,7 +4,7 @@
     <title>casa verona</title>
     <link>https://casa-verona.zappy5.app</link>
     <description>Product feed for casa verona</description>
-    <lastBuildDate>Thu, 16 Jul 2026 12:06:06 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jul 2026 12:06:43 GMT</lastBuildDate>
     <item>
       <g:id>4fa5a792-fc75-4a15-8f76-13f26ba740b2</g:id>
       <g:title>kobki</g:title>
@@ -245,7 +245,7 @@
       <g:id>f9b195ab-02ed-4a88-984c-bc9470b3ee5b</g:id>
       <g:title>Monco X</g:title>
       <g:description>סלון רביצה פינתי המעניק שילוב מושלם בין נוחות, פונקציונלית ועיצוב יוקרתי. כולל מושבי רביצה רחבים, ריפוד איכותי ונעים למגע, שלדת עץ חזקה ושולחנות בין המושבים לנוחות בני המשפחה המשלימות את המראה המודרני. אדיאלי לאירוח, למנוחה וליצירת חלל סלון מזמין ומרשים. זמין בהתאמה אישית של מידות, בדים וצבעים.</g:description>
-      <g:link>https://casa-verona.zappy5.app/product/monco-x-k8ybp4</g:link>
+      <g:link>https://casa-verona.zappy5.app/product/monco-x-8ciich</g:link>
       <g:image_link>https://casa-verona.zappy5.app/assets/product-1784062346771-u6uy3.webp</g:image_link>
       <g:availability>in_stock</g:availability>
       <g:price>12700.00 ILS</g:price>
@@ -253,12 +253,13 @@
       <g:condition>new</g:condition>
       <g:brand>casa verona</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>סלונים</g:product_type>
     </item>
     <item>
       <g:id>b9d2f56b-8dc1-448b-a489-114f4cd2326a</g:id>
       <g:title>Orion</g:title>
       <g:description>סלון רביצה פינתי בעיצוב אלגנטי עם מושבים עמוקים ומפנקים, רגלי שולחן מודרניות וגימור יוקרתי. מיוצר מחומרי גלם איכותיים לנוחות מרבית, עמידות לאורך שנים ומראה שמשדר יוקרה בכל חלל. זמין בהתאמה אישית של מידות, בדים וצבעים.</g:description>
-      <g:link>https://casa-verona.zappy5.app/product/orion-y6elmv</g:link>
+      <g:link>https://casa-verona.zappy5.app/product/orion-u8mjrt</g:link>
       <g:image_link>https://casa-verona.zappy5.app/assets/product-1784061584546-io5v9g.webp</g:image_link>
       <g:additional_image_link>https://casa-verona.zappy5.app/assets/product-1784061614141-3tqvi.webp</g:additional_image_link>
       <g:availability>in_stock</g:availability>
@@ -267,6 +268,7 @@
       <g:condition>new</g:condition>
       <g:brand>casa verona</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>סלונים</g:product_type>
     </item>
     <item>
       <g:id>3c0ca378-36f9-47ab-a2a7-3aeae6dfd34e</g:id>
