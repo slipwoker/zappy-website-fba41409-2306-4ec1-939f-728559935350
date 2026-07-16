@@ -67,10 +67,11 @@ Information about WCAG compliance and accessibility features.
 **Total active products: 47**
 
 ### Aurora
-https://casa-verona.zappy5.app/product/aurora-qfr4hj
+https://casa-verona.zappy5.app/product/aurora-zvs2l1
 - Price: 5000.00 ILS (sale, was 7000.00 ILS)
 - Availability: In stock
 - Category: מזנונים
+- Image: https://casa-verona.zappy5.app/assets/product-1784211959627-pxq40h.webp
 
 ### perla 
 https://casa-verona.zappy5.app/product/perla-054yfc

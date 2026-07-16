@@ -1,13 +1,13 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-16T14:26:33.178Z",
+  "generated_at": "2026-07-16T14:29:04.251Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
   "count": 47,
   "products": [
     {
       "id": "e74e83df-e1a8-42b6-bde2-9a87f632d6e8",
-      "slug": "aurora-qfr4hj",
+      "slug": "aurora-zvs2l1",
       "name": "Aurora",
       "name_translations": {
         "en": "Aurora",
@@ -21,14 +21,16 @@
       "base_price": 7000,
       "sale_price": 5000,
       "currency": "ILS",
-      "images": [],
+      "images": [
+        "https://casa-verona.zappy5.app/assets/product-1784211959627-pxq40h.webp"
+      ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://casa-verona.zappy5.app/product/aurora-qfr4hj",
+      "url": "https://casa-verona.zappy5.app/product/aurora-zvs2l1",
       "categories": [
         "מזנונים"
       ],
-      "updated_at": "2026-07-16T14:26:01.494Z"
+      "updated_at": "2026-07-16T14:28:32.540Z"
     },
     {
       "id": "fcbd0dcf-4f28-471f-b49a-0546f0bae5c1",
