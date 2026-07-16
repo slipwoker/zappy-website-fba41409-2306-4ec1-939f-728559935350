@@ -64,7 +64,14 @@ Information about WCAG compliance and accessibility features.
 
 ## Products
 
-**Total active products: 36**
+**Total active products: 37**
+
+### monaco
+https://casa-verona.zappy5.app/product/monaco-fjjns3
+- Price: 2800.00 ILS (sale, was 3600.00 ILS)
+- Availability: In stock
+- Category: כורסאות
+- Image: https://casa-verona.zappy5.app/assets/product-1784208398787-zi4df8.webp
 
 ### bilanco
 https://casa-verona.zappy5.app/product/bilanco-xnyhum

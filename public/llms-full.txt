@@ -4478,6 +4478,13 @@ Description: casa verona - תודה שפניתם אלינו
 
 ## Product Catalog
 
+### monaco
+URL: https://casa-verona.zappy5.app/product/monaco-fjjns3
+Price: 2800.00 ILS (sale, was 3600.00 ILS)
+Availability: In stock
+
+---
+
 ### bilanco
 URL: https://casa-verona.zappy5.app/product/bilanco-xnyhum
 Price: 2300.00 ILS (sale, was 3000.00 ILS)

@@ -4,7 +4,21 @@
     <title>casa verona</title>
     <link>https://casa-verona.zappy5.app</link>
     <description>Product feed for casa verona</description>
-    <lastBuildDate>Thu, 16 Jul 2026 13:26:53 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jul 2026 13:27:47 GMT</lastBuildDate>
+    <item>
+      <g:id>3d6b9b89-9989-41cb-bc90-90142eb6b4c4</g:id>
+      <g:title>monaco</g:title>
+      <g:description>monaco</g:description>
+      <g:link>https://casa-verona.zappy5.app/product/monaco-fjjns3</g:link>
+      <g:image_link>https://casa-verona.zappy5.app/assets/product-1784208398787-zi4df8.webp</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>3600.00 ILS</g:price>
+      <g:sale_price>2800.00 ILS</g:sale_price>
+      <g:condition>new</g:condition>
+      <g:brand>casa verona</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>כורסאות</g:product_type>
+    </item>
     <item>
       <g:id>0cccae11-cc93-43ea-b1d0-4d0d32bc79d5</g:id>
       <g:title>bilanco</g:title>
