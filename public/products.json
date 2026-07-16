@@ -1,10 +1,34 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-16T12:55:33.596Z",
+  "generated_at": "2026-07-16T13:00:49.945Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
-  "count": 31,
+  "count": 32,
   "products": [
+    {
+      "id": "4f6ec1c0-e279-4654-8da7-b0bd92d2ce23",
+      "slug": "dolce-vita-sofa-r8yt7q",
+      "name": "Dolce Vita Sofa",
+      "name_translations": {},
+      "description": "",
+      "short_description": "מחווה לאומנות החיים האיטלקית. ה Vita לוכדת את מהות ההדונזים הים- תיכוני: פרופורציות רחבות, ריפוד בלתי נמנע, וקו מתאר המאזן בן קלאסיקה לעידון מודרני.",
+      "sku": null,
+      "brand": null,
+      "price": 9700,
+      "base_price": 13000,
+      "sale_price": 9700,
+      "currency": "ILS",
+      "images": [
+        "https://casa-verona.zappy5.app/assets/product-1784206574565-y60kk.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://casa-verona.zappy5.app/product/dolce-vita-sofa-r8yt7q",
+      "categories": [
+        "סלונים"
+      ],
+      "updated_at": "2026-07-16T13:00:18.275Z"
+    },
     {
       "id": "d8d767ee-88b8-49e1-ad08-888c5f99ac2a",
       "slug": "divano-verona-nuvola-42mjtt",

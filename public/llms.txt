@@ -64,7 +64,15 @@ Information about WCAG compliance and accessibility features.
 
 ## Products
 
-**Total active products: 31**
+**Total active products: 32**
+
+### Dolce Vita Sofa
+https://casa-verona.zappy5.app/product/dolce-vita-sofa-r8yt7q
+- Price: 9700.00 ILS (sale, was 13000.00 ILS)
+- Availability: In stock
+- Category: סלונים
+- Description: מחווה לאומנות החיים האיטלקית. ה Vita לוכדת את מהות ההדונזים הים- תיכוני: פרופורציות רחבות, ריפוד בלתי נמנע, וקו מתאר המאזן בן קלאסיקה לעידון מודרני.
+- Image: https://casa-verona.zappy5.app/assets/product-1784206574565-y60kk.webp
 
 ### Divano Verona Nuvola
 https://casa-verona.zappy5.app/product/divano-verona-nuvola-42mjtt
