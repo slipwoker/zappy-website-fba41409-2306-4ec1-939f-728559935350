@@ -64,7 +64,14 @@ Information about WCAG compliance and accessibility features.
 
 ## Products
 
-**Total active products: 48**
+**Total active products: 49**
+
+### Nero
+https://casa-verona.zappy5.app/product/nero-zctnuy
+- Price: 3000.00 ILS (sale, was 4000.00 ILS)
+- Availability: In stock
+- Category: מזנונים
+- Image: https://casa-verona.zappy5.app/assets/product-1784212682650-bfr4g.webp
 
 ### Turchese
 https://casa-verona.zappy5.app/product/turchese-1nmu02

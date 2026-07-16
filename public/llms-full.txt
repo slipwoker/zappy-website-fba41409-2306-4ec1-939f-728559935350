@@ -4478,6 +4478,13 @@ Description: casa verona - תודה שפניתם אלינו
 
 ## Product Catalog
 
+### Nero
+URL: https://casa-verona.zappy5.app/product/nero-zctnuy
+Price: 3000.00 ILS (sale, was 4000.00 ILS)
+Availability: In stock
+
+---
+
 ### Turchese
 URL: https://casa-verona.zappy5.app/product/turchese-1nmu02
 Price: 4800.00 ILS (sale, was 6300.00 ILS)

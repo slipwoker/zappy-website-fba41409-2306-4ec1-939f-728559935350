@@ -1,10 +1,37 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-16T14:36:49.855Z",
+  "generated_at": "2026-07-16T14:39:25.875Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
-  "count": 48,
+  "count": 49,
   "products": [
+    {
+      "id": "6b6a71db-a240-40ef-b7bb-1cc96377e8a4",
+      "slug": "nero-zctnuy",
+      "name": "Nero",
+      "name_translations": {
+        "en": "Nero",
+        "he": "נרו"
+      },
+      "description": "",
+      "short_description": null,
+      "sku": null,
+      "brand": null,
+      "price": 3000,
+      "base_price": 4000,
+      "sale_price": 3000,
+      "currency": "ILS",
+      "images": [
+        "https://casa-verona.zappy5.app/assets/product-1784212682650-bfr4g.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://casa-verona.zappy5.app/product/nero-zctnuy",
+      "categories": [
+        "מזנונים"
+      ],
+      "updated_at": "2026-07-16T14:38:53.806Z"
+    },
     {
       "id": "febf5677-a721-4c6d-92e7-2d114762e287",
       "slug": "turchese-1nmu02",
