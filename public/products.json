@@ -1,13 +1,13 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-16T12:47:01.469Z",
+  "generated_at": "2026-07-16T12:47:27.169Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
   "count": 30,
   "products": [
     {
       "id": "6bdc5745-4341-49c9-b75a-9f0dbee150f8",
-      "slug": "moonligth-n58ymo",
+      "slug": "moonligth-ju8db2",
       "name": "MOONLIGTH",
       "name_translations": {},
       "description": "",
@@ -23,9 +23,11 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://casa-verona.zappy5.app/product/moonligth-n58ymo",
-      "categories": [],
-      "updated_at": "2026-07-16T12:46:55.661Z"
+      "url": "https://casa-verona.zappy5.app/product/moonligth-ju8db2",
+      "categories": [
+        "סלונים"
+      ],
+      "updated_at": "2026-07-16T12:47:03.903Z"
     },
     {
       "id": "be2506cc-0026-4f06-86df-484a540a2602",
