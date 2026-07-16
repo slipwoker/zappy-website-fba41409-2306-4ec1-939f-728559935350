@@ -4,7 +4,7 @@
     <title>casa verona</title>
     <link>https://casa-verona.zappy5.app</link>
     <description>Product feed for casa verona</description>
-    <lastBuildDate>Thu, 16 Jul 2026 12:09:03 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jul 2026 12:09:19 GMT</lastBuildDate>
     <item>
       <g:id>4fa5a792-fc75-4a15-8f76-13f26ba740b2</g:id>
       <g:title>kobki</g:title>
@@ -378,7 +378,7 @@
       <g:id>e3e631a9-e97f-4f87-a788-dadf56f08bd5</g:id>
       <g:title>DiVano LaGo CoMo </g:title>
       <g:description>סלון פינתי מפנק ומיוחד במיוחד לאנשים שואהבים לסיים את היום ברביצה ונחות הסלון מגיע בגימורים מיוחדים ומושלמים. זמין בהתאמה אישית של מידות, בדים וצבעים.</g:description>
-      <g:link>https://casa-verona.zappy5.app/product/divano-lago-como-32vcq1</g:link>
+      <g:link>https://casa-verona.zappy5.app/product/divano-lago-como-12x6lu</g:link>
       <g:image_link>https://casa-verona.zappy5.app/assets/product-1784045442491-z4jc7z.webp</g:image_link>
       <g:additional_image_link>https://casa-verona.zappy5.app/assets/product-enhanced-1784059040869-x0he1j.webp</g:additional_image_link>
       <g:availability>in_stock</g:availability>
@@ -387,6 +387,7 @@
       <g:condition>new</g:condition>
       <g:brand>casa verona</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>סלונים</g:product_type>
     </item>
   </channel>
 </rss>

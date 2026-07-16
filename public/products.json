@@ -1,6 +1,6 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-16T12:09:03.564Z",
+  "generated_at": "2026-07-16T12:09:19.760Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
   "count": 27,
@@ -652,7 +652,7 @@
     },
     {
       "id": "e3e631a9-e97f-4f87-a788-dadf56f08bd5",
-      "slug": "divano-lago-como-32vcq1",
+      "slug": "divano-lago-como-12x6lu",
       "name": "DiVano LaGo CoMo ",
       "name_translations": {},
       "description": "<p>זמין בהתאמה אישית של מידות, בדים וצבעים.</p><p>.</p><p>סלון פינתי מפנק ומיוחד במיוחד לאנשים שואהבים לסיים את היום ברביצה ונחות&nbsp;הסלון מגיע בגימורים מיוחדים ומושלמים.</p>",
@@ -669,9 +669,11 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://casa-verona.zappy5.app/product/divano-lago-como-32vcq1",
-      "categories": [],
-      "updated_at": "2026-07-14T21:27:39.114Z"
+      "url": "https://casa-verona.zappy5.app/product/divano-lago-como-12x6lu",
+      "categories": [
+        "סלונים"
+      ],
+      "updated_at": "2026-07-16T12:09:03.712Z"
     }
   ]
 }
