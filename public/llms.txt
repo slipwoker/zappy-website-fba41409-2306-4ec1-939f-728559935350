@@ -64,7 +64,14 @@ Information about WCAG compliance and accessibility features.
 
 ## Products
 
-**Total active products: 43**
+**Total active products: 44**
+
+### Tree
+https://casa-verona.zappy5.app/product/tree-8vtbvg
+- Price: 3900.00 ILS (sale, was 5000.00 ILS)
+- Availability: In stock
+- Category: מזנונים
+- Image: https://casa-verona.zappy5.app/assets/product-1784211143932-6citgl.webp
 
 ### blacks
 https://casa-verona.zappy5.app/product/blacks-ha8r1h

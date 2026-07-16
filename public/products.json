@@ -1,10 +1,37 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-16T14:12:28.393Z",
+  "generated_at": "2026-07-16T14:13:49.533Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
-  "count": 43,
+  "count": 44,
   "products": [
+    {
+      "id": "13880efc-7074-44bb-b777-35433e80aa2b",
+      "slug": "tree-8vtbvg",
+      "name": "Tree",
+      "name_translations": {
+        "en": "Tree",
+        "he": "עץ"
+      },
+      "description": "",
+      "short_description": null,
+      "sku": null,
+      "brand": null,
+      "price": 3900,
+      "base_price": 5000,
+      "sale_price": 3900,
+      "currency": "ILS",
+      "images": [
+        "https://casa-verona.zappy5.app/assets/product-1784211143932-6citgl.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://casa-verona.zappy5.app/product/tree-8vtbvg",
+      "categories": [
+        "מזנונים"
+      ],
+      "updated_at": "2026-07-16T14:13:23.514Z"
+    },
     {
       "id": "c0b92862-a569-42e8-819c-2a52fbb9a954",
       "slug": "blacks-ha8r1h",

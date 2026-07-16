@@ -4,7 +4,21 @@
     <title>casa verona</title>
     <link>https://casa-verona.zappy5.app</link>
     <description>Product feed for casa verona</description>
-    <lastBuildDate>Thu, 16 Jul 2026 14:12:28 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jul 2026 14:13:49 GMT</lastBuildDate>
+    <item>
+      <g:id>13880efc-7074-44bb-b777-35433e80aa2b</g:id>
+      <g:title>Tree</g:title>
+      <g:description>Tree</g:description>
+      <g:link>https://casa-verona.zappy5.app/product/tree-8vtbvg</g:link>
+      <g:image_link>https://casa-verona.zappy5.app/assets/product-1784211143932-6citgl.webp</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>5000.00 ILS</g:price>
+      <g:sale_price>3900.00 ILS</g:sale_price>
+      <g:condition>new</g:condition>
+      <g:brand>casa verona</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>מזנונים</g:product_type>
+    </item>
     <item>
       <g:id>c0b92862-a569-42e8-819c-2a52fbb9a954</g:id>
       <g:title>blacks</g:title>

@@ -4478,6 +4478,13 @@ Description: casa verona - תודה שפניתם אלינו
 
 ## Product Catalog
 
+### Tree
+URL: https://casa-verona.zappy5.app/product/tree-8vtbvg
+Price: 3900.00 ILS (sale, was 5000.00 ILS)
+Availability: In stock
+
+---
+
 ### blacks
 URL: https://casa-verona.zappy5.app/product/blacks-ha8r1h
 Price: 4000.00 ILS (sale, was 5000.00 ILS)
