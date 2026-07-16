@@ -1,6 +1,6 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-16T12:06:43.651Z",
+  "generated_at": "2026-07-16T12:08:44.644Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
   "count": 27,
@@ -478,7 +478,7 @@
     },
     {
       "id": "3c0ca378-36f9-47ab-a2a7-3aeae6dfd34e",
-      "slug": "casas-rbxgrn",
+      "slug": "casas-v8trc2",
       "name": "Casas",
       "name_translations": {},
       "description": "",
@@ -494,13 +494,15 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://casa-verona.zappy5.app/product/casas-rbxgrn",
-      "categories": [],
-      "updated_at": "2026-07-14T21:25:29.975Z"
+      "url": "https://casa-verona.zappy5.app/product/casas-v8trc2",
+      "categories": [
+        "סלונים"
+      ],
+      "updated_at": "2026-07-16T12:06:53.516Z"
     },
     {
       "id": "b50a3ad2-930e-4876-aae6-091f2e100342",
-      "slug": "aston-aabeml",
+      "slug": "aston-hvzzi7",
       "name": "Aston",
       "name_translations": {},
       "description": "",
@@ -516,13 +518,15 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://casa-verona.zappy5.app/product/aston-aabeml",
-      "categories": [],
-      "updated_at": "2026-07-14T21:25:44.156Z"
+      "url": "https://casa-verona.zappy5.app/product/aston-hvzzi7",
+      "categories": [
+        "סלונים"
+      ],
+      "updated_at": "2026-07-16T12:07:10.591Z"
     },
     {
       "id": "8d579147-0269-43af-839a-abaf4bbbc7a3",
-      "slug": "torino-moderno-u4ripl",
+      "slug": "torino-moderno-hgz545",
       "name": "Torino moderno ",
       "name_translations": {},
       "description": "",
@@ -538,13 +542,15 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://casa-verona.zappy5.app/product/torino-moderno-u4ripl",
-      "categories": [],
-      "updated_at": "2026-07-14T21:25:57.699Z"
+      "url": "https://casa-verona.zappy5.app/product/torino-moderno-hgz545",
+      "categories": [
+        "סלונים"
+      ],
+      "updated_at": "2026-07-16T12:07:33.323Z"
     },
     {
       "id": "f377df2f-a090-4f8b-b402-c687e3c1e7f5",
-      "slug": "cloud-stone-gyb73o",
+      "slug": "cloud-stone-v9sye0",
       "name": "Cloud stone ",
       "name_translations": {},
       "description": "",
@@ -562,13 +568,15 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://casa-verona.zappy5.app/product/cloud-stone-gyb73o",
-      "categories": [],
-      "updated_at": "2026-07-14T21:26:07.650Z"
+      "url": "https://casa-verona.zappy5.app/product/cloud-stone-v9sye0",
+      "categories": [
+        "סלונים"
+      ],
+      "updated_at": "2026-07-16T12:07:55.117Z"
     },
     {
       "id": "446a201b-0885-4717-8d2f-d47358e12089",
-      "slug": "axis-otwvnl",
+      "slug": "axis-j32hux",
       "name": "Axis",
       "name_translations": {},
       "description": "",
@@ -586,13 +594,15 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://casa-verona.zappy5.app/product/axis-otwvnl",
-      "categories": [],
-      "updated_at": "2026-07-14T21:26:20.357Z"
+      "url": "https://casa-verona.zappy5.app/product/axis-j32hux",
+      "categories": [
+        "סלונים"
+      ],
+      "updated_at": "2026-07-16T12:08:13.180Z"
     },
     {
       "id": "ba9fd494-bc18-43a2-abb7-fd6b124bd4ad",
-      "slug": "classico-ljh622",
+      "slug": "classico-ws4l5p",
       "name": "classico",
       "name_translations": {},
       "description": "",
@@ -610,9 +620,11 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://casa-verona.zappy5.app/product/classico-ljh622",
-      "categories": [],
-      "updated_at": "2026-07-14T21:26:33.068Z"
+      "url": "https://casa-verona.zappy5.app/product/classico-ws4l5p",
+      "categories": [
+        "סלונים"
+      ],
+      "updated_at": "2026-07-16T12:08:32.142Z"
     },
     {
       "id": "5ff2f5b9-fb11-4ad1-888e-a484c1ba3a2d",
