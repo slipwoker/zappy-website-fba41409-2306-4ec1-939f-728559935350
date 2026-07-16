@@ -1,13 +1,13 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-16T17:26:11.195Z",
+  "generated_at": "2026-07-16T17:27:02.158Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
   "count": 50,
   "products": [
     {
       "id": "18c8554a-06d0-4b14-8c77-6a284790afcc",
-      "slug": "babels-cjstsk",
+      "slug": "babels-efv3er",
       "name": "Babels ",
       "name_translations": {},
       "description": "",
@@ -27,9 +27,11 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://casa-verona.zappy5.app/product/babels-cjstsk",
-      "categories": [],
-      "updated_at": "2026-07-16T17:25:39.564Z"
+      "url": "https://casa-verona.zappy5.app/product/babels-efv3er",
+      "categories": [
+        "שולחנות סלון"
+      ],
+      "updated_at": "2026-07-16T17:26:30.746Z"
     },
     {
       "id": "6b6a71db-a240-40ef-b7bb-1cc96377e8a4",

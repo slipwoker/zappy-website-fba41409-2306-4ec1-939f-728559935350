@@ -67,9 +67,10 @@ Information about WCAG compliance and accessibility features.
 **Total active products: 50**
 
 ### Babels 
-https://casa-verona.zappy5.app/product/babels-cjstsk
+https://casa-verona.zappy5.app/product/babels-efv3er
 - Price: 2600.00 ILS
 - Availability: In stock
+- Category: שולחנות סלון
 - Description: שוחלן כדורים עם סטייל מטורף..
 - Image: https://casa-verona.zappy5.app/assets/product-1784222021077-zc1sug.webp
 

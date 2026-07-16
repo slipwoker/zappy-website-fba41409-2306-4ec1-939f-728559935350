@@ -4480,7 +4480,7 @@ Description: casa verona - תודה שפניתם אלינו
 ## Product Catalog
 
 ### Babels 
-URL: https://casa-verona.zappy5.app/product/babels-cjstsk
+URL: https://casa-verona.zappy5.app/product/babels-efv3er
 Price: 2600.00 ILS
 Availability: In stock
 
