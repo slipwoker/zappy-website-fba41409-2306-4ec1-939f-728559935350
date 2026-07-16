@@ -64,7 +64,15 @@ Information about WCAG compliance and accessibility features.
 
 ## Products
 
-**Total active products: 39**
+**Total active products: 40**
+
+### Modern 
+https://casa-verona.zappy5.app/product/modern-e0uhw7
+- Price: 5300.00 ILS (sale, was 7000.00 ILS)
+- Availability: In stock
+- Category: מזנונים
+- Description: קיים בכל המידות הגוונים והצבעים.
+- Image: https://casa-verona.zappy5.app/assets/product-1784209030324-jbrmvg.webp
 
 ### stone
 https://casa-verona.zappy5.app/product/stone-evocxx

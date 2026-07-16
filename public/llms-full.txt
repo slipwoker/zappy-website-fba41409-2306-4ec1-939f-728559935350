@@ -4478,6 +4478,13 @@ Description: casa verona - תודה שפניתם אלינו
 
 ## Product Catalog
 
+### Modern 
+URL: https://casa-verona.zappy5.app/product/modern-e0uhw7
+Price: 5300.00 ILS (sale, was 7000.00 ILS)
+Availability: In stock
+
+---
+
 ### stone
 URL: https://casa-verona.zappy5.app/product/stone-evocxx
 Price: 4499.00 ILS (sale, was 5500.00 ILS)

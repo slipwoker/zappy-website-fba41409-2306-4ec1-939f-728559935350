@@ -1,10 +1,34 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-16T13:37:27.507Z",
+  "generated_at": "2026-07-16T13:38:47.564Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
-  "count": 39,
+  "count": 40,
   "products": [
+    {
+      "id": "bdf7511e-10b9-4bf1-b75e-adc2b2343e9f",
+      "slug": "modern-e0uhw7",
+      "name": "Modern ",
+      "name_translations": {},
+      "description": "",
+      "short_description": "קיים בכל המידות הגוונים והצבעים.",
+      "sku": null,
+      "brand": null,
+      "price": 5300,
+      "base_price": 7000,
+      "sale_price": 5300,
+      "currency": "ILS",
+      "images": [
+        "https://casa-verona.zappy5.app/assets/product-1784209030324-jbrmvg.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://casa-verona.zappy5.app/product/modern-e0uhw7",
+      "categories": [
+        "מזנונים"
+      ],
+      "updated_at": "2026-07-16T13:38:15.550Z"
+    },
     {
       "id": "f439ecb9-63eb-47a5-8f24-611156decb59",
       "slug": "stone-evocxx",
