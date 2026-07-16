@@ -64,7 +64,14 @@ Information about WCAG compliance and accessibility features.
 
 ## Products
 
-**Total active products: 47**
+**Total active products: 48**
+
+### Turchese
+https://casa-verona.zappy5.app/product/turchese-1nmu02
+- Price: 4800.00 ILS (sale, was 6300.00 ILS)
+- Availability: In stock
+- Category: מזנונים
+- Image: https://casa-verona.zappy5.app/assets/product-1784212506827-pqmk9.webp
 
 ### Aurora
 https://casa-verona.zappy5.app/product/aurora-zvs2l1

@@ -4,7 +4,21 @@
     <title>casa verona</title>
     <link>https://casa-verona.zappy5.app</link>
     <description>Product feed for casa verona</description>
-    <lastBuildDate>Thu, 16 Jul 2026 14:33:18 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jul 2026 14:36:49 GMT</lastBuildDate>
+    <item>
+      <g:id>febf5677-a721-4c6d-92e7-2d114762e287</g:id>
+      <g:title>Turchese</g:title>
+      <g:description>Turchese</g:description>
+      <g:link>https://casa-verona.zappy5.app/product/turchese-1nmu02</g:link>
+      <g:image_link>https://casa-verona.zappy5.app/assets/product-1784212506827-pqmk9.webp</g:image_link>
+      <g:availability>in_stock</g:availability>
+      <g:price>6300.00 ILS</g:price>
+      <g:sale_price>4800.00 ILS</g:sale_price>
+      <g:condition>new</g:condition>
+      <g:brand>casa verona</g:brand>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:product_type>מזנונים</g:product_type>
+    </item>
     <item>
       <g:id>e74e83df-e1a8-42b6-bde2-9a87f632d6e8</g:id>
       <g:title>Aurora</g:title>

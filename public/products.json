@@ -1,10 +1,37 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-16T14:33:18.021Z",
+  "generated_at": "2026-07-16T14:36:49.855Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
-  "count": 47,
+  "count": 48,
   "products": [
+    {
+      "id": "febf5677-a721-4c6d-92e7-2d114762e287",
+      "slug": "turchese-1nmu02",
+      "name": "Turchese",
+      "name_translations": {
+        "en": "Turchese",
+        "he": "טורקיז"
+      },
+      "description": "",
+      "short_description": null,
+      "sku": null,
+      "brand": null,
+      "price": 4800,
+      "base_price": 6300,
+      "sale_price": 4800,
+      "currency": "ILS",
+      "images": [
+        "https://casa-verona.zappy5.app/assets/product-1784212506827-pqmk9.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://casa-verona.zappy5.app/product/turchese-1nmu02",
+      "categories": [
+        "מזנונים"
+      ],
+      "updated_at": "2026-07-16T14:36:18.132Z"
+    },
     {
       "id": "e74e83df-e1a8-42b6-bde2-9a87f632d6e8",
       "slug": "aurora-zvs2l1",

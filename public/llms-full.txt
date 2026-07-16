@@ -4478,6 +4478,13 @@ Description: casa verona - תודה שפניתם אלינו
 
 ## Product Catalog
 
+### Turchese
+URL: https://casa-verona.zappy5.app/product/turchese-1nmu02
+Price: 4800.00 ILS (sale, was 6300.00 ILS)
+Availability: In stock
+
+---
+
 ### Aurora
 URL: https://casa-verona.zappy5.app/product/aurora-zvs2l1
 Price: 5000.00 ILS (sale, was 7000.00 ILS)
