@@ -1,6 +1,6 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-16T14:11:13.895Z",
+  "generated_at": "2026-07-16T14:11:43.236Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
   "count": 43,
@@ -262,7 +262,7 @@
     },
     {
       "id": "6f3872b7-5bb6-4d1b-8375-02b7e9ddeb89",
-      "slug": "palazzo-bianco-fd71u9",
+      "slug": "palazzo-bianco-crhx44",
       "name": "Palazzo Bianco ",
       "name_translations": {},
       "description": "",
@@ -278,9 +278,11 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://casa-verona.zappy5.app/product/palazzo-bianco-fd71u9",
-      "categories": [],
-      "updated_at": "2026-07-16T13:08:52.422Z"
+      "url": "https://casa-verona.zappy5.app/product/palazzo-bianco-crhx44",
+      "categories": [
+        "סלונים"
+      ],
+      "updated_at": "2026-07-16T14:11:30.215Z"
     },
     {
       "id": "4f6ec1c0-e279-4654-8da7-b0bd92d2ce23",
