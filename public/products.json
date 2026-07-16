@@ -1,13 +1,13 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-16T13:00:49.945Z",
+  "generated_at": "2026-07-16T13:02:38.700Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
   "count": 32,
   "products": [
     {
       "id": "4f6ec1c0-e279-4654-8da7-b0bd92d2ce23",
-      "slug": "dolce-vita-sofa-r8yt7q",
+      "slug": "dolce-vita-sofa-q91dlv",
       "name": "Dolce Vita Sofa",
       "name_translations": {},
       "description": "",
@@ -23,11 +23,11 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://casa-verona.zappy5.app/product/dolce-vita-sofa-r8yt7q",
+      "url": "https://casa-verona.zappy5.app/product/dolce-vita-sofa-q91dlv",
       "categories": [
         "סלונים"
       ],
-      "updated_at": "2026-07-16T13:00:18.275Z"
+      "updated_at": "2026-07-16T13:02:07.131Z"
     },
     {
       "id": "d8d767ee-88b8-49e1-ad08-888c5f99ac2a",
