@@ -131,23 +131,26 @@ https://casa-verona.zappy5.app/product/urban-221rnz
 - Image: https://casa-verona.zappy5.app/assets/product-1784064659077-73inp9.webp
 
 ### Poo
-https://casa-verona.zappy5.app/product/poo-y0dlbv
+https://casa-verona.zappy5.app/product/poo-n604g7
 - Price: 10000.00 ILS (sale, was 13000.00 ILS)
 - Availability: In stock
+- Category: סלונים
 - Description: את Poo אין איך לתאר .......
 - Image: https://casa-verona.zappy5.app/assets/product-1784064507709-y3l2mo.webp
 
 ### Morbido
-https://casa-verona.zappy5.app/product/morbido-de6e7b
+https://casa-verona.zappy5.app/product/morbido-0ki1sg
 - Price: 8700.00 ILS (sale, was 11000.00 ILS)
 - Availability: In stock
+- Category: סלונים
 - Description: סלון רביצה יוקרתי עם קוביות ישיבה מודולריות, המעניק שילוב מושלם של נוחות, פונקציונליות ועיצוב אלגנטי. זמין בהתאמה אישית של מידות, בדים וצבעים
 - Image: https://casa-verona.zappy5.app/assets/product-1784063983970-sg0mfc.webp
 
 ### Alba 
-https://casa-verona.zappy5.app/product/alba-1o8dke
+https://casa-verona.zappy5.app/product/alba-qxvs4o
 - Price: 8200.00 ILS (sale, was 10000.00 ILS)
 - Availability: In stock
+- Category: סלונים
 - Description: סלון מודולרי יוקרתי עם מסגרת ורגלי עץ, שולחן מרכזי משולב ומושבי רביצה מפנקים, שילוב מושלם של עיצוב מודרני, נוחות ופנקציונליות, המעניק לכל חלל מראה ייחודי ואלגנטי. זמין בהתאמה אישית של מידות, בדים וצבעים
 - Image: https://casa-verona.zappy5.app/assets/product-1784063793272-1anmb.webp
 

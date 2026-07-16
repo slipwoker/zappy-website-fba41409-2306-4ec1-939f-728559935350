@@ -1,6 +1,6 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-16T12:03:01.681Z",
+  "generated_at": "2026-07-16T12:04:53.978Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
   "count": 27,
@@ -257,7 +257,7 @@
     },
     {
       "id": "8bef5445-4528-48ea-b2ff-d3e81897887c",
-      "slug": "poo-y0dlbv",
+      "slug": "poo-n604g7",
       "name": "Poo",
       "name_translations": {},
       "description": "",
@@ -274,13 +274,15 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://casa-verona.zappy5.app/product/poo-y0dlbv",
-      "categories": [],
-      "updated_at": "2026-07-14T21:29:41.469Z"
+      "url": "https://casa-verona.zappy5.app/product/poo-n604g7",
+      "categories": [
+        "סלונים"
+      ],
+      "updated_at": "2026-07-16T12:04:05.496Z"
     },
     {
       "id": "2202b5ea-20c5-431a-bb23-66ff7b8cc05d",
-      "slug": "morbido-de6e7b",
+      "slug": "morbido-0ki1sg",
       "name": "Morbido",
       "name_translations": {},
       "description": "",
@@ -296,13 +298,15 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://casa-verona.zappy5.app/product/morbido-de6e7b",
-      "categories": [],
-      "updated_at": "2026-07-14T21:23:28.957Z"
+      "url": "https://casa-verona.zappy5.app/product/morbido-0ki1sg",
+      "categories": [
+        "סלונים"
+      ],
+      "updated_at": "2026-07-16T12:04:22.478Z"
     },
     {
       "id": "0168cb1e-d851-455e-a93d-62372a9e4c80",
-      "slug": "alba-1o8dke",
+      "slug": "alba-qxvs4o",
       "name": "Alba ",
       "name_translations": {},
       "description": "",
@@ -318,9 +322,11 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://casa-verona.zappy5.app/product/alba-1o8dke",
-      "categories": [],
-      "updated_at": "2026-07-14T21:23:44.321Z"
+      "url": "https://casa-verona.zappy5.app/product/alba-qxvs4o",
+      "categories": [
+        "סלונים"
+      ],
+      "updated_at": "2026-07-16T12:04:38.020Z"
     },
     {
       "id": "7de93f02-a9c6-44b1-88be-30b928ac0353",
