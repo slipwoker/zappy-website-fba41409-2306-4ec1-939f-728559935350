@@ -1,10 +1,37 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-16T13:36:09.452Z",
+  "generated_at": "2026-07-16T13:37:27.507Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
-  "count": 38,
+  "count": 39,
   "products": [
+    {
+      "id": "f439ecb9-63eb-47a5-8f24-611156decb59",
+      "slug": "stone-evocxx",
+      "name": "stone",
+      "name_translations": {
+        "en": "stone",
+        "he": "אבן"
+      },
+      "description": "",
+      "short_description": null,
+      "sku": null,
+      "brand": null,
+      "price": 4499,
+      "base_price": 5500,
+      "sale_price": 4499,
+      "currency": "ILS",
+      "images": [
+        "https://casa-verona.zappy5.app/assets/product-1784208953354-no88d.webp"
+      ],
+      "in_stock": true,
+      "stock_status": "in_stock",
+      "url": "https://casa-verona.zappy5.app/product/stone-evocxx",
+      "categories": [
+        "מזנונים"
+      ],
+      "updated_at": "2026-07-16T13:36:55.561Z"
+    },
     {
       "id": "4b76d3ae-3958-40fc-86d9-3fcd915bcd9b",
       "slug": "sahara-pwnbkh",

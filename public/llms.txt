@@ -64,7 +64,14 @@ Information about WCAG compliance and accessibility features.
 
 ## Products
 
-**Total active products: 38**
+**Total active products: 39**
+
+### stone
+https://casa-verona.zappy5.app/product/stone-evocxx
+- Price: 4499.00 ILS (sale, was 5500.00 ILS)
+- Availability: In stock
+- Category: מזנונים
+- Image: https://casa-verona.zappy5.app/assets/product-1784208953354-no88d.webp
 
 ### sahara
 https://casa-verona.zappy5.app/product/sahara-pwnbkh
