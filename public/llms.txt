@@ -115,9 +115,10 @@ https://casa-verona.zappy5.app/product/verona-g0wr6e
 - Image: https://casa-verona.zappy5.app/assets/product-1784065224849-lrv7wp.webp
 
 ### Plaza Athena
-https://casa-verona.zappy5.app/product/plaza-athena-8yach8
+https://casa-verona.zappy5.app/product/plaza-athena-waiku7
 - Price: 8600.00 ILS (sale, was 11500.00 ILS)
 - Availability: In stock
+- Category: סלונים
 - Description: סלון רביצה פינתי עם שזלונג עגול, המשלב קווים אלגנטיים, נוחות מפנקת ועיצוב ייחודי. ניתן להתאמה אישית במידות, בבדים ובצבעים , ליצירת הסלון המושלם לבחירתכם...
 - Image: https://casa-verona.zappy5.app/assets/product-1784064931285-rr0o0k.webp
 

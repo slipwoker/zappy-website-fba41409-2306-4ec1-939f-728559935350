@@ -1,6 +1,6 @@
 {
   "@context": "https://schema.org",
-  "generated_at": "2026-07-15T19:27:19.053Z",
+  "generated_at": "2026-07-16T12:02:28.205Z",
   "base_url": "https://casa-verona.zappy5.app",
   "currency": "ILS",
   "count": 27,
@@ -207,7 +207,7 @@
     },
     {
       "id": "03d5c1d0-9ef5-41c3-a910-b5e6734ea769",
-      "slug": "plaza-athena-8yach8",
+      "slug": "plaza-athena-waiku7",
       "name": "Plaza Athena",
       "name_translations": {},
       "description": "",
@@ -224,9 +224,11 @@
       ],
       "in_stock": true,
       "stock_status": "in_stock",
-      "url": "https://casa-verona.zappy5.app/product/plaza-athena-8yach8",
-      "categories": [],
-      "updated_at": "2026-07-15T19:26:52.412Z"
+      "url": "https://casa-verona.zappy5.app/product/plaza-athena-waiku7",
+      "categories": [
+        "סלונים"
+      ],
+      "updated_at": "2026-07-16T12:01:56.385Z"
     },
     {
       "id": "0c372098-fbbf-4bc5-b1d5-812fb07ab068",
